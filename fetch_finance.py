@@ -1,7 +1,7 @@
 """
 财经热榜抓取 + 五大赛道（保险/银行/非银/信贷/财富）影响评估
 数据来源: tophub.today/c/finance
-大模型: 火山引擎 Ark（兼容 OpenAI API）
+大模型: 火山引擎 Ark（兼容 OpenAI API，带 JSON 容错解析）
 """
 
 import os
@@ -29,7 +29,7 @@ REQUEST_TIMEOUT = 30
 MAX_RETRIES = 3
 MAX_ITEMS_FOR_LLM = 25
 
-# ====== 火山引擎 Ark 配置（通过环境变量注入，不需要在这里写 Key）======
+# ====== 火山引擎 Ark 配置 ======
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
 LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
 LLM_MODEL = os.environ.get("LLM_MODEL", "")
@@ -44,6 +44,9 @@ logging.basicConfig(
 logger = logging.getLogger("finance_fetcher")
 
 
+# ============================================================
+# 1. 抓取 HTML
+# ============================================================
 def fetch_html(url: str) -> str:
     headers = {
         "User-Agent": USER_AGENT,
@@ -66,6 +69,32 @@ def fetch_html(url: str) -> str:
     raise RuntimeError(f"重试 {MAX_RETRIES} 次后仍无法抓取")
 
 
+# ============================================================
+# 2. 解析榜单卡片
+# ============================================================
+def parse_heat_value(extra_text: str) -> dict:
+    result = {"value": 0, "raw": extra_text}
+    if not extra_text:
+        return result
+    text = extra_text.strip()
+    m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
+    if m:
+        num_str = m.group(1).replace(",", "")
+        unit = m.group(2) or ""
+        try:
+            value = float(num_str)
+            if unit == "万":
+                value *= 10_000
+            elif unit == "亿":
+                value *= 100_000_000
+            elif unit in ("k", "K", "千"):
+                value *= 1_000
+            result["value"] = int(value) if value == int(value) else value
+        except ValueError:
+            pass
+    return result
+
+
 def parse_board_card(card_html) -> dict:
     title_elem = card_html.find(class_="cc-cd-lb")
     title = title_elem.get_text(strip=True) if title_elem else "未知榜单"
@@ -82,16 +111,19 @@ def parse_board_card(card_html) -> dict:
             rank_text = rank_elem.get_text(strip=True) if rank_elem else str(idx)
             item_title = title_elem_item.get_text(strip=True) if title_elem_item else ""
             extra_text = extra_elem.get_text(strip=True) if extra_elem else ""
+            hv = parse_heat_value(extra_text)
             items.append({
                 "rank": int(rank_text) if rank_text.isdigit() else idx,
                 "title": item_title,
                 "heat_raw": extra_text,
-                "heat_value": parse_heat_value(extra_text)["value"],
+                "heat_value": hv["value"],
                 "url": a_tag.get("href", ""),
             })
 
     full_text = card_html.get_text(" ", strip=True)
-    time_match = re.search(r"(\d+\s*(?:分钟前|小时前|天前|刚刚)|\d{1,2}:\d{2})", full_text)
+    time_match = re.search(
+        r"(\d+\s*(?:分钟前|小时前|天前|刚刚)|\d{1,2}:\d{2})", full_text
+    )
     update_time = time_match.group(1) if time_match else ""
 
     return {
@@ -101,29 +133,6 @@ def parse_board_card(card_html) -> dict:
         "items_count": len(items),
         "items": items,
     }
-
-
-def parse_heat_value(extra_text: str) -> dict:
-    result = {"value": 0, "raw": extra_text}
-    if not extra_text:
-        return result
-    text = extra_text.strip()
-    m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
-    if m:
-        num_str = m.group(1).replace(",", "")
-        unit = m.group(2) or ""
-        try:
-            value = float(num_str)
-            if unit in ("万",):
-                value *= 10_000
-            elif unit == "亿":
-                value *= 100_000_000
-            elif unit in ("k", "K", "千"):
-                value *= 1_000
-            result["value"] = int(value) if value == int(value) else value
-        except ValueError:
-            pass
-    return result
 
 
 def parse_all_boards(html_text: str) -> dict:
@@ -149,6 +158,9 @@ def parse_all_boards(html_text: str) -> dict:
     }
 
 
+# ============================================================
+# 3. 汇总新闻列表（去重后送给大模型）
+# ============================================================
 def collect_items_for_llm(raw_data: dict) -> list[dict]:
     seen = set()
     merged = []
@@ -168,6 +180,9 @@ def collect_items_for_llm(raw_data: dict) -> list[dict]:
     return merged
 
 
+# ============================================================
+# 4. 构造给大模型的提示词
+# ============================================================
 def build_classification_prompt(items: list[dict]) -> str:
     bullet_list = "\n".join(
         f"  [{i['id']}] ({i['source_board']}) {i['title']}"
@@ -212,6 +227,75 @@ def build_classification_prompt(items: list[dict]) -> str:
 """
 
 
+# ============================================================
+# 5. JSON 容错解析（修复火山引擎豆包偶尔输出格式瑕疵的问题）
+# ============================================================
+def extract_json(text: str) -> str:
+    """从模型输出中提取 JSON 字符串。"""
+    if not text:
+        return ""
+    s = text.strip()
+    # 去掉 ```json ... ``` 包裹
+    m = re.search(r"```(?:json)?\s*(\{[\s\S]+?\})\s*```", s)
+    if m:
+        s = m.group(1).strip()
+    # 去掉 ``` ... ``` 包裹
+    m = re.search(r"```\s*(\{[\s\S]+?\})\s*```", s)
+    if m:
+        s = m.group(1).strip()
+    # 找到第一个 { 和最后一个 }
+    start = s.find("{")
+    end = s.rfind("}")
+    if start >= 0 and end > start:
+        s = s[start:end + 1]
+    return s
+
+
+def parse_llm_json(text: str) -> dict:
+    """容错解析模型返回的 JSON。"""
+    cleaned = extract_json(text)
+    if not cleaned:
+        raise ValueError("模型输出为空或不含 JSON")
+
+    # 先尝试直接解析
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError as e1:
+        logger.warning(f"首次 JSON 解析失败: {e1}，尝试容错修复")
+
+    # 修复 1: 去掉行尾的尾随逗号
+    fixed = re.sub(r",\s*([}\]])", r"\1", cleaned)
+    # 修复 2: 中文全角引号 → 英文引号
+    fixed = fixed.replace("“", '"').replace("”", '"').replace("‘", "'").replace("’", "'")
+    # 修复 3: 字符串内的未转义换行符
+    fixed = re.sub(
+        r'"([^"]*?)\n([^"]*?)"',
+        lambda mm: '"' + mm.group(1).replace("\n", "\\n") + mm.group(2).replace("\n", "\\n") + '"',
+        fixed,
+    )
+
+    try:
+        return json.loads(fixed)
+    except json.JSONDecodeError as e2:
+        logger.error(f"修复后仍解析失败: {e2}")
+        # 最后手段：尝试手工提取几个关键字段
+        sentiment = re.search(r'"overall_sentiment"\s*:\s*"([^"]{0,10})"', fixed)
+        brief = re.search(r'"brief"\s*:\s*"([^"]{0,200})"', fixed)
+        return {
+            "error": f"JSON parse failed: {e2}",
+            "items": [],
+            "market_overview": {
+                "overall_sentiment": sentiment.group(1) if sentiment else "—",
+                "hot_sector": "—",
+                "cold_sector": "—",
+                "brief": (brief.group(1) if brief else f"模型返回的 JSON 不合法: {e2}"),
+            },
+        }
+
+
+# ============================================================
+# 6. 调用火山引擎 Ark 做五大赛道分类
+# ============================================================
 def call_llm_for_classification(items: list[dict]) -> dict:
     if not LLM_API_KEY or not LLM_MODEL:
         logger.warning("未配置 LLM_API_KEY 或 LLM_MODEL，跳过大模型分类")
@@ -233,16 +317,17 @@ def call_llm_for_classification(items: list[dict]) -> dict:
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你是严谨的财经信息分析助手，只输出合法 JSON。确保每个 score 是 -2/-1/0/1/2 整数。"},
+                {"role": "system", "content": "你是严谨的财经信息分析助手。重要：只输出合法 JSON 字符串，不要任何 markdown 标记、不要代码块、不要解释性文字。确保每个 score 是 -2/-1/0/1/2 整数。中文内容中的双引号必须用 \\\" 转义。"},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.2,
             max_tokens=3500,
-            response_format={"type": "json_object"},
         )
         content = response.choices[0].message.content.strip()
-        content = re.sub(r"^```json\s*|\s*```$", "", content, flags=re.IGNORECASE)
-        parsed = json.loads(content)
+        logger.info(f"模型原始输出长度: {len(content)} 字符")
+        parsed = parse_llm_json(content)
+        if not isinstance(parsed, dict) or "market_overview" not in parsed or "items" not in parsed:
+            raise ValueError("模型输出缺少 items 或 market_overview 字段")
         logger.info("大模型分类完成")
         return parsed
     except Exception as e:
@@ -259,6 +344,9 @@ def call_llm_for_classification(items: list[dict]) -> dict:
         }
 
 
+# ============================================================
+# 7. 保存 JSON
+# ============================================================
 def save_data(data: dict, filename: str) -> Path:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if "latest" in filename:
@@ -272,6 +360,9 @@ def save_data(data: dict, filename: str) -> Path:
     return out_file
 
 
+# ============================================================
+# 8. 主流程
+# ============================================================
 def main() -> int:
     logger.info("=== 财经热榜数据抓取开始 ===")
     try:
