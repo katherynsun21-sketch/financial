@@ -1,6 +1,6 @@
 """
-财经热榜数据抓取 + 大模型分析脚本
-来源: https://tophub.today/c/finance
+财经热榜抓取 + 五大赛道（保险/银行/非银/信贷/财富）影响评估
+数据来源: tophub.today/c/finance
 """
 
 import os
@@ -26,11 +26,14 @@ USER_AGENT = (
 )
 REQUEST_TIMEOUT = 30
 MAX_RETRIES = 3
+# 每条最多送多少条新闻进大模型（太多会爆 token / 贵）
+MAX_ITEMS_FOR_LLM = 25
 
-# 从环境变量读大模型配置 —— 在 GitHub 里以 Secrets 方式存 Key
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
 LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.deepseek.com")
 LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-chat")
+
+SECTORS = ["保险", "银行", "非银金融", "信贷", "财富管理"]
 
 logging.basicConfig(
     level=logging.INFO,
@@ -65,11 +68,10 @@ def fetch_html(url: str) -> str:
 
 
 def parse_heat_value(extra_text: str) -> dict:
-    result = {"value": 0, "unit": "", "raw": extra_text}
+    result = {"value": 0, "raw": extra_text}
     if not extra_text:
         return result
     text = extra_text.strip()
-    result["raw"] = text
     m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
     if m:
         num_str = m.group(1).replace(",", "")
@@ -83,7 +85,6 @@ def parse_heat_value(extra_text: str) -> dict:
             elif unit in ("k", "K", "千"):
                 value *= 1_000
             result["value"] = int(value) if value == int(value) else value
-            result["unit"] = unit
         except ValueError:
             pass
     return result
@@ -105,11 +106,12 @@ def parse_board_card(card_html) -> dict:
             rank_text = rank_elem.get_text(strip=True) if rank_elem else str(idx)
             item_title = title_elem_item.get_text(strip=True) if title_elem_item else ""
             extra_text = extra_elem.get_text(strip=True) if extra_elem else ""
+            hv = parse_heat_value(extra_text)
             items.append({
                 "rank": int(rank_text) if rank_text.isdigit() else idx,
                 "title": item_title,
                 "heat_raw": extra_text,
-                "heat_value": parse_heat_value(extra_text)["value"],
+                "heat_value": hv["value"],
                 "url": a_tag.get("href", ""),
             })
 
@@ -151,129 +153,178 @@ def parse_all_boards(html_text: str) -> dict:
     }
 
 
-def build_prompt(raw_data: dict) -> str:
-    """根据原始抓取数据生成给大模型的提示词"""
-    summary_lines = []
-    for board in raw_data["boards"][:5]:  # 取前 5 个榜单避免 token 过长
-        lines = []
-        for item in board["items"][:5]:  # 每个榜单取前 5 条
-            heat = ""
-            if item["heat_value"]:
-                heat = f"（热度 {item['heat_raw']}）"
-            lines.append(f"  {item['rank']}. {item['title']}{heat}")
-        if lines:
-            summary_lines.append(f"[{board['board_name']} - {board['board_subtitle']}]")
-            summary_lines.extend(lines)
+def collect_items_for_llm(raw_data: dict) -> list[dict]:
+    """把所有榜单的前几条合并成一个列表，喂给大模型"""
+    seen = set()
+    merged = []
+    for board in raw_data["boards"]:
+        for item in board["items"][:5]:  # 每个榜单最多取前 5
+            key = item["title"][:30]
+            if key in seen:
+                continue
+            seen.add(key)
+            merged.append({
+                "id": len(merged) + 1,
+                "title": item["title"],
+                "source_board": board["board_name"],
+            })
+            if len(merged) >= MAX_ITEMS_FOR_LLM:
+                return merged
+    return merged
 
+
+def build_classification_prompt(items: list[dict]) -> str:
+    bullet_list = "\n".join(
+        f"  [{i['id']}] ({i['source_board']}) {i['title']}"
+        for i in items
+    )
     return f"""
-你是一个财经市场观察者。下面是今日财经热榜的 TOP 条目，请你：
+你是一个金融行业研究员。请对下面每条财经新闻标题，从五大赛道（保险 / 银行 / 非银金融 / 信贷 / 财富管理）的角度判断影响。
 
-1) 用 2-3 句话总结今天市场的总体情绪（乐观/谨慎/悲观，以及主要方向）
-2) 挑出 3 条你认为最值得关注的新闻，用一句话说明为什么值得关注
-3) 给出一个"今日关注点"，限 20 字以内
+评分规则：
+- -2 = 强利空（行业整体明显承压）
+- -1 = 利空（部分机构/业务受负面影响）
+-  0 = 中性或影响不明确
+- +1 = 利好（部分机构/业务受益）
+- +2 = 强利好（行业整体明显受益）
 
-用中文输出，使用下面的 JSON 格式（不要包含任何 markdown 标记）：
+输出严格 JSON，不要任何 markdown 标记：
 {{
-  "sentiment": "...",
-  "summary": "...",
-  "highlights": [
-    {{"title": "...", "reason": "..."}},
-    {{"title": "...", "reason": "..."}},
-    {{"title": "...", "reason": "..."}}
+  "items": [
+    {{
+      "id": 新闻的数字 id,
+      "title": "原样复制新闻标题",
+      "sector_impact": {{
+        "保险": {{ "score": 数字, "level": "强利空/利空/中性/利好/强利好", "reason": "20字以内简要说明" }},
+        "银行": {{ "score": 数字, "level": "...", "reason": "..." }},
+        "非银金融": {{ "score": 数字, "level": "...", "reason": "..." }},
+        "信贷": {{ "score": 数字, "level": "...", "reason": "..." }},
+        "财富管理": {{ "score": 数字, "level": "...", "reason": "..." }}
+      }},
+      "primary_sector": "五选一（或空）",
+      "summary": "一句话概述，30字以内"
+    }}
   ],
-  "today_focus": "..."
+  "market_overview": {{
+    "overall_sentiment": "乐观/中性/谨慎",
+    "hot_sector": "当日最热门的赛道（五选一）",
+    "cold_sector": "当日最冷清/承压的赛道（五选一）",
+    "brief": "2-3 句话总结今日整体盘面与方向"
+  }}
 }}
 
-榜单数据：
-{chr(10).join(summary_lines)}
+新闻列表：
+{bullet_list}
 """.strip()
 
 
-def call_llm(raw_data: dict) -> dict:
-    """调用大模型生成分析结果。没有 Key 则返回占位数据。"""
+def call_llm_for_classification(items: list[dict]) -> dict:
     if not LLM_API_KEY:
-        logger.warning("未设置 LLM_API_KEY，跳过大模型分析")
+        logger.warning("未设置 LLM_API_KEY，跳过大模型分类")
         return {
             "error": "LLM_API_KEY not configured",
-            "sentiment": "—",
-            "summary": "（未配置大模型 Key，跳过分析）",
-            "highlights": [],
-            "today_focus": "",
+            "items": [
+                {
+                    "id": it["id"],
+                    "title": it["title"],
+                    "sector_impact": {s: {"score": 0, "level": "中性", "reason": "未配置 Key，跳过"} for s in SECTORS},
+                    "primary_sector": "",
+                    "summary": "",
+                }
+                for it in items
+            ],
+            "market_overview": {
+                "overall_sentiment": "—",
+                "hot_sector": "—",
+                "cold_sector": "—",
+                "brief": "未配置大模型 Key，跳过分析。",
+            },
         }
 
-    prompt = build_prompt(raw_data)
+    prompt = build_classification_prompt(items)
     try:
         client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你是一个严谨的财经信息分析助手，只输出合法 JSON。"},
+                {"role": "system", "content": "你只输出合法 JSON。确保每个 score 是 -2/-1/0/1/2 整数。"},
                 {"role": "user", "content": prompt},
             ],
-            temperature=0.3,
-            max_tokens=800,
+            temperature=0.2,
+            max_tokens=3500,
             response_format={"type": "json_object"},
         )
         content = response.choices[0].message.content.strip()
-        # 去掉可能的 ```json ... ``` 包裹
         content = re.sub(r"^```json\s*|\s*```$", "", content, flags=re.IGNORECASE)
         parsed = json.loads(content)
-        logger.info("大模型分析完成")
+        logger.info("大模型分类完成")
         return parsed
     except Exception as e:
         logger.error(f"大模型调用失败: {e}")
         return {
             "error": str(e),
-            "sentiment": "—",
-            "summary": f"（大模型调用失败：{e}）",
-            "highlights": [],
-            "today_focus": "",
+            "items": [],
+            "market_overview": {
+                "overall_sentiment": "—",
+                "hot_sector": "—",
+                "cold_sector": "—",
+                "brief": f"大模型调用失败：{e}",
+            },
         }
 
 
-def save_data(data: dict, suffix: str) -> Path:
+def save_data(data: dict, filename: str) -> Path:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    date_str = data["date"] if "date" in data else datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d")
-    out_file = DATA_DIR / f"{date_str}_{suffix}.json"
-    latest_file = DATA_DIR / f"latest_{suffix}.json"
+    date_str = data.get("date", datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"))
+    if "latest" in filename:
+        out_file = DATA_DIR / f"{filename}.json"
+    else:
+        out_file = DATA_DIR / f"{date_str}_{filename}.json"
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     logger.info(f"已保存: {out_file}")
-    with open(latest_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    logger.info(f"已更新: {latest_file}")
-    return latest_file
+    return out_file
 
 
 def main() -> int:
     logger.info("=== 财经热榜数据抓取开始 ===")
     try:
-        # 1) 抓取
+        # 1) 抓取 + 解析
         html = fetch_html(TARGET_URL)
         raw_data = parse_all_boards(html)
-        save_data(raw_data, "raw")
 
-        # 2) 大模型分析
-        analysis = call_llm(raw_data)
-        analysis_payload = {
-            "generated_at": datetime.now(CUSTOM_TZ).isoformat(),
-            "date": datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"),
-            "time": datetime.now(CUSTOM_TZ).strftime("%H:%M:%S"),
-            "analysis": analysis,
-        }
-        save_data(analysis_payload, "analysis")
+        # 2) 汇总新闻 → 调用大模型做五赛道分类
+        items_for_llm = collect_items_for_llm(raw_data)
+        logger.info(f"送入大模型分类: {len(items_for_llm)} 条新闻")
+        classification = call_llm_for_classification(items_for_llm)
 
-        # 3) 综合文件（latest.json = 原始数据 + 分析）
-        combined = {**raw_data, "analysis": analysis}
-        combined_file = DATA_DIR / "latest.json"
-        with open(combined_file, "w", encoding="utf-8") as f:
-            json.dump(combined, f, ensure_ascii=False, indent=2)
-        logger.info(f"已更新: {combined_file}")
+        # 把分类结果挂回 raw_data，方便前端一份文件就读全
+        raw_data["classification"] = classification
+
+        # 3) 按赛道聚合（方便页面展示"每条赛道下分别有哪些新闻"）
+        by_sector = {s: [] for s in SECTORS}
+        for item in classification.get("items", []):
+            primary = item.get("primary_sector", "")
+            if primary and primary in by_sector:
+                # 附带该赛道的具体评分与理由
+                imp = item.get("sector_impact", {}).get(primary, {})
+                by_sector[primary].append({
+                    **item,
+                    "this_sector_score": imp.get("score", 0),
+                    "this_sector_level": imp.get("level", "中性"),
+                    "this_sector_reason": imp.get("reason", ""),
+                })
+        raw_data["by_sector"] = by_sector
+
+        # 4) 存文件
+        save_data(raw_data, "latest")               # 综合最新
+        save_data(raw_data, "raw")                  # 原始数据备份
+        save_data(classification, "classification") # 分类单独一份
 
         logger.info("=== 全部完成 ===")
         return 0
     except Exception as e:
-        logger.error(f"=== 抓取失败: {e} ===")
+        logger.error(f"=== 失败: {e} ===")
         import traceback
         traceback.print_exc()
         return 1
