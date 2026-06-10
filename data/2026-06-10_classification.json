@@ -1,10 +1,10 @@
 {
-  "error": "Unterminated string starting at: line 216 column 17 (char 9648)",
+  "error": "JSON parse failed: Expecting property name enclosed in double quotes: line 2 column 24 (char 25)",
   "items": [],
   "market_overview": {
     "overall_sentiment": "—",
     "hot_sector": "—",
     "cold_sector": "—",
-    "brief": "大模型调用失败: Unterminated string starting at: line 216 column 17 (char 9648)"
+    "brief": "模型返回的 JSON 不合法: Expecting property name enclosed in double quotes: line 2 column 24 (char 25)"
   }
 }
