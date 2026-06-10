@@ -1,5 +1,5 @@
 """
-财经热榜数据抓取脚本
+财经热榜数据抓取 + 大模型分析脚本
 来源: https://tophub.today/c/finance
 """
 
@@ -14,6 +14,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from openai import OpenAI
 
 TARGET_URL = "https://tophub.today/c/finance"
 DATA_DIR = Path(__file__).parent / "data"
@@ -25,6 +26,11 @@ USER_AGENT = (
 )
 REQUEST_TIMEOUT = 30
 MAX_RETRIES = 3
+
+# 从环境变量读大模型配置 —— 在 GitHub 里以 Secrets 方式存 Key
+LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.deepseek.com")
+LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-chat")
 
 logging.basicConfig(
     level=logging.INFO,
@@ -89,14 +95,6 @@ def parse_board_card(card_html) -> dict:
     sub_elem = card_html.find(class_="cc-cd-sb-st")
     subtitle = sub_elem.get_text(strip=True) if sub_elem else ""
 
-    board_link_elem = card_html.select_one(".cc-cd-is a")
-    board_url = board_link_elem.get("href", "") if board_link_elem else ""
-    if board_url and board_url.startswith("/"):
-        board_url = "https://tophub.today" + board_url
-
-    card_id = card_html.get("id", "")
-    node_id = card_id[5:] if card_id.startswith("node-") else ""
-
     items = []
     item_container = card_html.find(class_="cc-cd-cb")
     if item_container:
@@ -107,16 +105,12 @@ def parse_board_card(card_html) -> dict:
             rank_text = rank_elem.get_text(strip=True) if rank_elem else str(idx)
             item_title = title_elem_item.get_text(strip=True) if title_elem_item else ""
             extra_text = extra_elem.get_text(strip=True) if extra_elem else ""
-            heat = parse_heat_value(extra_text)
-            item_url = a_tag.get("href", "")
-            item_id = a_tag.get("itemid", "")
             items.append({
                 "rank": int(rank_text) if rank_text.isdigit() else idx,
                 "title": item_title,
-                "extra": extra_text,
-                "heat": heat,
-                "url": item_url,
-                "item_id": item_id,
+                "heat_raw": extra_text,
+                "heat_value": parse_heat_value(extra_text)["value"],
+                "url": a_tag.get("href", ""),
             })
 
     full_text = card_html.get_text(" ", strip=True)
@@ -128,9 +122,7 @@ def parse_board_card(card_html) -> dict:
     return {
         "board_name": title,
         "board_subtitle": subtitle,
-        "board_url": board_url,
-        "node_id": node_id,
-        "update_time_text": update_time,
+        "update_time": update_time,
         "items_count": len(items),
         "items": items,
     }
@@ -145,17 +137,12 @@ def parse_all_boards(html_text: str) -> dict:
         try:
             board = parse_board_card(card)
             boards.append(board)
-            logger.info(
-                f"  [{idx}] {board['board_name']} | {board['board_subtitle']} "
-                f"| {board['items_count']} 条 | {board['update_time_text']}"
-            )
+            logger.info(f"  [{idx}] {board['board_name']} | {board['items_count']} 条")
         except Exception as e:
             logger.error(f"  [{idx}] 解析失败: {e}")
     total_items = sum(b["items_count"] for b in boards)
     return {
-        "source_url": TARGET_URL,
         "fetched_at": datetime.now(CUSTOM_TZ).isoformat(),
-        "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
         "date": datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"),
         "time": datetime.now(CUSTOM_TZ).strftime("%H:%M:%S"),
         "boards_count": len(boards),
@@ -164,14 +151,94 @@ def parse_all_boards(html_text: str) -> dict:
     }
 
 
-def save_data(data: dict) -> Path:
+def build_prompt(raw_data: dict) -> str:
+    """根据原始抓取数据生成给大模型的提示词"""
+    summary_lines = []
+    for board in raw_data["boards"][:5]:  # 取前 5 个榜单避免 token 过长
+        lines = []
+        for item in board["items"][:5]:  # 每个榜单取前 5 条
+            heat = ""
+            if item["heat_value"]:
+                heat = f"（热度 {item['heat_raw']}）"
+            lines.append(f"  {item['rank']}. {item['title']}{heat}")
+        if lines:
+            summary_lines.append(f"[{board['board_name']} - {board['board_subtitle']}]")
+            summary_lines.extend(lines)
+
+    return f"""
+你是一个财经市场观察者。下面是今日财经热榜的 TOP 条目，请你：
+
+1) 用 2-3 句话总结今天市场的总体情绪（乐观/谨慎/悲观，以及主要方向）
+2) 挑出 3 条你认为最值得关注的新闻，用一句话说明为什么值得关注
+3) 给出一个"今日关注点"，限 20 字以内
+
+用中文输出，使用下面的 JSON 格式（不要包含任何 markdown 标记）：
+{{
+  "sentiment": "...",
+  "summary": "...",
+  "highlights": [
+    {{"title": "...", "reason": "..."}},
+    {{"title": "...", "reason": "..."}},
+    {{"title": "...", "reason": "..."}}
+  ],
+  "today_focus": "..."
+}}
+
+榜单数据：
+{chr(10).join(summary_lines)}
+""".strip()
+
+
+def call_llm(raw_data: dict) -> dict:
+    """调用大模型生成分析结果。没有 Key 则返回占位数据。"""
+    if not LLM_API_KEY:
+        logger.warning("未设置 LLM_API_KEY，跳过大模型分析")
+        return {
+            "error": "LLM_API_KEY not configured",
+            "sentiment": "—",
+            "summary": "（未配置大模型 Key，跳过分析）",
+            "highlights": [],
+            "today_focus": "",
+        }
+
+    prompt = build_prompt(raw_data)
+    try:
+        client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
+        response = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[
+                {"role": "system", "content": "你是一个严谨的财经信息分析助手，只输出合法 JSON。"},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.3,
+            max_tokens=800,
+            response_format={"type": "json_object"},
+        )
+        content = response.choices[0].message.content.strip()
+        # 去掉可能的 ```json ... ``` 包裹
+        content = re.sub(r"^```json\s*|\s*```$", "", content, flags=re.IGNORECASE)
+        parsed = json.loads(content)
+        logger.info("大模型分析完成")
+        return parsed
+    except Exception as e:
+        logger.error(f"大模型调用失败: {e}")
+        return {
+            "error": str(e),
+            "sentiment": "—",
+            "summary": f"（大模型调用失败：{e}）",
+            "highlights": [],
+            "today_focus": "",
+        }
+
+
+def save_data(data: dict, suffix: str) -> Path:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    date_str = data["date"]
-    daily_file = DATA_DIR / f"{date_str}.json"
-    latest_file = DATA_DIR / "latest.json"
-    with open(daily_file, "w", encoding="utf-8") as f:
+    date_str = data["date"] if "date" in data else datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d")
+    out_file = DATA_DIR / f"{date_str}_{suffix}.json"
+    latest_file = DATA_DIR / f"latest_{suffix}.json"
+    with open(out_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    logger.info(f"已保存: {daily_file}")
+    logger.info(f"已保存: {out_file}")
     with open(latest_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     logger.info(f"已更新: {latest_file}")
@@ -180,15 +247,30 @@ def save_data(data: dict) -> Path:
 
 def main() -> int:
     logger.info("=== 财经热榜数据抓取开始 ===")
-    logger.info(f"目标 URL: {TARGET_URL}")
     try:
+        # 1) 抓取
         html = fetch_html(TARGET_URL)
-        data = parse_all_boards(html)
-        save_data(data)
-        logger.info(
-            f"=== 抓取完成: {data['boards_count']} 个榜单, "
-            f"{data['total_items']} 条数据 ==="
-        )
+        raw_data = parse_all_boards(html)
+        save_data(raw_data, "raw")
+
+        # 2) 大模型分析
+        analysis = call_llm(raw_data)
+        analysis_payload = {
+            "generated_at": datetime.now(CUSTOM_TZ).isoformat(),
+            "date": datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"),
+            "time": datetime.now(CUSTOM_TZ).strftime("%H:%M:%S"),
+            "analysis": analysis,
+        }
+        save_data(analysis_payload, "analysis")
+
+        # 3) 综合文件（latest.json = 原始数据 + 分析）
+        combined = {**raw_data, "analysis": analysis}
+        combined_file = DATA_DIR / "latest.json"
+        with open(combined_file, "w", encoding="utf-8") as f:
+            json.dump(combined, f, ensure_ascii=False, indent=2)
+        logger.info(f"已更新: {combined_file}")
+
+        logger.info("=== 全部完成 ===")
         return 0
     except Exception as e:
         logger.error(f"=== 抓取失败: {e} ===")
