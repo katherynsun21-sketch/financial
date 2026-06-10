@@ -25,7 +25,7 @@ jobs:
     #   → New repository secret → Name 填 LLM_API_KEY, Secret 填你的 Ark API Key
     env:
       LLM_BASE_URL: https://ark.cn-beijing.volces.com/api/v3
-      LLM_MODEL: ep-请替换为你的EndpointID          # ← 改成你自己的，例如 ep-20250610abcdef
+      LLM_MODEL: ep-20260610203554          # ← 改成你自己的，例如 ep-20250610abcdef
       LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
       TZ: Asia/Shanghai
 
