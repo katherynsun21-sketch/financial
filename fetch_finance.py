@@ -1,6 +1,7 @@
 """
 财经热榜抓取 + 五大赛道（保险/银行/非银/信贷/财富）影响评估
 数据来源: tophub.today/c/finance
+大模型: 火山引擎 Ark（兼容 OpenAI API）
 """
 
 import os
@@ -26,12 +27,12 @@ USER_AGENT = (
 )
 REQUEST_TIMEOUT = 30
 MAX_RETRIES = 3
-# 每条最多送多少条新闻进大模型（太多会爆 token / 贵）
 MAX_ITEMS_FOR_LLM = 25
 
+# ====== 火山引擎 Ark 配置（通过环境变量注入，不需要在这里写 Key）======
 LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
-LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.deepseek.com")
-LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-chat")
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
+LLM_MODEL = os.environ.get("LLM_MODEL", "")
 
 SECTORS = ["保险", "银行", "非银金融", "信贷", "财富管理"]
 
@@ -50,7 +51,6 @@ def fetch_html(url: str) -> str:
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
         "Cache-Control": "no-cache",
     }
-    last_exception = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             logger.info(f"抓取中 (第 {attempt}/{MAX_RETRIES} 次): {url}")
@@ -60,34 +60,10 @@ def fetch_html(url: str) -> str:
             logger.info(f"抓取成功，长度: {len(response.text)} 字符")
             return response.text
         except Exception as e:
-            last_exception = e
             wait_time = attempt * 3
             logger.warning(f"抓取失败: {e}，等待 {wait_time} 秒后重试...")
             time.sleep(wait_time)
-    raise RuntimeError(f"重试 {MAX_RETRIES} 次后仍无法抓取: {last_exception}")
-
-
-def parse_heat_value(extra_text: str) -> dict:
-    result = {"value": 0, "raw": extra_text}
-    if not extra_text:
-        return result
-    text = extra_text.strip()
-    m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
-    if m:
-        num_str = m.group(1).replace(",", "")
-        unit = m.group(2) or ""
-        try:
-            value = float(num_str)
-            if unit in ("万", "w", "W"):
-                value *= 10_000
-            elif unit == "亿":
-                value *= 100_000_000
-            elif unit in ("k", "K", "千"):
-                value *= 1_000
-            result["value"] = int(value) if value == int(value) else value
-        except ValueError:
-            pass
-    return result
+    raise RuntimeError(f"重试 {MAX_RETRIES} 次后仍无法抓取")
 
 
 def parse_board_card(card_html) -> dict:
@@ -106,19 +82,16 @@ def parse_board_card(card_html) -> dict:
             rank_text = rank_elem.get_text(strip=True) if rank_elem else str(idx)
             item_title = title_elem_item.get_text(strip=True) if title_elem_item else ""
             extra_text = extra_elem.get_text(strip=True) if extra_elem else ""
-            hv = parse_heat_value(extra_text)
             items.append({
                 "rank": int(rank_text) if rank_text.isdigit() else idx,
                 "title": item_title,
                 "heat_raw": extra_text,
-                "heat_value": hv["value"],
+                "heat_value": parse_heat_value(extra_text)["value"],
                 "url": a_tag.get("href", ""),
             })
 
     full_text = card_html.get_text(" ", strip=True)
-    time_match = re.search(
-        r"(\d+\s*(?:分钟前|小时前|天前|刚刚)|\d{1,2}:\d{2})", full_text
-    )
+    time_match = re.search(r"(\d+\s*(?:分钟前|小时前|天前|刚刚)|\d{1,2}:\d{2})", full_text)
     update_time = time_match.group(1) if time_match else ""
 
     return {
@@ -128,6 +101,29 @@ def parse_board_card(card_html) -> dict:
         "items_count": len(items),
         "items": items,
     }
+
+
+def parse_heat_value(extra_text: str) -> dict:
+    result = {"value": 0, "raw": extra_text}
+    if not extra_text:
+        return result
+    text = extra_text.strip()
+    m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
+    if m:
+        num_str = m.group(1).replace(",", "")
+        unit = m.group(2) or ""
+        try:
+            value = float(num_str)
+            if unit in ("万",):
+                value *= 10_000
+            elif unit == "亿":
+                value *= 100_000_000
+            elif unit in ("k", "K", "千"):
+                value *= 1_000
+            result["value"] = int(value) if value == int(value) else value
+        except ValueError:
+            pass
+    return result
 
 
 def parse_all_boards(html_text: str) -> dict:
@@ -154,11 +150,10 @@ def parse_all_boards(html_text: str) -> dict:
 
 
 def collect_items_for_llm(raw_data: dict) -> list[dict]:
-    """把所有榜单的前几条合并成一个列表，喂给大模型"""
     seen = set()
     merged = []
     for board in raw_data["boards"]:
-        for item in board["items"][:5]:  # 每个榜单最多取前 5
+        for item in board["items"][:5]:
             key = item["title"][:30]
             if key in seen:
                 continue
@@ -178,8 +173,7 @@ def build_classification_prompt(items: list[dict]) -> str:
         f"  [{i['id']}] ({i['source_board']}) {i['title']}"
         for i in items
     )
-    return f"""
-你是一个金融行业研究员。请对下面每条财经新闻标题，从五大赛道（保险 / 银行 / 非银金融 / 信贷 / 财富管理）的角度判断影响。
+    return f"""你是一个金融行业研究员。请对下面每条财经新闻标题，从五大赛道（保险 / 银行 / 非银金融 / 信贷 / 财富管理）的角度判断影响。
 
 评分规则：
 - -2 = 强利空（行业整体明显承压）
@@ -195,59 +189,51 @@ def build_classification_prompt(items: list[dict]) -> str:
       "id": 新闻的数字 id,
       "title": "原样复制新闻标题",
       "sector_impact": {{
-        "保险": {{ "score": 数字, "level": "强利空/利空/中性/利好/强利好", "reason": "20字以内简要说明" }},
+        "保险": {{ "score": 数字, "level": "强利空/利空/中性/利好/强利好", "reason": "20字以内" }},
         "银行": {{ "score": 数字, "level": "...", "reason": "..." }},
         "非银金融": {{ "score": 数字, "level": "...", "reason": "..." }},
         "信贷": {{ "score": 数字, "level": "...", "reason": "..." }},
         "财富管理": {{ "score": 数字, "level": "...", "reason": "..." }}
       }},
-      "primary_sector": "五选一（或空）",
+      "primary_sector": "五选一（或空字符串）",
       "summary": "一句话概述，30字以内"
     }}
   ],
   "market_overview": {{
     "overall_sentiment": "乐观/中性/谨慎",
-    "hot_sector": "当日最热门的赛道（五选一）",
-    "cold_sector": "当日最冷清/承压的赛道（五选一）",
-    "brief": "2-3 句话总结今日整体盘面与方向"
+    "hot_sector": "当日最热门赛道",
+    "cold_sector": "当日最承压赛道",
+    "brief": "2-3句话总结今日整体盘面与方向"
   }}
 }}
 
 新闻列表：
 {bullet_list}
-""".strip()
+"""
 
 
 def call_llm_for_classification(items: list[dict]) -> dict:
-    if not LLM_API_KEY:
-        logger.warning("未设置 LLM_API_KEY，跳过大模型分类")
+    if not LLM_API_KEY or not LLM_MODEL:
+        logger.warning("未配置 LLM_API_KEY 或 LLM_MODEL，跳过大模型分类")
         return {
-            "error": "LLM_API_KEY not configured",
-            "items": [
-                {
-                    "id": it["id"],
-                    "title": it["title"],
-                    "sector_impact": {s: {"score": 0, "level": "中性", "reason": "未配置 Key，跳过"} for s in SECTORS},
-                    "primary_sector": "",
-                    "summary": "",
-                }
-                for it in items
-            ],
+            "error": "LLM not configured (missing API Key or Model Endpoint)",
+            "items": [],
             "market_overview": {
                 "overall_sentiment": "—",
                 "hot_sector": "—",
                 "cold_sector": "—",
-                "brief": "未配置大模型 Key，跳过分析。",
+                "brief": "未配置大模型 Key，跳过 AI 分类。",
             },
         }
 
     prompt = build_classification_prompt(items)
     try:
+        logger.info(f"调用火山引擎 Ark: model={LLM_MODEL}")
         client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你只输出合法 JSON。确保每个 score 是 -2/-1/0/1/2 整数。"},
+                {"role": "system", "content": "你是严谨的财经信息分析助手，只输出合法 JSON。确保每个 score 是 -2/-1/0/1/2 整数。"},
                 {"role": "user", "content": prompt},
             ],
             temperature=0.2,
@@ -268,17 +254,17 @@ def call_llm_for_classification(items: list[dict]) -> dict:
                 "overall_sentiment": "—",
                 "hot_sector": "—",
                 "cold_sector": "—",
-                "brief": f"大模型调用失败：{e}",
+                "brief": f"大模型调用失败: {e}",
             },
         }
 
 
 def save_data(data: dict, filename: str) -> Path:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    date_str = data.get("date", datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"))
     if "latest" in filename:
         out_file = DATA_DIR / f"{filename}.json"
     else:
+        date_str = data.get("date", datetime.now(CUSTOM_TZ).strftime("%Y-%m-%d"))
         out_file = DATA_DIR / f"{date_str}_{filename}.json"
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -293,20 +279,17 @@ def main() -> int:
         html = fetch_html(TARGET_URL)
         raw_data = parse_all_boards(html)
 
-        # 2) 汇总新闻 → 调用大模型做五赛道分类
+        # 2) 汇总 → 调用火山引擎 Ark 做五大赛道分类
         items_for_llm = collect_items_for_llm(raw_data)
         logger.info(f"送入大模型分类: {len(items_for_llm)} 条新闻")
         classification = call_llm_for_classification(items_for_llm)
-
-        # 把分类结果挂回 raw_data，方便前端一份文件就读全
         raw_data["classification"] = classification
 
-        # 3) 按赛道聚合（方便页面展示"每条赛道下分别有哪些新闻"）
+        # 3) 按赛道聚合
         by_sector = {s: [] for s in SECTORS}
         for item in classification.get("items", []):
             primary = item.get("primary_sector", "")
             if primary and primary in by_sector:
-                # 附带该赛道的具体评分与理由
                 imp = item.get("sector_impact", {}).get(primary, {})
                 by_sector[primary].append({
                     **item,
@@ -316,10 +299,10 @@ def main() -> int:
                 })
         raw_data["by_sector"] = by_sector
 
-        # 4) 存文件
-        save_data(raw_data, "latest")               # 综合最新
-        save_data(raw_data, "raw")                  # 原始数据备份
-        save_data(classification, "classification") # 分类单独一份
+        # 4) 落盘
+        save_data(raw_data, "latest")
+        save_data(raw_data, "raw")
+        save_data(classification, "classification")
 
         logger.info("=== 全部完成 ===")
         return 0
