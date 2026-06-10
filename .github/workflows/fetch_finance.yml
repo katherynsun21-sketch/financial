@@ -2,13 +2,17 @@ name: Fetch Finance Hot List
 
 on:
   schedule:
-    # 每 2 小时自动抓一次（北京时间整点）
+    # 每 2 小时运行一次 (北京时间 00:00, 02:00, 04:00...)
     - cron: "0 */2 * * *"
-  # 支持在 Actions 页面手动点 Run workflow 触发
+  # 支持手动触发
   workflow_dispatch:
-  # 每次推送到 main 分支，自动跑一次作为验证
+  # 每次推送到 main 分支时运行一次作为测试
   push:
     branches: [main]
+    paths:
+      - "fetch_finance.py"
+      - "requirements.txt"
+      - ".github/workflows/fetch_finance.yml"
 
 permissions:
   contents: write
@@ -17,17 +21,6 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-
-    # ================= 火山引擎 Ark 配置 =================
-    # ⚠️ 把下面的 LLM_MODEL 替换成你在方舟控制台创建的 Endpoint ID
-    #   形如: ep-20250610xxxxxx
-    # ⚠️ LLM_API_KEY 从 Secrets 读取，请先去 Settings → Secrets and variables → Actions
-    #   → New repository secret → Name 填 LLM_API_KEY, Secret 填你的 Ark API Key
-    env:
-      LLM_BASE_URL: https://ark.cn-beijing.volces.com/api/v3
-      LLM_MODEL: ep-20260610203528-fmwd5          # ← 改成你自己的，例如 ep-20250610abcdef
-      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-      TZ: Asia/Shanghai
 
     steps:
       - name: Checkout repository
@@ -44,13 +37,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run fetch + LLM classification
+      - name: Run fetch script
         run: python fetch_finance.py
+        env:
+          TZ: Asia/Shanghai
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
 
-      - name: Commit and push JSON data
+      - name: Commit and push data files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          # 设置允许检出
+          git pull --rebase || true
+
+          # 检查 data 目录是否有变更
           if [[ -n "$(git status --porcelain data/)" ]]; then
             git add data/*.json
             git commit -m "自动更新: 抓取财经热榜 $(date +'%Y-%m-%d %H:%M:%S' -u)"
