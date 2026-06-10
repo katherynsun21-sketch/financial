@@ -12,3 +12,23 @@
 ## 本地运行
 
 ```bash
+pip install -r requirements.txt
+python fetch_finance.py
+```
+
+## GitHub Actions 自动部署
+
+- 每 2 小时自动运行一次
+- 抓取结果会自动 commit 回仓库
+- 在 Actions 页面可以手动触发
+
+## 配置步骤
+
+1. 推送代码到 GitHub 公开仓库
+2. 进入 Settings → Actions → General → Workflow permissions
+3. 勾选 "Read and write permissions" → Save
+4. 在 Actions 页面手动 Run workflow 验证一次
+
+## 免责声明
+
+本项目仅用于学习和研究目的。请遵守目标网站的使用条款和 robots.txt。
