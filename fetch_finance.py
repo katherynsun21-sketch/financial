@@ -52,16 +52,17 @@ SECTOR_KEYWORDS = {
         "信贷", "贷款", "房贷", "按揭", "消费贷", "经营贷", "小微", "普惠", "融资",
         "授信", "征信", "债务", "逾期", "违约", "展期", "延期还本", "降息", "LPR",
         "社融", "信用", "按揭贷款", "房地产融资", "融资租赁", "保理", "助贷",
+        "第三方支付", "支付公司", "消费金融公司", "贷款服务", "普惠金融", "助农贷款",
     ],
     "财富": [
         "财富", "理财", "基金", "公募", "私募", "信托", "资管", "券商资管", "净值",
         "养老金融", "养老金", "个人养老金", "FOF", "ETF", "投顾", "资产配置", "高净值",
         "家族信托", "固收", "权益", "债基", "货基", "财富管理", "代销", "客户资产",
+        "证券", "期货", "典当", "证券公司", "基金公司", "财富平台",
     ],
     "非金": [
-        "证券", "券商", "投行", "经纪", "两融", "融资融券", "期货", "交易所", "A股",
-        "港股", "北交所", "IPO", "并购", "重组", "创投", "租赁", "担保", "典当",
-        "小贷", "支付", "金融科技", "互金", "消金", "消费金融", "AMC", "资产管理公司",
+        "金融科技", "互金", "AMC", "资产管理公司", "综合金融平台", "中介服务",
+        "金融科技公司", "数字金融",
     ],
 }
 
@@ -99,12 +100,10 @@ EVENT_RULES = {
         {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "整改", "通报"]},
     ],
     "非金": [
-        {"event_type": "资本市场活跃", "keywords": ["成交额放大", "两融增长", "券商业绩增长", "IPO重启", "并购重组", "市场回暖"]},
-        {"event_type": "政策支持", "keywords": ["资本市场改革", "支持并购", "活跃资本市场", "长期资金入市"]},
-        {"event_type": "金融科技机会", "keywords": ["金融科技", "支付增长", "数字金融", "AI金融"]},
-        {"event_type": "交易低迷", "keywords": ["成交低迷", "佣金下滑", "投行业务下滑", "IPO放缓"]},
-        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "立案", "调查", "整改", "通报"]},
-        {"event_type": "信用风险", "keywords": ["担保风险", "小贷风险", "融资租赁风险", "资产减值"]},
+        {"event_type": "金融科技机会", "keywords": ["金融科技", "数字金融", "AI金融", "互金平台", "综合金融平台"]},
+        {"event_type": "资产管理处置", "keywords": ["AMC", "不良资产", "资产处置", "资产管理公司"]},
+        {"event_type": "中介服务动态", "keywords": ["中介服务", "管理咨询", "综合服务"]},
+        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "整改", "通报"]},
     ],
 }
 
@@ -237,14 +236,27 @@ def parse_heat_value(extra_text: str) -> dict:
     return result
 
 
+PRIMARY_SECTORS = ["保险", "银行", "财富", "信贷"]
+
+
 def pick_sector(text: str, source: str) -> tuple:
     sector_scores = {}
     for sector, keywords in SECTOR_KEYWORDS.items():
         sector_scores[sector] = sum(1 for kw in keywords if kw and kw in text)
 
-    sector = max(sector_scores, key=sector_scores.get)
-    if sector_scores[sector] == 0:
-        sector = guess_sector_from_source(source)
+    # 先看四个主赛道，优先排序
+    primary_scores = {s: sector_scores.get(s, 0) for s in PRIMARY_SECTORS}
+    best_primary = max(primary_scores, key=primary_scores.get)
+
+    if primary_scores[best_primary] > 0:
+        return best_primary, sector_scores
+
+    # 四个主赛道都未命中时，再看非金
+    if sector_scores.get("非金", 0) > 0:
+        return "非金", sector_scores
+
+    # 全部为 0，按来源兜底
+    sector = guess_sector_from_source(source)
     return sector, sector_scores
 
 
@@ -316,7 +328,9 @@ def guess_sector_from_source(source: str) -> str:
     if "银行" in source or "央行" in source:
         return "银行"
     if "证券" in source or "证监" in source or "财联社" in source:
-        return "非金"
+        # 按 SQL 口径：证券/期货优先归财富，不作为非金
+        return "财富"
+    # 默认放财富，非金仅作为兜底桶
     return "财富"
 
 
@@ -477,8 +491,14 @@ def build_classify_prompt(batch: list) -> str:
     lines = [
         "你是金融机构行业研究员。请把新闻归入五大赛道，用于资讯披露和局势观察。",
         "五大赛道只能从以下选择：保险、非金、信贷、财富、银行。",
+        "归类规则（必须遵守，和业务口径一致）：",
+        "1) 标题或来源中出现保险、寿险、财险、养老险、保费、赔付等，归保险。",
+        "2) 出现银行、商业银行、存款、息差、按揭、银联等，归银行。",
+        "3) 出现基金、证券、期货、理财、信托、资管、私募、公募、ETF、高净值、典当、蚂蚁财富等，归财富（这是重点优先级）。",
+        "4) 出现信贷、贷款、房贷、消费贷、经营贷、小微、普惠、融资、支付、消费金融、第三方支付、贷款服务等，归信贷（优先级高于财富和非金）。",
+        "5) 非金只作为兜底：只有当新闻主要讲金融科技、互金平台、综合金融平台、AMC且不满足上面任何一条时，才归非金。",
         "不要判断利好、利空、中性，不要输出影响分。只判断新闻和哪个赛道最相关。",
-        "尽量让五大赛道都有新闻覆盖；宏观、政策、市场类新闻可按最相关的客户需求或业务场景分配。",
+        "基金、证券、期货一定要归财富，不要归非金；支付、消费金融一定要归信贷，不要归非金。",
         "topic_type请归纳为：政策监管、产品动态、市场环境、机构经营、客户需求、风险事件、宏观经济、一般资讯等。",
         "confidence为0到1的小数，表示赛道归属置信度。",
         "请只输出JSON，不要Markdown，不要解释。格式：",
@@ -577,7 +597,7 @@ def merge_classification(items: list, llm_map: dict) -> list:
     return enriched
 
 
-def improve_sector_coverage(items: list, min_per_sector: int = 8) -> list:
+def improve_sector_coverage(items: list, min_per_sector: int = 8, min_non_jin: int = 4) -> list:
     if not items:
         return items
 
@@ -586,14 +606,25 @@ def improve_sector_coverage(items: list, min_per_sector: int = 8) -> list:
     for item in items:
         counts[item["sector"]] = counts.get(item["sector"], 0) + 1
 
+    # 四个主赛道补到 min_per_sector；非金只补到 min_non_jin（非金是兜底，不强行塞）
+    sector_target = {}
+    for s in SECTORS:
+        sector_target[s] = min_non_jin if s == "非金" else min_per_sector
+
     for target_sector in SECTORS:
-        while counts.get(target_sector, 0) < min_per_sector:
+        target = sector_target.get(target_sector, min_per_sector)
+        while counts.get(target_sector, 0) < target:
             candidate = None
             candidate_score = 0
             for item in items:
                 current_sector = item.get("sector")
-                if current_sector == target_sector or counts.get(current_sector, 0) <= min_per_sector:
+                if current_sector == target_sector:
                     continue
+                # 不把当前赛道低于目标值的新闻抢走
+                if counts.get(current_sector, 0) <= sector_target.get(current_sector, min_per_sector):
+                    # 但是允许从非金里抢，因为非金是兜底桶
+                    if current_sector != "非金":
+                        continue
                 text = "%s %s" % (item.get("title", ""), item.get("source", ""))
                 score = sum(1 for kw in SECTOR_KEYWORDS[target_sector] if kw in text)
                 if target_sector == guess_sector_from_source(item.get("source", "")):
