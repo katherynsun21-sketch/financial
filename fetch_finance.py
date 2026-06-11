@@ -65,64 +65,55 @@ SECTOR_KEYWORDS = {
     ],
 }
 
-POSITIVE_KEYWORDS = [
-    "增长", "上涨", "提升", "改善", "回暖", "利好", "支持", "鼓励", "加快", "扩大", "创新",
-    "降准", "降息", "减费", "增持", "获批", "突破", "修复", "复苏", "盈利", "放宽",
-]
-
-NEGATIVE_KEYWORDS = [
-    "下滑", "下降", "亏损", "风险", "处罚", "罚款", "收紧", "违约", "逾期", "暴雷", "承压",
-    "不良", "退市", "调查", "叫停", "减少", "裁员", "整改", "问责", "低迷", "拖累",
-]
 
 EVENT_RULES = {
     "保险": [
-        {"event_type": "保费增长", "direction": 2, "keywords": ["保费增长", "新单增长", "NBV", "新业务价值", "续期改善"]},
-        {"event_type": "养老健康政策", "direction": 1, "keywords": ["养老金融", "个人养老金", "养老保险", "健康险", "长期护理"]},
-        {"event_type": "投资收益改善", "direction": 1, "keywords": ["权益市场回暖", "投资收益", "浮盈", "资产端改善"]},
-        {"event_type": "赔付压力", "direction": -1, "keywords": ["赔付上升", "赔款增加", "赔付率上升", "巨灾", "理赔压力"]},
-        {"event_type": "监管处罚", "direction": -2, "keywords": ["处罚", "罚款", "违规", "整改", "通报", "问责"]},
-        {"event_type": "退保或销售承压", "direction": -1, "keywords": ["退保", "销售下滑", "代理人减少", "保费下滑"]},
+        {"event_type": "保费增长", "keywords": ["保费增长", "新单增长", "NBV", "新业务价值", "续期改善"]},
+        {"event_type": "养老健康政策", "keywords": ["养老金融", "个人养老金", "养老保险", "健康险", "长期护理"]},
+        {"event_type": "投资收益改善", "keywords": ["权益市场回暖", "投资收益", "浮盈", "资产端改善"]},
+        {"event_type": "赔付压力", "keywords": ["赔付上升", "赔款增加", "赔付率上升", "巨灾", "理赔压力"]},
+        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "整改", "通报", "问责"]},
+        {"event_type": "退保或销售承压", "keywords": ["退保", "销售下滑", "代理人减少", "保费下滑"]},
     ],
     "银行": [
-        {"event_type": "信贷扩张", "direction": 1, "keywords": ["贷款增长", "信贷投放", "社融增长", "支持实体", "普惠金融"]},
-        {"event_type": "负债成本改善", "direction": 1, "keywords": ["存款利率下调", "负债成本下降", "息差企稳", "净息差企稳"]},
-        {"event_type": "资本补充", "direction": 1, "keywords": ["资本补充", "永续债", "二级资本债", "资本充足率提升"]},
-        {"event_type": "息差压力", "direction": -1, "keywords": ["净息差收窄", "息差收窄", "息差承压", "降息"]},
-        {"event_type": "资产质量风险", "direction": -2, "keywords": ["不良率上升", "不良贷款", "拨备下降", "逾期", "违约", "房地产风险"]},
-        {"event_type": "监管处罚", "direction": -2, "keywords": ["处罚", "罚款", "违规", "整改", "通报", "问责"]},
+        {"event_type": "信贷扩张", "keywords": ["贷款增长", "信贷投放", "社融增长", "支持实体", "普惠金融"]},
+        {"event_type": "负债成本改善", "keywords": ["存款利率下调", "负债成本下降", "息差企稳", "净息差企稳"]},
+        {"event_type": "资本补充", "keywords": ["资本补充", "永续债", "二级资本债", "资本充足率提升"]},
+        {"event_type": "息差压力", "keywords": ["净息差收窄", "息差收窄", "息差承压", "降息"]},
+        {"event_type": "资产质量风险", "keywords": ["不良率上升", "不良贷款", "拨备下降", "逾期", "违约", "房地产风险"]},
+        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "整改", "通报", "问责"]},
     ],
     "信贷": [
-        {"event_type": "融资支持", "direction": 2, "keywords": ["融资支持", "信贷支持", "延期还本", "小微贷款", "普惠贷款", "贷款增长"]},
-        {"event_type": "利率下行", "direction": 1, "keywords": ["LPR下降", "降息", "贷款利率下降", "融资成本下降"]},
-        {"event_type": "地产融资改善", "direction": 1, "keywords": ["房地产融资", "白名单", "保交楼", "房贷利率下调"]},
-        {"event_type": "逾期违约", "direction": -2, "keywords": ["逾期", "违约", "坏账", "催收", "不良贷款", "债务风险"]},
-        {"event_type": "授信收紧", "direction": -1, "keywords": ["收紧", "压降", "暂停放款", "风控收紧", "贷款下滑"]},
+        {"event_type": "融资支持", "keywords": ["融资支持", "信贷支持", "延期还本", "小微贷款", "普惠贷款", "贷款增长"]},
+        {"event_type": "利率下行", "keywords": ["LPR下降", "降息", "贷款利率下降", "融资成本下降"]},
+        {"event_type": "地产融资改善", "keywords": ["房地产融资", "白名单", "保交楼", "房贷利率下调"]},
+        {"event_type": "逾期违约", "keywords": ["逾期", "违约", "坏账", "催收", "不良贷款", "债务风险"]},
+        {"event_type": "授信收紧", "keywords": ["收紧", "压降", "暂停放款", "风控收紧", "贷款下滑"]},
     ],
     "财富": [
-        {"event_type": "市场回暖", "direction": 2, "keywords": ["A股上涨", "港股上涨", "市场回暖", "权益回暖", "风险偏好回升"]},
-        {"event_type": "产品规模增长", "direction": 1, "keywords": ["理财规模增长", "基金发行回暖", "ETF增长", "净申购", "规模增长"]},
-        {"event_type": "养老财富机会", "direction": 1, "keywords": ["个人养老金", "养老理财", "养老基金", "长期资金"]},
-        {"event_type": "净值回撤", "direction": -1, "keywords": ["净值回撤", "破净", "亏损", "赎回", "收益下滑"]},
-        {"event_type": "信托风险", "direction": -2, "keywords": ["信托风险", "信托违约", "兑付风险", "延期兑付", "爆雷"]},
-        {"event_type": "监管处罚", "direction": -2, "keywords": ["处罚", "罚款", "违规", "整改", "通报"]},
+        {"event_type": "市场回暖", "keywords": ["A股上涨", "港股上涨", "市场回暖", "权益回暖", "风险偏好回升"]},
+        {"event_type": "产品规模增长", "keywords": ["理财规模增长", "基金发行回暖", "ETF增长", "净申购", "规模增长"]},
+        {"event_type": "养老财富机会", "keywords": ["个人养老金", "养老理财", "养老基金", "长期资金"]},
+        {"event_type": "净值回撤", "keywords": ["净值回撤", "破净", "亏损", "赎回", "收益下滑"]},
+        {"event_type": "信托风险", "keywords": ["信托风险", "信托违约", "兑付风险", "延期兑付", "爆雷"]},
+        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "整改", "通报"]},
     ],
     "非金": [
-        {"event_type": "资本市场活跃", "direction": 2, "keywords": ["成交额放大", "两融增长", "券商业绩增长", "IPO重启", "并购重组", "市场回暖"]},
-        {"event_type": "政策支持", "direction": 1, "keywords": ["资本市场改革", "支持并购", "活跃资本市场", "长期资金入市"]},
-        {"event_type": "金融科技机会", "direction": 1, "keywords": ["金融科技", "支付增长", "数字金融", "AI金融"]},
-        {"event_type": "交易低迷", "direction": -1, "keywords": ["成交低迷", "佣金下滑", "投行业务下滑", "IPO放缓"]},
-        {"event_type": "监管处罚", "direction": -2, "keywords": ["处罚", "罚款", "违规", "立案", "调查", "整改", "通报"]},
-        {"event_type": "信用风险", "direction": -1, "keywords": ["担保风险", "小贷风险", "融资租赁风险", "资产减值"]},
+        {"event_type": "资本市场活跃", "keywords": ["成交额放大", "两融增长", "券商业绩增长", "IPO重启", "并购重组", "市场回暖"]},
+        {"event_type": "政策支持", "keywords": ["资本市场改革", "支持并购", "活跃资本市场", "长期资金入市"]},
+        {"event_type": "金融科技机会", "keywords": ["金融科技", "支付增长", "数字金融", "AI金融"]},
+        {"event_type": "交易低迷", "keywords": ["成交低迷", "佣金下滑", "投行业务下滑", "IPO放缓"]},
+        {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "立案", "调查", "整改", "通报"]},
+        {"event_type": "信用风险", "keywords": ["担保风险", "小贷风险", "融资租赁风险", "资产减值"]},
     ],
 }
 
 GENERAL_EVENT_RULES = [
-    {"event_type": "监管处罚", "direction": -2, "keywords": ["处罚", "罚款", "违规", "立案", "调查", "整改", "问责", "通报"]},
-    {"event_type": "风险暴露", "direction": -2, "keywords": ["暴雷", "违约", "逾期", "兑付风险", "债务风险", "不良率上升"]},
-    {"event_type": "经营承压", "direction": -1, "keywords": ["下滑", "下降", "亏损", "承压", "低迷", "减少"]},
-    {"event_type": "政策支持", "direction": 1, "keywords": ["支持", "鼓励", "扩大", "优化", "放宽", "减费", "降准"]},
-    {"event_type": "增长改善", "direction": 1, "keywords": ["增长", "提升", "改善", "回暖", "复苏", "盈利", "修复"]},
+    {"event_type": "监管处罚", "keywords": ["处罚", "罚款", "违规", "立案", "调查", "整改", "问责", "通报"]},
+    {"event_type": "风险暴露", "keywords": ["暴雷", "违约", "逾期", "兑付风险", "债务风险", "不良率上升"]},
+    {"event_type": "经营承压", "keywords": ["下滑", "下降", "亏损", "承压", "低迷", "减少"]},
+    {"event_type": "政策支持", "keywords": ["支持", "鼓励", "扩大", "优化", "放宽", "减费", "降准"]},
+    {"event_type": "增长改善", "keywords": ["增长", "提升", "改善", "回暖", "复苏", "盈利", "修复"]},
 ]
 
 RULE_KEYWORDS = []
@@ -132,8 +123,6 @@ for rules in list(EVENT_RULES.values()) + [GENERAL_EVENT_RULES]:
 
 NEWS_KEYWORDS = sorted(
     set(sum(SECTOR_KEYWORDS.values(), []))
-    | set(POSITIVE_KEYWORDS)
-    | set(NEGATIVE_KEYWORDS)
     | set(RULE_KEYWORDS)
 )
 
@@ -203,7 +192,6 @@ def fetch_html(url: str, referer: str = "") -> str:
                 time.sleep(attempt * 2)
             else:
                 logger.warning("抓取失败，已跳过: %s | %s", url, exc)
-
     logger.warning("重试失败，返回空内容: %s", last_exception)
     return ""
 
@@ -230,11 +218,9 @@ def parse_heat_value(extra_text: str) -> dict:
     text = normalize_text(extra_text)
     if not text:
         return result
-
     m = re.match(r"([\d,]+(?:\.\d+)?)\s*(万|w|W|亿|k|K|千)?", text)
     if not m:
         return result
-
     try:
         value = float(m.group(1).replace(",", ""))
         unit = m.group(2) or ""
@@ -248,7 +234,6 @@ def parse_heat_value(extra_text: str) -> dict:
         result["unit"] = unit
     except ValueError:
         pass
-
     return result
 
 
@@ -260,43 +245,27 @@ def pick_sector(text: str, source: str) -> tuple:
     sector = max(sector_scores, key=sector_scores.get)
     if sector_scores[sector] == 0:
         sector = guess_sector_from_source(source)
-
     return sector, sector_scores
 
 
-def match_event_rules(text: str, sector: str) -> tuple:
+def match_topic_rules(text: str, sector: str) -> tuple:
     matched = []
-    weighted_score = 0
     rules = EVENT_RULES.get(sector, []) + GENERAL_EVENT_RULES
-
     for rule in rules:
         hits = [kw for kw in rule["keywords"] if kw in text]
         if not hits:
             continue
-
-        contribution = rule["direction"] * len(hits)
-        weighted_score += contribution
         matched.append({
-            "event_type": rule["event_type"],
-            "direction": rule["direction"],
+            "topic_type": rule["event_type"],
             "keywords": hits[:4],
-            "contribution": contribution,
+            "hit_count": len(hits),
         })
 
     if not matched:
-        return "一般资讯", 0, []
+        return "一般资讯", []
 
-    primary = sorted(matched, key=lambda row: abs(row["contribution"]), reverse=True)[0]
-    impact_score = max(-2, min(2, weighted_score))
-    return primary["event_type"], impact_score, matched[:5]
-
-
-def label_from_score(impact_score: int) -> str:
-    if impact_score > 0:
-        return "利好"
-    if impact_score < 0:
-        return "利空"
-    return "中性"
+    primary = sorted(matched, key=lambda row: row["hit_count"], reverse=True)[0]
+    return primary["topic_type"], matched[:5]
 
 
 def calc_confidence(sector_scores: dict, matched_rules: list) -> float:
@@ -306,43 +275,38 @@ def calc_confidence(sector_scores: dict, matched_rules: list) -> float:
     return round(min(confidence, 0.92), 2)
 
 
-def build_impact_basis(sector: str, event_type: str, matched_rules: list, score_label: str) -> str:
+def build_relevance_reason(sector: str, topic_type: str, matched_rules: list) -> str:
     if not matched_rules:
-        return "未命中明确事件规则，按赛道相关性暂定为中性。"
-
+        return "按来源和金融相关性归入%s赛道，未命中更细主题关键词。" % sector
     keywords = []
     for row in matched_rules:
         keywords.extend(row.get("keywords", []))
-
     keyword_text = "、".join(keywords[:6])
-    return "面向%s赛道，命中%s事件和关键词：%s，因此判为%s。" % (
+    return "归入%s赛道，主题为%s，命中关键词：%s。" % (
         sector,
-        event_type,
+        topic_type,
         keyword_text,
-        score_label,
     )
 
 
 def classify_by_keyword(title: str, source: str = "") -> dict:
     text = "%s %s" % (title, source)
     sector, sector_scores = pick_sector(text, source)
-    event_type, impact_score, matched_rules = match_event_rules(text, sector)
-    score_label = label_from_score(impact_score)
+    topic_type, matched_rules = match_topic_rules(text, sector)
     confidence = calc_confidence(sector_scores, matched_rules)
-    impact_basis = build_impact_basis(sector, event_type, matched_rules, score_label)
+    relevance_reason = build_relevance_reason(sector, topic_type, matched_rules)
 
     return {
         "sector": sector,
-        "event_type": event_type,
-        "score_label": score_label,
-        "impact_score": impact_score,
+        "topic_type": topic_type,
         "confidence": confidence,
         "matched_rules": matched_rules,
-        "impact_basis": impact_basis,
-        "reason": impact_basis,
-        "marketing_angle": build_fallback_angle(sector, score_label),
+        "relevance_reason": relevance_reason,
+        "reason": relevance_reason,
+        "sector_angle": build_fallback_angle(sector),
+        "marketing_angle": build_fallback_angle(sector),
         "customer_segments": fallback_segments(sector),
-        "actions": fallback_actions(sector, score_label),
+        "actions": fallback_actions(sector),
     }
 
 
@@ -356,12 +320,8 @@ def guess_sector_from_source(source: str) -> str:
     return "财富"
 
 
-def build_fallback_angle(sector: str, score_label: str) -> str:
-    if score_label == "利好":
-        return "%s赛道出现正向信号，可结合政策、产品或市场情绪做客户触达。" % sector
-    if score_label == "利空":
-        return "%s赛道存在风险信号，适合做风险提示、资产检视和稳健配置沟通。" % sector
-    return "%s赛道信息偏中性，适合做资讯解读和客户教育。" % sector
+def build_fallback_angle(sector: str) -> str:
+    return "%s赛道新闻可用于客户资讯解读、需求识别和后续话题跟进。" % sector
 
 
 def fallback_segments(sector: str) -> list:
@@ -375,21 +335,15 @@ def fallback_segments(sector: str) -> list:
     return mapping.get(sector, ["泛金融客户"])
 
 
-def fallback_actions(sector: str, score_label: str) -> list:
-    if score_label == "利空":
-        return ["推送风险提示", "安排客户资产检视", "提供稳健配置方案"]
-    if score_label == "利好":
-        return ["提炼政策利好解读", "匹配相关产品卖点", "筛选高意向客户触达"]
-    return ["制作资讯解读", "用于客户教育", "观察后续政策和市场变化"]
+def fallback_actions(sector: str) -> list:
+    return ["制作赛道资讯解读", "筛选相关客群触达", "观察后续政策和市场变化"]
 
 
 def parse_tophub_card(card_html) -> dict:
     title_elem = card_html.find(class_="cc-cd-lb")
     board_name = normalize_text(title_elem.get_text(" ", strip=True)) if title_elem else "未知榜单"
-
     sub_elem = card_html.find(class_="cc-cd-sb-st")
     board_subtitle = normalize_text(sub_elem.get_text(" ", strip=True)) if sub_elem else ""
-
     items = []
     container = card_html.find(class_="cc-cd-cb")
     if not container:
@@ -398,17 +352,13 @@ def parse_tophub_card(card_html) -> dict:
     for idx, a_tag in enumerate(container.find_all("a"), 1):
         if idx > TOPHUB_TOP_PER_BOARD:
             break
-
         title_elem = a_tag.find(class_="t")
         extra_elem = a_tag.find(class_="e")
         title = normalize_text(title_elem.get_text(" ", strip=True)) if title_elem else normalize_text(a_tag.get_text(" ", strip=True))
-
         if not title or len(title) < 5:
             continue
-
         url = absolute_url(TOPHUB_URL, a_tag.get("href", ""))
         extra = normalize_text(extra_elem.get_text(" ", strip=True)) if extra_elem else ""
-
         items.append({
             "id": item_id(title, url, board_name),
             "title": title,
@@ -420,7 +370,6 @@ def parse_tophub_card(card_html) -> dict:
             "heat": parse_heat_value(extra),
             "published_at": "",
         })
-
     return {"board_name": board_name, "board_subtitle": board_subtitle, "items": items}
 
 
@@ -428,11 +377,9 @@ def fetch_tophub() -> tuple:
     html = fetch_html(TOPHUB_URL)
     if not html:
         return [], []
-
     soup = BeautifulSoup(html, "html.parser")
     boards = []
     items = []
-
     for card in soup.find_all(class_="cc-cd"):
         try:
             board = parse_tophub_card(card)
@@ -440,28 +387,23 @@ def fetch_tophub() -> tuple:
             items.extend(board["items"])
         except Exception as exc:
             logger.warning("解析今日热榜卡片失败: %s", exc)
-
     logger.info("今日热榜抓取 %s 个榜单，%s 条", len(boards), len(items))
     return items, boards
 
 
 def is_useful_title(title: str) -> bool:
     title = normalize_text(title)
-
     if len(title) < 8 or len(title) > 90:
         return False
-
     bad_words = ["首页", "登录", "注册", "广告", "更多", "专题", "视频", "图片", "客户端", "版权", "联系我们"]
     if any(word in title for word in bad_words):
         return False
-
     return any(word in title for word in NEWS_KEYWORDS) or len(title) >= 14
 
 
 def parse_generic_html(source: dict, html: str) -> list:
     if not html:
         return []
-
     soup = BeautifulSoup(html, "html.parser")
     items = []
     seen = set()
@@ -470,13 +412,10 @@ def parse_generic_html(source: dict, html: str) -> list:
         title = normalize_text(tag.get("title") or tag.get_text(" ", strip=True))
         if not is_useful_title(title):
             continue
-
         url = absolute_url(source["url"], tag.get("href", ""))
         dedup_key = title[:40]
-
         if dedup_key in seen:
             continue
-
         seen.add(dedup_key)
         items.append({
             "id": item_id(title, url, source["name"]),
@@ -489,22 +428,18 @@ def parse_generic_html(source: dict, html: str) -> list:
             "heat": {"value": 0, "unit": "", "raw": ""},
             "published_at": "",
         })
-
         if len(items) >= MAX_GENERIC_ITEMS_PER_SOURCE:
             break
-
     return items
 
 
 def fetch_generic_sources() -> tuple:
     all_items = []
     source_status = []
-
     for source in GENERIC_HTML_SOURCES:
         html = fetch_html(source["url"])
         items = parse_generic_html(source, html)
         all_items.extend(items)
-
         source_status.append({
             "name": source["name"],
             "url": source["url"],
@@ -512,9 +447,7 @@ def fetch_generic_sources() -> tuple:
             "items_count": len(items),
             "ok": bool(html),
         })
-
         logger.info("%s 抓取 %s 条", source["name"], len(items))
-
     return all_items, source_status
 
 
@@ -522,76 +455,58 @@ def dedupe_items(items: list) -> list:
     result = []
     seen_title = set()
     seen_url = set()
-
     for item in items:
         title = normalize_text(item.get("title", ""))
         url = item.get("url", "")
-
         if not title:
             continue
-
         title_key = re.sub(r"[\s，。！？、：:,.!?]", "", title)[:42]
-
         if title_key in seen_title or (url and url in seen_url):
             continue
-
         seen_title.add(title_key)
-
         if url:
             seen_url.add(url)
-
         item["title"] = title
         result.append(item)
-
         if len(result) >= MAX_TOTAL_ITEMS:
             break
-
     return result
 
 
 def build_classify_prompt(batch: list) -> str:
     lines = [
-        "你是金融机构营销策略分析师。请把新闻归入五大赛道，并判断对该赛道业务和营销的影响方向。",
+        "你是金融机构行业研究员。请把新闻归入五大赛道，用于资讯披露和局势观察。",
         "五大赛道只能从以下选择：保险、非金、信贷、财富、银行。",
-        "重要：不要只判断标题情绪，要判断新闻对所归属赛道的业务、客户需求、产品销售和风险沟通的影响。",
-        "评分标准：2=明确重大利好，1=一般利好，0=中性或影响不明确，-1=一般负面，-2=明确重大利空。",
-        "参考口径：银行的净息差收窄/不良上升偏利空，信贷支持/融资成本下降偏利好；保险保费增长/养老健康政策偏利好，赔付压力/处罚偏利空；财富市场回暖/产品规模增长偏利好，净值回撤/赎回/信托风险偏利空；非金成交活跃/并购IPO活跃偏利好，监管处罚/交易低迷偏利空。",
-        "event_type请归纳为：政策支持、监管处罚、增长改善、经营承压、风险暴露、市场回暖、产品机会、资产质量风险、息差压力、一般资讯等。",
-        "confidence为0到1的小数，表示判断置信度。",
+        "不要判断利好、利空、中性，不要输出影响分。只判断新闻和哪个赛道最相关。",
+        "尽量让五大赛道都有新闻覆盖；宏观、政策、市场类新闻可按最相关的客户需求或业务场景分配。",
+        "topic_type请归纳为：政策监管、产品动态、市场环境、机构经营、客户需求、风险事件、宏观经济、一般资讯等。",
+        "confidence为0到1的小数，表示赛道归属置信度。",
         "请只输出JSON，不要Markdown，不要解释。格式：",
-        '{"items":[{"id":"","sector":"保险/非金/信贷/财富/银行","event_type":"事件类型","score_label":"利好/利空/中性","impact_score":0,"confidence":0.75,"reason":"30字内，说明对赛道影响","impact_basis":"命中依据","marketing_angle":"40字内","customer_segments":["客群1","客群2"],"actions":["动作1","动作2"]}]}',
+        '{"items":[{"id":"","sector":"保险/非金/信贷/财富/银行","topic_type":"主题类型","confidence":0.75,"relevance_reason":"30字内，说明归类依据","sector_angle":"该赛道可关注的角度","customer_segments":["客群1","客群2"],"actions":["动作1","动作2"]}]}',
         "新闻列表：",
     ]
-
     for item in batch:
         lines.append("- id=%s | source=%s | title=%s" % (item["id"], item["source"], item["title"]))
-
     return "\n".join(lines)
 
 
 def extract_json(text: str) -> dict:
     text = (text or "").strip()
-
     if not text:
         return {}
-
     text = re.sub(r"^```(?:json)?", "", text).strip()
     text = re.sub(r"```$", "", text).strip()
-
     try:
         return json.loads(text)
     except Exception:
         pass
-
     start = text.find("{")
     end = text.rfind("}")
-
     if start >= 0 and end > start:
         try:
             return json.loads(text[start:end + 1])
         except Exception:
             return {}
-
     return {}
 
 
@@ -608,11 +523,9 @@ def call_llm_classify(items: list) -> dict:
 
     client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL, timeout=LLM_TIMEOUT)
     result = {}
-
     for batch_no, start in enumerate(range(0, len(items), LLM_BATCH_SIZE), 1):
         batch = items[start:start + LLM_BATCH_SIZE]
         prompt = build_classify_prompt(batch)
-
         try:
             logger.info("调用大模型分类批次 %s，%s 条", batch_no, len(batch))
             resp = client.chat.completions.create(
@@ -623,123 +536,127 @@ def call_llm_classify(items: list) -> dict:
                 ],
                 temperature=0.2,
             )
-
             content = resp.choices[0].message.content
             data = extract_json(content)
-
             for row in data.get("items", []):
                 item_key = row.get("id")
                 if item_key:
                     result[item_key] = row
-
         except Exception as exc:
             logger.warning("大模型分类批次失败，改用关键词兜底: %s", exc)
-
     logger.info("大模型分类覆盖 %s/%s 条", len(result), len(items))
     return result
 
 
 def merge_classification(items: list, llm_map: dict) -> list:
     enriched = []
-
     for item in items:
         fallback = classify_by_keyword(item["title"], item.get("source", ""))
         llm_row = llm_map.get(item["id"], {}) if llm_map else {}
-
         sector = llm_row.get("sector") if llm_row.get("sector") in SECTORS else fallback["sector"]
-        score_label = llm_row.get("score_label") if llm_row.get("score_label") in ["利好", "利空", "中性"] else fallback["score_label"]
-
-        try:
-            impact_score = int(llm_row.get("impact_score", fallback["impact_score"]))
-        except Exception:
-            impact_score = fallback["impact_score"]
-
-        impact_score = max(-2, min(2, impact_score))
-
-        if score_label == "中性" and impact_score != 0:
-            score_label = label_from_score(impact_score)
-
         try:
             confidence = float(llm_row.get("confidence", fallback["confidence"]))
         except Exception:
             confidence = fallback["confidence"]
-
         confidence = round(max(0, min(1, confidence)), 2)
-
         merged = dict(item)
         merged.update({
             "sector": sector,
-            "event_type": llm_row.get("event_type") or fallback["event_type"],
-            "score_label": score_label,
-            "impact_score": impact_score,
+            "topic_type": llm_row.get("topic_type") or fallback["topic_type"],
             "confidence": confidence,
             "matched_rules": fallback.get("matched_rules", []),
-            "impact_basis": llm_row.get("impact_basis") or fallback["impact_basis"],
-            "reason": llm_row.get("reason") or fallback["reason"],
-            "marketing_angle": llm_row.get("marketing_angle") or fallback["marketing_angle"],
+            "relevance_reason": llm_row.get("relevance_reason") or fallback["relevance_reason"],
+            "reason": llm_row.get("relevance_reason") or llm_row.get("reason") or fallback["reason"],
+            "sector_angle": llm_row.get("sector_angle") or fallback["sector_angle"],
+            "marketing_angle": llm_row.get("sector_angle") or fallback["marketing_angle"],
             "customer_segments": llm_row.get("customer_segments") or fallback["customer_segments"],
             "actions": llm_row.get("actions") or fallback["actions"],
             "classified_by": "llm" if item["id"] in llm_map else "keyword",
         })
-
         enriched.append(merged)
-
     return enriched
+
+
+def improve_sector_coverage(items: list, min_per_sector: int = 8) -> list:
+    if not items:
+        return items
+
+    macro_sources = ["央行", "财政部", "国家金融监督管理总局", "外汇局", "东方财富-财经", "新浪财经"]
+    counts = {sector: 0 for sector in SECTORS}
+    for item in items:
+        counts[item["sector"]] = counts.get(item["sector"], 0) + 1
+
+    for target_sector in SECTORS:
+        while counts.get(target_sector, 0) < min_per_sector:
+            candidate = None
+            candidate_score = 0
+            for item in items:
+                current_sector = item.get("sector")
+                if current_sector == target_sector or counts.get(current_sector, 0) <= min_per_sector:
+                    continue
+                text = "%s %s" % (item.get("title", ""), item.get("source", ""))
+                score = sum(1 for kw in SECTOR_KEYWORDS[target_sector] if kw in text)
+                if target_sector == guess_sector_from_source(item.get("source", "")):
+                    score += 2
+                if any(name in item.get("source", "") for name in macro_sources):
+                    score += 1
+                if score > candidate_score:
+                    candidate = item
+                    candidate_score = score
+            if not candidate:
+                break
+            old_sector = candidate["sector"]
+            candidate["sector"] = target_sector
+            candidate["classified_by"] = candidate.get("classified_by", "keyword") + "_coverage_adjusted"
+            candidate["relevance_reason"] = "为增强%s赛道新闻覆盖，按来源或关键词相关性归入该赛道。" % target_sector
+            candidate["reason"] = candidate["relevance_reason"]
+            counts[old_sector] -= 1
+            counts[target_sector] += 1
+
+    return items
 
 
 def summarize_by_sector(items: list) -> tuple:
     by_sector = {sector: [] for sector in SECTORS}
-
     for item in items:
         by_sector.setdefault(item["sector"], []).append(item)
 
     summary = {}
-
     for sector in SECTORS:
         rows = by_sector.get(sector, [])
-        positive = sum(1 for x in rows if x.get("score_label") == "利好")
-        negative = sum(1 for x in rows if x.get("score_label") == "利空")
-        neutral = sum(1 for x in rows if x.get("score_label") == "中性")
-        avg_score = round(sum(x.get("impact_score", 0) for x in rows) / len(rows), 2) if rows else 0
-
+        topic_counts = {}
+        for row in rows:
+            topic = row.get("topic_type", "一般资讯")
+            topic_counts[topic] = topic_counts.get(topic, 0) + 1
         summary[sector] = {
             "count": len(rows),
-            "positive": positive,
-            "negative": negative,
-            "neutral": neutral,
-            "avg_impact_score": avg_score,
+            "topic_counts": topic_counts,
+            "coverage": "充足" if len(rows) >= 8 else "偏少",
             "top_titles": [x["title"] for x in rows[:5]],
         }
-
-        by_sector[sector] = sorted(
-            rows,
-            key=lambda x: (abs(x.get("impact_score", 0)), x.get("rank", 999)),
-            reverse=True,
-        )
-
+        by_sector[sector] = sorted(rows, key=lambda x: (x.get("confidence", 0), -x.get("rank", 999)), reverse=True)
     return by_sector, summary
 
 
 def build_insight_prompt(sector_summary: dict, by_sector: dict) -> str:
     compact = {}
-
     for sector in SECTORS:
         compact[sector] = {
             "summary": sector_summary.get(sector, {}),
             "news": [
                 {
                     "title": item["title"],
-                    "score_label": item["score_label"],
+                    "topic_type": item.get("topic_type", "一般资讯"),
                     "reason": item["reason"],
                 }
                 for item in by_sector.get(sector, [])[:8]
             ],
         }
-
     return "\n".join([
-        "你是金融机构营销负责人，请基于新闻分类结果生成营销洞察。",
+        "你是金融机构行业研究和营销策略负责人，请基于五大赛道新闻生成整体局势分析。",
+        "不要做利好/利空判断，不要给投资建议。重点分析当前局面、主要议题、客户沟通方向和后续观察点。",
         "只输出JSON，不要Markdown。格式：",
-        '{"overall":"总览100字内","sectors":{"保险":{"insight":"","opportunity":"","risk":"","suggested_campaigns":[""],"priority":"高/中/低"},"非金":{},"信贷":{},"财富":{},"银行":{}},"today_actions":[""]}',
+        '{"overall_situation":"整体局面150字内","key_themes":["主题1","主题2"],"sectors":{"保险":{"situation":"","client_focus":"","content_angle":"","watch_points":[""]},"非金":{},"信贷":{},"财富":{},"银行":{}},"today_actions":["动作1","动作2"],"generated_title":"一句话标题"}',
         "输入数据：",
         json.dumps(compact, ensure_ascii=False),
     ])
@@ -747,44 +664,33 @@ def build_insight_prompt(sector_summary: dict, by_sector: dict) -> str:
 
 def fallback_marketing_insights(sector_summary: dict, by_sector: dict) -> dict:
     sectors = {}
-
     for sector in SECTORS:
         summary = sector_summary.get(sector, {})
         count = summary.get("count", 0)
-        avg = summary.get("avg_impact_score", 0)
-
-        if count == 0:
-            priority = "低"
-        elif avg > 0.3 or count >= 8:
-            priority = "高"
-        else:
-            priority = "中"
-
+        top_topics = sorted(summary.get("topic_counts", {}).items(), key=lambda x: x[1], reverse=True)
+        topic_text = "、".join([topic for topic, _ in top_topics[:3]]) or "一般资讯"
         sectors[sector] = {
-            "insight": "%s今日共捕捉%s条相关新闻，平均影响分%s。" % (sector, count, avg),
-            "opportunity": build_fallback_angle(sector, "利好" if avg > 0 else "中性"),
-            "risk": "关注政策、市场波动和客户预期变化。",
-            "suggested_campaigns": fallback_actions(sector, "利好" if avg > 0 else "中性"),
-            "priority": priority,
+            "situation": "%s今日共捕捉%s条相关新闻，主要主题为%s。" % (sector, count, topic_text),
+            "client_focus": "围绕%s赛道客户的资讯理解、配置需求和风险认知做沟通。" % sector,
+            "content_angle": build_fallback_angle(sector),
+            "watch_points": ["政策变化", "市场情绪", "机构经营动态"],
         }
-
     return {
-        "overall": "已基于多源财经新闻完成五大赛道归类，可用于每日晨会、客户触达和营销选题。",
+        "overall_situation": "已基于多源财经新闻完成五大赛道归类，可用于每日晨会、客户触达和营销选题。当前更适合做局势观察和客户教育，不做利好利空判断。",
+        "key_themes": ["政策监管", "市场环境", "机构经营", "客户需求"],
         "sectors": sectors,
-        "today_actions": ["优先查看高优先级赛道", "挑选利好新闻制作客户话术", "对利空新闻补充风险提示"],
+        "today_actions": ["按赛道制作资讯摘要", "选择客户关心的主题做解读", "持续跟踪监管和市场变化"],
+        "generated_title": "五大金融赛道每日局势观察",
         "generated_by": "keyword_fallback",
     }
 
 
 def call_llm_insights(sector_summary: dict, by_sector: dict) -> dict:
     fallback = fallback_marketing_insights(sector_summary, by_sector)
-
     if not LLM_API_KEY or not LLM_MODEL:
         return fallback
-
     try:
         from openai import OpenAI
-
         client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL, timeout=LLM_TIMEOUT)
         resp = client.chat.completions.create(
             model=LLM_MODEL,
@@ -794,25 +700,19 @@ def call_llm_insights(sector_summary: dict, by_sector: dict) -> dict:
             ],
             temperature=0.3,
         )
-
         data = extract_json(resp.choices[0].message.content)
-
         if data and isinstance(data.get("sectors"), dict):
             data["generated_by"] = "llm"
             return data
-
     except Exception as exc:
         logger.warning("大模型洞察生成失败，使用兜底洞察: %s", exc)
-
     return fallback
 
 
 def save_json(data: dict, filename: Path) -> None:
     filename.parent.mkdir(parents=True, exist_ok=True)
-
     with open(filename, "w", encoding="utf-8") as fp:
         json.dump(data, fp, ensure_ascii=False, indent=2)
-
     logger.info("已保存: %s", filename)
 
 
@@ -826,8 +726,9 @@ def main() -> int:
 
     llm_map = call_llm_classify(all_items)
     classified_items = merge_classification(all_items, llm_map)
+    classified_items = improve_sector_coverage(classified_items)
     by_sector, sector_summary = summarize_by_sector(classified_items)
-    marketing_insights = call_llm_insights(sector_summary, by_sector)
+    situation_analysis = call_llm_insights(sector_summary, by_sector)
 
     data = {
         **meta,
@@ -842,7 +743,8 @@ def main() -> int:
         "source_status": source_status,
         "raw_boards": raw_boards,
         "sector_summary": sector_summary,
-        "marketing_insights": marketing_insights,
+        "situation_analysis": situation_analysis,
+        "marketing_insights": situation_analysis,
         "by_sector": by_sector,
         "items": classified_items,
     }
@@ -862,7 +764,8 @@ def main() -> int:
     classified_data = {
         **meta,
         "sector_summary": sector_summary,
-        "marketing_insights": marketing_insights,
+        "situation_analysis": situation_analysis,
+        "marketing_insights": situation_analysis,
         "by_sector": by_sector,
         "items": classified_items,
     }
