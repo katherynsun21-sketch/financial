@@ -66,6 +66,7 @@ SECTOR_KEYWORDS = {
     ],
 }
 
+
 EVENT_RULES = {
     "保险": [
         {"event_type": "保费增长", "keywords": ["保费增长", "新单增长", "NBV", "新业务价值", "续期改善"]},
@@ -631,6 +632,9 @@ def merge_classification(items: list, llm_map: dict) -> list:
             "actions": llm_row.get("actions") or fallback["actions"],
             "classified_by": "llm" if item["id"] in llm_map else "keyword",
         })
+        # 为每条新闻生成面向销售/运营的可执行建议
+        item_suggestion = _per_item_suggestion(merged)
+        merged["item_suggestions"] = item_suggestion
         enriched.append(merged)
     return enriched
 
@@ -727,6 +731,189 @@ def build_insight_prompt(sector_summary: dict, by_sector: dict) -> str:
     ])
 
 
+def _dynamic_content_angles(sector: str, top_titles: list, top_topics: list) -> list:
+    head = [(t[:24] + u"…") if len(t) > 24 else t for t in (top_titles or [])][:2]
+    topics = [tp for tp, _ in (top_topics or []) if tp and tp != u"一般资讯"][:2]
+    base = {
+        "保险": [
+            u"结合「养老金融 / 商业健康险个税优惠」等话题，面向寿险/财险客户推送政策解读型内容",
+            u"围绕代理人增员和服务升级，产出「理赔案例 + 行业对比」组合素材，作为品牌 + 效果投放的承接",
+            u"关注新车销量、车险综改等动态，为车险续保类客户准备差异化投放话术和落地页",
+        ],
+        "银行": [
+            u"围绕零售信贷利率、信用卡权益升级等话题，产出「产品对比 + 场景案例」型内容",
+            u"面向私行/财富客户，准备「资产配置 + 财富传承」主题内容，承接高净值人群预算",
+            u"结合存款利率变动和储蓄趋势，为零售存款/结构性产品客户准备差异化营销素材",
+        ],
+        "财富": [
+            u"围绕基金发行、市场回暖、ETF规模变化，产出「新发基金解读 + 定投教育」组合内容",
+            u"结合个人养老金、养老理财、信托产品动态，面向高净值客户推送「长期资产配置」话题",
+            u"关注券商佣金战和投顾升级，为券商资管/投顾客户准备品牌 + 效果投放方案",
+        ],
+        "信贷": [
+            u"围绕 LPR 下调、消费贷利率下行，面向消费金融/助贷平台客户准备「低利率 + 审批快」素材",
+            u"结合小微融资支持政策，为中小微企业信贷客户制作「政策红利 + 成功案例」内容",
+            u"关注房贷/经营贷置换需求，准备「利率科普 + 资质对比」型落地页与内容种草",
+        ],
+        "非金": [
+            u"围绕金融科技升级、AI风控、数字金融等动态，为金融科技/综合金融平台客户准备技术展示型内容",
+            u"关注支付场景创新、跨境支付合规，面向支付结算/担保类品牌推送场景解决方案素材",
+            u"结合 AMC/不良资产处置动态，为资产管理公司、行业解决方案客户准备案例研究内容",
+        ],
+    }
+    result = list(base.get(sector, []))
+    if head:
+        result.append(u"当日可直接复用的话题锚点：" + u"；".join(head))
+    if topics:
+        result.append(u"内容关键词建议叠加：" + u"、".join(topics))
+    return result
+
+
+def _dynamic_compliance(sector: str, top_topics: list) -> list:
+    topics = [tp for tp, _ in (top_topics or []) if tp][:3]
+    base = {
+        "保险": [
+            u"广告素材禁止承诺收益、夸大保障范围；产品页面必须明确免责条款和等待期",
+            u"如涉及代理人展示，必须校验执业资格；金融广告需完成内部合规+监管报备",
+            u"涉及健康险/养老险等税收优惠表述时，不得使用绝对化措辞（如「必涨」「稳赚」）",
+        ],
+        "银行": [
+            u"必须明示年化利率（APR），禁止使用「最低」「最高」等模糊或诱导性措辞",
+            u"理财产品需在首屏显著位置展示风险等级和投资者适当性提示",
+            u"信用卡营销禁止诱导过度借贷、强制捆绑；客户信息收集需符合个保法最小必要原则",
+        ],
+        "财富": [
+            u"基金/理财宣传不得预测收益、承诺保本、使用历史业绩暗示未来表现",
+            u"涉及投顾、资产管理，必须标注持牌主体和资质备案号",
+            u"涉及养老金/养老理财等长期产品，需提示流动性风险和税收政策变动风险",
+        ],
+        "信贷": [
+            u"贷款利率不得超过法定上限，费用构成必须清晰透明并在合同/落地页显著位置披露",
+            u"禁止暴力催收、骚扰式营销，催收/提醒短信文案需提前合规审查",
+            u"征信信息查询/使用需用户明示授权，不得滥用数据驱动营销",
+        ],
+        "非金": [
+            u"开展支付/担保/资管等业务必须具备相应牌照，广告需体现持牌信息",
+            u"金融数据/用户信息处理需符合数据安全法和个人信息保护法",
+            u"跨境业务/支付需符合外汇管理规定，不得暗示绕过监管",
+        ],
+    }
+    result = list(base.get(sector, []))
+    if u"监管处罚" in topics or any(u"罚" in t or u"监管" in t for t in topics):
+        result.insert(0, u"【今日特别提醒】当日出现监管处罚类新闻，客户广告文案需重新走内部合规审查")
+    if u"赔付" in topics or u"风险" in topics or any(u"风险" in t or u"赔付" in t for t in topics):
+        result.append(u"【今日特别提醒】涉及赔付/负面舆情相关新闻，广告主需暂缓投放敏感性素材")
+    return result
+
+
+def _dynamic_risks(sector: str, top_topics: list) -> list:
+    topics = [tp for tp, _ in (top_topics or []) if tp][:3]
+    base = {
+        "保险": [
+            u"利率下行环境下储蓄型产品吸引力可能减弱，需注意退保和销售承压风险",
+            u"理赔纠纷/巨灾赔付类新闻可能引发舆情，需配合品牌安全策略",
+            u"代理人队伍波动可能影响增员类投放 ROI，需持续监控转化数据",
+        ],
+        "银行": [
+            u"净息差持续收窄，银行零售/信贷预算可能缩减，需调整客户沟通策略",
+            u"存款/理财搬家趋势下，品牌型投放短期转化可能偏低，需配合活动位运营",
+            u"房地产风险传导至不良率，涉房类素材需避开敏感时期",
+        ],
+        "财富": [
+            u"市场波动期，净值型产品宣传需做好客户预期管理和投资者适当性",
+            u"大额赎回、信托违约等负面事件可能影响品牌安全，需临时调整投放词包",
+            u"基金经理变动/管理人负面新闻，需暂停相关品牌广告，避免品牌风险",
+        ],
+        "信贷": [
+            u"逾期率上升期，消费金融/助贷客户的风险模型与投放节奏需要重新校准",
+            u"降息周期利差压缩，客户预算可能收紧，需以「效果 + 品牌安全」方案承接",
+            u"催收/数据合规监管升级，需提醒客户调整提醒类短信和外呼策略",
+        ],
+        "非金": [
+            u"金融科技监管环境变化，需提醒客户关注牌照和业务边界调整",
+            u"系统故障/安全事件会严重影响品牌信任，相关客户投放需有应急预案",
+            u"行业竞争加剧+监管收紧，客户预算可能转向合规可控的效果类投放",
+        ],
+    }
+    result = list(base.get(sector, []))
+    if any(u"罚" in t or u"违规" in t for t in topics):
+        result.insert(0, u"【今日风险提示】当日含监管处罚/违规类新闻，建议客户暂停敏感关键词投放 24-48 小时")
+    if any(u"违约" in t or u"逾期" in t or u"风险" in t for t in topics):
+        result.append(u"【今日风险提示】负面风险类新闻集中，建议调低「承诺型/收益型」创意比例")
+    return result
+
+
+def _per_item_suggestion(item: dict) -> dict:
+    title = item.get("title", u"")
+    sector = item.get("sector", u"")
+    topic = item.get("topic_type", u"一般资讯")
+
+    advertisers_map = {
+        "保险": u"寿险/财险公司、健康险品牌、企业团险 HR、车险续保客户、代理人增员相关预算方",
+        "银行": u"银行零售信贷、信用卡/消费分期品牌、私行/财富运营、中小企业信贷部、存款/理财营销团队",
+        "财富": u"公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "信贷": u"消费金融公司、助贷/贷款服务平台、小微企业信贷产品方、融资租赁/保理客户、支付场景信贷合作方",
+        "非金": u"金融科技/互金平台、综合金融服务平台、支付结算/担保类品牌、AMC/资产管理公司、行业解决方案客户",
+    }
+
+    # 依据标题/主题拼接更具体的内容角度
+    actions = []
+    if u"保费" in title or u"增长" in title or u"NBV" in title:
+        actions.append(u"以「保费增长、新业务价值改善」为话题，向寿险/财险品牌客户沟通品牌 + 投放计划")
+    if u"养老" in title or u"养老金" in title or u"养老险" in title:
+        actions.append(u"准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送")
+    if u"健康" in title or u"医疗" in title or u"重疾" in title:
+        actions.append(u"结合健康险/医疗险话题，面向健康险品牌、团险 HR 客户沟通投放方案")
+    if u"车险" in title or u"新车" in title or u"汽车" in title or u"新能源" in title:
+        actions.append(u"面向车险、新车分期等客户准备续保/场景信贷类投放素材和落地页")
+    if u"利率" in title or u"LPR" in title or u"降息" in title or u"存款" in title:
+        actions.append(u"围绕利率变动准备「产品对比 + 场景案例」型内容，面向零售信贷/存款/信用卡客户沟通")
+    if u"贷款" in title or u"信贷" in title or u"小微" in title or u"普惠" in title:
+        actions.append(u"面向消费金融、助贷平台、小微企业信贷客户准备「政策红利 + 审批效率」素材")
+    if u"房贷" in title or u"按揭" in title or u"房地产" in title or u"保交楼" in title:
+        actions.append(u"面向房贷/经营贷置换需求客户，准备「利率科普 + 资质对比」型落地页")
+    if u"基金" in title or u"ETF" in title or u"理财" in title or u"发行" in title:
+        actions.append(u"面向基金公司/理财子客户准备「新发基金解读 + 定投教育」内容和投放方案")
+    if u"券商" in title or u"证券" in title or u"佣金" in title or u"投顾" in title:
+        actions.append(u"面向券商资管/投顾业务客户沟通「佣金战 + 投顾升级」品牌 + 效果投放组合")
+    if u"信托" in title or u"高净值" in title or u"家族" in title or u"传承" in title:
+        actions.append(u"面向信托/财富管理公司准备「长期资产配置 + 财富传承」内容")
+    if u"监管" in title or u"处罚" in title or u"罚款" in title or u"违规" in title or u"问责" in title:
+        actions.append(u"【合规提醒】当日监管处罚/违规类新闻，建议客户审查敏感素材，必要时暂停关键词投放")
+    if u"违约" in title or u"逾期" in title or u"暴雷" in title or u"兑付" in title or u"风险" in title:
+        actions.append(u"【风险提示】负面风险/违约类新闻集中，建议客户调低「承诺型/收益型」创意比例，增加品牌安全词包")
+    if u"科技" in title or u"AI" in title or u"数字" in title or u"互金" in title:
+        actions.append(u"面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容")
+    if u"支付" in title or u"跨境" in title or u"担保" in title or u"AMC" in title or u"资产处置" in title:
+        actions.append(u"面向支付结算/担保/AMC 等客户准备场景解决方案、案例研究型内容")
+    if u"信用卡" in title or u"分期" in title or u"消费" in title:
+        actions.append(u"面向信用卡/消费分期品牌沟通「权益升级 + 场景营销」投放计划")
+    if not actions:
+        # 兜底：结合主题给出建议
+        actions.append(u"以该条新闻为话题，面向" + (advertisers_map.get(sector, u"金融行业广告主")) + u"沟通定制化投放方案")
+        actions.append(u"准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接")
+
+    compliance_extra = []
+    if u"监管" in topic or u"罚" in topic or u"处罚" in topic:
+        compliance_extra.append(u"该条含监管/处罚信号，客户广告文案需完成内部合规审查后再上线")
+    if u"收益" in title or u"涨幅" in title or u"回报" in title:
+        compliance_extra.append(u"涉及收益/回报型说法，广告不得使用绝对化措辞，需披露投资风险")
+
+    risk_extra = []
+    if u"违约" in title or u"逾期" in title or u"暴雷" in title or u"风险" in title:
+        risk_extra.append(u"该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情")
+    if u"投诉" in title or u"纠纷" in title or u"举报" in title:
+        risk_extra.append(u"该条含客户投诉/纠纷信号，建议客户关注社媒舆情，必要时调整投放节奏")
+
+    return {
+        "suggested_advertisers": advertisers_map.get(sector, u"金融行业广告主"),
+        "suggested_actions": actions[:3],
+        "compliance_notes": compliance_extra or [u"常规审查：年化利率、风险提示、资质披露、个保法合规"],
+        "risk_notes": risk_extra or [u"常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"],
+        "topic_type": topic,
+    }
+
+
 def fallback_marketing_insights(sector_summary: dict, by_sector: dict) -> dict:
     sectors = {}
     sector_advertisers = {
@@ -743,27 +930,15 @@ def fallback_marketing_insights(sector_summary: dict, by_sector: dict) -> dict:
         "信贷": ["消费贷款", "小微贷款", "房贷/经营贷", "助贷平台获客", "支付信贷服务"],
         "非金": ["金融科技解决方案", "支付结算产品", "担保服务", "资产处置", "综合金融平台"],
     }
-    sector_content_angles = {
-        "保险": ["政策解读：养老金第三支柱、商业健康险个税优惠", "场景化内容：家庭保障规划、企业团险方案对比", "用户证言：理赔案例、服务体验故事", "行业观察：保费增长、代理人转型"],
-        "银行": ["产品对比：不同期限、不同银行产品差异", "场景营销：装修贷款、购车分期、旅游消费", "品牌故事：数字化转型成果、服务创新案例", "风险提示：息差管理、不良率控制"],
-        "财富": ["市场解读：宏观经济、行业趋势分析", "投资教育：资产配置理念、风险管理", "产品测评：不同基金/理财对比分析", "养老话题：个人养老金、财富传承规划"],
-        "信贷": ["利率科普：LPR机制、浮动利率转换", "资质解读：如何提升贷款通过率", "案例分享：小微企业主融资故事", "风险提示：逾期管理、债务规划"],
-        "非金": ["技术展示：AI风控、数字身份认证", "案例研究：行业解决方案落地案例", "趋势分析：金融数字化转型方向", "政策观察：金融科技创新监管"],
-    }
-    sector_compliance = {
-        "保险": ["禁止承诺收益、夸大保障范围", "必须明确免责条款和等待期", "代理人必须有执业资格", "金融广告需提前报备", "保护客户个人信息安全"],
-        "银行": ["必须明示年化利率，禁止模糊表述", "理财产品需显著提示风险等级", "禁止诱导办卡、强制捆绑", "客户信息保护严格遵守监管", "反洗钱：大额交易监控和报告义务"],
-        "信贷": ["不得超过法定利率上限", "禁止暴力催收、骚扰式催收", "放贷主体必须具备相应牌照", "费用构成必须清晰透明", "用户征信信息使用需合规"],
-        "财富": ["禁止预测收益、承诺保本", "产品需匹配投资者风险承受能力", "提供投资建议需具备相应资质", "信息隔离：防止内幕信息泄露", "基金销售广告需符合证监会规定"],
-        "非金": ["开展支付业务必须具备牌照", "金融数据需符合等保要求", "禁止虚假宣传、商业诋毁", "跨境业务需符合外汇管理规定", "根据业务类型取得相应监管许可"],
-    }
-    sector_risks = {
-        "保险": ["广告内容被监管部门约谈整改", "理赔纠纷可能引发舆情危机", "产品说明不当导致投诉", "利率下行影响储蓄型产品吸引力"],
-        "银行": ["客户投诉可能引发负面舆情", "理财产品宣传不当被处罚", "利率变动影响产品竞争力", "存款流失影响资金成本"],
-        "信贷": ["逾期率上升影响资产质量", "催收不当引发监管关注", "利率下行压缩利差空间", "监管政策变化影响业务开展"],
-        "财富": ["净值波动可能引发客户投诉", "宣传不当被监管处罚", "大额赎回可能影响产品运作", "基金经理变动影响投资者信心"],
-        "非金": ["业务资质不全被监管处罚", "系统故障影响服务连续性", "行业竞争加剧压缩利润空间", "监管政策变化影响业务模式"],
-    }
+
+    # 聚合当日全局高频主题词，给整体局势使用
+    global_topics = []
+    for sector in SECTORS:
+        for tp, cnt in (sector_summary.get(sector, {}).get("topic_counts", {}) or {}).items():
+            if tp and tp != u"一般资讯" and cnt >= 2:
+                global_topics.append((tp, cnt))
+    global_topics.sort(key=lambda x: x[1], reverse=True)
+    global_topic_names = [tp for tp, _ in global_topics[:5]] or [u"政策监管", u"产品机会"]
 
     for sector in SECTORS:
         summary = sector_summary.get(sector, {})
@@ -774,49 +949,61 @@ def fallback_marketing_insights(sector_summary: dict, by_sector: dict) -> dict:
         if count == 0:
             insight = sector + u"赛道今日暂未抓取到直接相关新闻。建议主动关注" + sector + u"相关政策和行业动态，提前准备投放素材。"
         else:
-            topic_text_list = [topic for topic, cnt in top_topics[:2] if topic != u"一般资讯"] or [u"行业动态"]
-            headline = top_titles[0] if top_titles else u"行业热点"
-            headline = headline[:28] + (u"..." if len(headline) > 28 else "")
+            topic_text_list = [topic for topic, cnt in top_topics[:3] if topic != u"一般资讯"] or [u"行业动态"]
+            headlines_short = []
+            for t in top_titles[:2]:
+                headlines_short.append((t[:26] + u"…") if len(t) > 26 else t)
             insight = (
-                sector + u"赛道今日共 " + str(count) + u" 条相关新闻，核心主题：" + u"、".join(topic_text_list) +
-                u"。热点话题示例：" + headline +
-                u"。建议销售团队结合当前行业动态梳理素材，重点关注广告主投放需求变化、监管政策调整、以及目标客群关注的具体方向。"
+                sector + u"赛道今日共 " + str(count) + u" 条相关新闻。核心主题：" +
+                u"、".join(topic_text_list) +
+                u"。代表性新闻：" + u"；".join(headlines_short or [u"行业热点"]) +
+                u"。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与" + u"、".join(topic_text_list[:1]) +
+                u"直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。"
             )
 
         sectors[sector] = {
             "insight": insight,
             "advertisers": sector_advertisers.get(sector, []),
             "products": sector_products.get(sector, []),
-            "content_angles": sector_content_angles.get(sector, []),
-            "compliance_points": sector_compliance.get(sector, []),
-            "risk_factors": sector_risks.get(sector, []),
+            "content_angles": _dynamic_content_angles(sector, top_titles, top_topics),
+            "compliance_points": _dynamic_compliance(sector, top_topics),
+            "risk_factors": _dynamic_risks(sector, top_topics),
+            "top_titles": top_titles[:5],
+            "topic_counts": summary.get("topic_counts", {}),
         }
 
     total_items = sum([sector_summary.get(s, {}).get("count", 0) for s in SECTORS])
     active_sectors = [s for s in SECTORS if sector_summary.get(s, {}).get("count", 0) >= 5]
     hot_topic_text = u""
     if active_sectors:
-        hot_topic_text = u"今日热点赛道：" + u"、".join(active_sectors)
+        hot_topic_text = u"今日热点赛道（新闻量较多）：" + u"、".join(active_sectors) + u"。"
+
+    # 挑出当日"最值得销售跟进"的 2-3 个赛道做重点建议
+    lead_sectors = active_sectors[:3] or [s for s in SECTORS if sector_summary.get(s, {}).get("count", 0) > 0][:3]
+    lead_text = u"今日建议销售优先沟通：" + u"、".join(lead_sectors) + u"类客户。" if lead_sectors else u""
 
     overall = (
         u"今日共抓取 " + str(total_items) + u" 条金融相关新闻，覆盖五大类金融赛道。" + hot_topic_text +
-        u"。整体关注重点包括：监管政策变化、市场环境调整、产品创新和客户需求变化。"
-        u"建议销售/运营团队优先关注财富管理和信贷类客户的投放需求，并提前准备合规审查材料。"
+        u"当日全局高频主题：" + u"、".join(global_topic_names) + u"。" + lead_text +
+        u"建议销售/运营团队：① 按赛道重排客户清单，优先沟通与当日主题高度相关的客户；"
+        u"② 准备「政策解读 + 产品机会 + 成功案例」组合素材；"
+        u"③ 提前进行合规与品牌安全审查，避免敏感词和绝对化措辞。"
     )
 
     return {
         "overall_situation": overall,
-        "core_themes": [u"政策监管动态", u"市场机会与产品机会", u"客户营销预算与投放需求", u"内容种草与活动运营配合", u"合规风险与品牌安全"],
+        "core_themes": global_topic_names + [u"品牌安全与合规", u"内容种草与活动运营配合"],
         "sectors": sectors,
         "sales_today_actions": [
-            u"按赛道整理当前在跟客户清单，挑选今日有话题感的客户优先沟通",
-            u"准备各赛道对应的话题素材和销售话术，用于客户拜访或内容投放",
-            u"检查广告素材是否符合合规要求，重点关注风险提示条款",
-            u"安排运营同事准备相关落地页、活动位、内容种草计划",
-            u"跟踪近期监管动态，及时调整客户沟通策略",
+            u"按赛道整理当前在跟客户清单，优先沟通与当日高频主题（" + u"、".join(global_topic_names[:2]) + u"）相关的客户",
+            u"准备「政策解读 + 产品机会 + 成功案例」内容素材，用于客户拜访和投放落地页",
+            u"检查广告素材是否显著披露年化利率/风险等级/持牌信息，避免绝对化措辞",
+            u"联动运营同事准备相关活动位、内容种草、搜索词包调整计划",
+            u"对包含「监管处罚、违约、负面舆情」信号的赛道，建议客户 24-48 小时内暂停敏感投放",
         ],
         "generated_by": "keyword_fallback",
     }
+
 
 
 def call_llm_insights(sector_summary: dict, by_sector: dict) -> dict:
