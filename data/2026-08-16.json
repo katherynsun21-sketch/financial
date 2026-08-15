@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-08-16T00:07:53.447161+08:00",
-  "fetched_at_utc": "2026-08-15T16:07:53.447165+00:00",
+  "fetched_at": "2026-08-16T02:08:40.727385+08:00",
+  "fetched_at_utc": "2026-08-15T18:08:40.727393+00:00",
   "date": "2026-08-16",
-  "time": "00:07:53",
+  "time": "02:08:40",
   "status": "ok",
   "error": "",
   "sectors": [
@@ -113,8 +113,8 @@
       "name": "证监会",
       "url": "https://www.csrc.gov.cn/csrc/c100028/zfxxgk_zdgk.shtml",
       "type": "监管机构",
-      "items_count": 30,
-      "ok": true
+      "items_count": 0,
+      "ok": false
     },
     {
       "name": "财政部",
@@ -524,32 +524,32 @@
       "board_subtitle": "日排行",
       "items": [
         {
-          "id": "c8988ea2762ad5e7",
-          "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
-          "url": "https://wallstreetcn.com/articles/3779437",
-          "source": "今日热榜-华尔街见闻",
-          "source_type": "热榜",
-          "rank": 1,
-          "extra": "10.7万",
-          "heat": {
-            "value": 107000,
-            "unit": "万",
-            "raw": "10.7万"
-          },
-          "published_at": ""
-        },
-        {
           "id": "a4449e53f46c0ec1",
           "title": "8月，华尔街的“牛市”又回来了，“赌性”也回来了",
           "url": "https://wallstreetcn.com/articles/3779498",
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
-          "rank": 2,
-          "extra": "7.9万",
+          "rank": 1,
+          "extra": "8.3万",
           "heat": {
-            "value": 79000,
+            "value": 83000,
             "unit": "万",
-            "raw": "7.9万"
+            "raw": "8.3万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c8988ea2762ad5e7",
+          "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
+          "url": "https://wallstreetcn.com/articles/3779437",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "5.9万",
+          "heat": {
+            "value": 59000,
+            "unit": "万",
+            "raw": "5.9万"
           },
           "published_at": ""
         },
@@ -575,11 +575,11 @@
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
           "rank": 4,
-          "extra": "4.5万",
+          "extra": "4.7万",
           "heat": {
-            "value": 45000,
+            "value": 47000,
             "unit": "万",
-            "raw": "4.5万"
+            "raw": "4.7万"
           },
           "published_at": ""
         },
@@ -590,26 +590,11 @@
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
           "rank": 5,
-          "extra": "4.0万",
+          "extra": "4.2万",
           "heat": {
-            "value": 40000,
+            "value": 42000,
             "unit": "万",
-            "raw": "4.0万"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "ef35123866677777",
-          "title": "A股牛市第三阶段的新叙事",
-          "url": "https://wallstreetcn.com/articles/3779505",
-          "source": "今日热榜-华尔街见闻",
-          "source_type": "热榜",
-          "rank": 6,
-          "extra": "3.9万",
-          "heat": {
-            "value": 39000,
-            "unit": "万",
-            "raw": "3.9万"
+            "raw": "4.2万"
           },
           "published_at": ""
         },
@@ -619,12 +604,27 @@
           "url": "https://wallstreetcn.com/articles/3779512",
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
-          "rank": 7,
-          "extra": "3.8万",
+          "rank": 6,
+          "extra": "4.1万",
           "heat": {
-            "value": 38000,
+            "value": 41000,
             "unit": "万",
-            "raw": "3.8万"
+            "raw": "4.1万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ef35123866677777",
+          "title": "A股牛市第三阶段的新叙事",
+          "url": "https://wallstreetcn.com/articles/3779505",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "4.1万",
+          "heat": {
+            "value": 41000,
+            "unit": "万",
+            "raw": "4.1万"
           },
           "published_at": ""
         },
@@ -635,11 +635,11 @@
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
           "rank": 8,
-          "extra": "3.8万",
+          "extra": "3.9万",
           "heat": {
-            "value": 38000,
+            "value": 39000,
             "unit": "万",
-            "raw": "3.8万"
+            "raw": "3.9万"
           },
           "published_at": ""
         },
@@ -650,11 +650,11 @@
           "source": "今日热榜-华尔街见闻",
           "source_type": "热榜",
           "rank": 9,
-          "extra": "3.4万",
+          "extra": "3.5万",
           "heat": {
-            "value": 34000,
+            "value": 35000,
             "unit": "万",
-            "raw": "3.4万"
+            "raw": "3.5万"
           },
           "published_at": ""
         },
@@ -680,132 +680,12 @@
       "board_subtitle": "点击量排行",
       "items": [
         {
-          "id": "942344e64a1afc27",
-          "title": "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-          "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyys3646083.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 1,
-          "extra": "6,072",
-          "heat": {
-            "value": 6072,
-            "unit": "",
-            "raw": "6,072"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "197d37bcf94a3a17",
-          "title": "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-          "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-15/doc-ininkfht2353963.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 2,
-          "extra": "3,656",
-          "heat": {
-            "value": 3656,
-            "unit": "",
-            "raw": "3,656"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "edb13bfc430ea945",
-          "title": "央行明确新信号 利率端改革多点推进",
-          "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininikcc2669662.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 3,
-          "extra": "3,354",
-          "heat": {
-            "value": 3354,
-            "unit": "",
-            "raw": "3,354"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "9751a548d265a6d9",
-          "title": "伊朗首次展示美军机残骸 想传递什么信息？",
-          "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkmqn3523688.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 4,
-          "extra": "3,319",
-          "heat": {
-            "value": 3319,
-            "unit": "",
-            "raw": "3,319"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "3e752af79936d43a",
-          "title": "直击印尼7.7级强震：建筑剧烈摇晃倒塌 民众拼命奔逃 海水大幅度退潮",
-          "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkfhv8779742.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 5,
-          "extra": "2,789",
-          "heat": {
-            "value": 2789,
-            "unit": "",
-            "raw": "2,789"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "25cbff030dbb0b28",
-          "title": "唐守正同志逝世",
-          "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhu1995098.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 6,
-          "extra": "2,477",
-          "heat": {
-            "value": 2477,
-            "unit": "",
-            "raw": "2,477"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "1db62f3fdc16a7d0",
-          "title": "上半年各地财政运行情况如何？31个省区市“晒账本”",
-          "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininiyyv2382012.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 7,
-          "extra": "1,736",
-          "heat": {
-            "value": 1736,
-            "unit": "",
-            "raw": "1,736"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "c3fcb801b1ae10a4",
-          "title": "特朗普威胁宣布霍尔木兹为美国领土，美国将对伊朗采取“前所未见”的经济手段",
-          "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiusu3749972.shtml",
-          "source": "今日热榜-新浪财经新闻",
-          "source_type": "热榜",
-          "rank": 8,
-          "extra": "1,722",
-          "heat": {
-            "value": 1722,
-            "unit": "",
-            "raw": "1,722"
-          },
-          "published_at": ""
-        },
-        {
           "id": "5423790975818e5a",
           "title": "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
           "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyyv2371423.shtml",
           "source": "今日热榜-新浪财经新闻",
           "source_type": "热榜",
-          "rank": 9,
+          "rank": 1,
           "extra": "1,704",
           "heat": {
             "value": 1704,
@@ -820,12 +700,132 @@
           "url": "https://finance.sina.com.cn/tob/2026-08-15/doc-ininmane3330830.shtml",
           "source": "今日热榜-新浪财经新闻",
           "source_type": "热榜",
-          "rank": 10,
+          "rank": 2,
           "extra": "1,621",
           "heat": {
             "value": 1621,
             "unit": "",
             "raw": "1,621"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "025fb93d17cf566d",
+          "title": "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+          "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkrwr8632413.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "1,520",
+          "heat": {
+            "value": 1520,
+            "unit": "",
+            "raw": "1,520"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "756eaad91283d314",
+          "title": "特朗普爆粗口：“没有比这更大的侮辱”",
+          "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkmqt8725573.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "1,429",
+          "heat": {
+            "value": 1429,
+            "unit": "",
+            "raw": "1,429"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "acc49ba54a5a79fb",
+          "title": "段永平、李录，最新美股持仓曝光！",
+          "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininkmqn3568631.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "1,262",
+          "heat": {
+            "value": 1262,
+            "unit": "",
+            "raw": "1,262"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "2ae067d8451b0462",
+          "title": "“积极信号”！万亿级赛道，崛起新力量",
+          "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmane3331449.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "1,255",
+          "heat": {
+            "value": 1255,
+            "unit": "",
+            "raw": "1,255"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "563ab20e19cb661b",
+          "title": "养老金增持股名单出炉！下周2股解禁比例超50%（附股）",
+          "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmanm8480768.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "1,114",
+          "heat": {
+            "value": 1114,
+            "unit": "",
+            "raw": "1,114"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "25684677ecc936e6",
+          "title": "郭德纲被立案调查，湖北文旅厅回应，此前西安站演出已取消",
+          "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkrwr8660094.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "1,098",
+          "heat": {
+            "value": 1098,
+            "unit": "",
+            "raw": "1,098"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d661dc272e6311f0",
+          "title": "8月15日收盘：美股三大指数周五收跌，标普500周线三连阳",
+          "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiqkw3862105.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "1,008",
+          "heat": {
+            "value": 1008,
+            "unit": "",
+            "raw": "1,008"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "8bb4f182cec0ee5e",
+          "title": "社保基金、QFII调仓动向曝光！QFII大幅加仓的绩优股出炉",
+          "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininiyyx8841052.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "968",
+          "heat": {
+            "value": 968,
+            "unit": "",
+            "raw": "968"
           },
           "published_at": ""
         }
@@ -1454,9 +1454,9 @@
       "board_subtitle": "热文日排行",
       "items": [
         {
-          "id": "62088499cb606f44",
-          "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
-          "url": "https://www.gelonghui.com/p/6083953",
+          "id": "7d4cf334cdff7cb4",
+          "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
+          "url": "https://www.gelonghui.com/p/6083390",
           "source": "今日热榜-格隆汇",
           "source_type": "热榜",
           "rank": 1,
@@ -1469,9 +1469,9 @@
           "published_at": ""
         },
         {
-          "id": "7d4cf334cdff7cb4",
-          "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
-          "url": "https://www.gelonghui.com/p/6083390",
+          "id": "62088499cb606f44",
+          "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
+          "url": "https://www.gelonghui.com/p/6083953",
           "source": "今日热榜-格隆汇",
           "source_type": "热榜",
           "rank": 2,
@@ -1544,27 +1544,12 @@
           "published_at": ""
         },
         {
-          "id": "cf5f8be1d17973e6",
-          "title": "贵州茅台半年报：净利下滑，“i茅台”猛增274%",
-          "url": "https://www.gelonghui.com/p/6083352",
-          "source": "今日热榜-格隆汇",
-          "source_type": "热榜",
-          "rank": 7,
-          "extra": "",
-          "heat": {
-            "value": 0,
-            "unit": "",
-            "raw": ""
-          },
-          "published_at": ""
-        },
-        {
           "id": "d95be0aef665f081",
           "title": "伯克希尔Q2大手笔加仓谷歌，Alphabet跃居第三",
           "url": "https://www.gelonghui.com/p/6083886",
           "source": "今日热榜-格隆汇",
           "source_type": "热榜",
-          "rank": 8,
+          "rank": 7,
           "extra": "",
           "heat": {
             "value": 0,
@@ -1579,7 +1564,7 @@
           "url": "https://www.gelonghui.com/p/6083384",
           "source": "今日热榜-格隆汇",
           "source_type": "热榜",
-          "rank": 9,
+          "rank": 8,
           "extra": "",
           "heat": {
             "value": 0,
@@ -1592,6 +1577,21 @@
           "id": "00def386f76c35f7",
           "title": "中期选举压力是否还能触发“TACO”？",
           "url": "https://www.gelonghui.com/p/6084244",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "00f32a15feaa7830",
+          "title": "特朗普宣称“很快”将霍尔木兹海峡划为美国领土",
+          "url": "https://www.gelonghui.com/p/6083415",
           "source": "今日热榜-格隆汇",
           "source_type": "热榜",
           "rank": 10,
@@ -1616,11 +1616,11 @@
           "source": "今日热榜-股吧",
           "source_type": "热榜",
           "rank": 1,
-          "extra": "1027",
+          "extra": "1211",
           "heat": {
-            "value": 1027,
+            "value": 1211,
             "unit": "",
-            "raw": "1027"
+            "raw": "1211"
           },
           "published_at": ""
         },
@@ -1631,26 +1631,11 @@
           "source": "今日热榜-股吧",
           "source_type": "热榜",
           "rank": 2,
-          "extra": "2.2万",
+          "extra": "2.5万",
           "heat": {
-            "value": 22000,
+            "value": 25000,
             "unit": "万",
-            "raw": "2.2万"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "52efa3faf2cb310a",
-          "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
-          "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
-          "source": "今日热榜-股吧",
-          "source_type": "热榜",
-          "rank": 3,
-          "extra": "2825",
-          "heat": {
-            "value": 2825,
-            "unit": "",
-            "raw": "2825"
+            "raw": "2.5万"
           },
           "published_at": ""
         },
@@ -1660,57 +1645,42 @@
           "url": "http://caifuhao.eastmoney.com/news/20260815184728882986550",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 4,
-          "extra": "229",
+          "rank": 3,
+          "extra": "272",
           "heat": {
-            "value": 229,
+            "value": 272,
             "unit": "",
-            "raw": "229"
+            "raw": "272"
           },
           "published_at": ""
         },
         {
-          "id": "aabf41311aaa308e",
-          "title": "汇金、证金退出茅台意味着什么？",
-          "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
+          "id": "52efa3faf2cb310a",
+          "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
+          "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "3104",
+          "heat": {
+            "value": 3104,
+            "unit": "",
+            "raw": "3104"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7afa3086b8815766",
+          "title": "出什么事了？近期北向资金疯狂买入A股第一真龙，业绩大涨330%，日赚4000万的低估真龙要起飞？",
+          "url": "http://caifuhao.eastmoney.com/news/20260815190403903212950",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
           "rank": 5,
-          "extra": "1753",
+          "extra": "1.0万",
           "heat": {
-            "value": 1753,
-            "unit": "",
-            "raw": "1753"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "f4643033fbb09a5e",
-          "title": "茅台暴雷 芯片偷笑 数据公布",
-          "url": "http://caifuhao.eastmoney.com/news/20260815074124413512120",
-          "source": "今日热榜-股吧",
-          "source_type": "热榜",
-          "rank": 6,
-          "extra": "1.7万",
-          "heat": {
-            "value": 17000,
+            "value": 10000,
             "unit": "万",
-            "raw": "1.7万"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "5cde078b90848c6d",
-          "title": "业绩暴增694%，日赚5000万！机器人赛道的\"印钞机\"来了，社保、养老已经提前上车？",
-          "url": "http://caifuhao.eastmoney.com/news/20260815173501922025920",
-          "source": "今日热榜-股吧",
-          "source_type": "热榜",
-          "rank": 8,
-          "extra": "3198",
-          "heat": {
-            "value": 3198,
-            "unit": "",
-            "raw": "3198"
+            "raw": "1.0万"
           },
           "published_at": ""
         },
@@ -1720,27 +1690,42 @@
           "url": "http://caifuhao.eastmoney.com/news/20260815221441815620760",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 9,
-          "extra": "7831",
+          "rank": 6,
+          "extra": "8622",
           "heat": {
-            "value": 7831,
+            "value": 8622,
             "unit": "",
-            "raw": "7831"
+            "raw": "8622"
           },
           "published_at": ""
         },
         {
-          "id": "9800fa9e6ce38a53",
-          "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
-          "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
+          "id": "f4643033fbb09a5e",
+          "title": "茅台暴雷 芯片偷笑 数据公布",
+          "url": "http://caifuhao.eastmoney.com/news/20260815074124413512120",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 10,
-          "extra": "280",
+          "rank": 7,
+          "extra": "1.7万",
           "heat": {
-            "value": 280,
+            "value": 17000,
+            "unit": "万",
+            "raw": "1.7万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "aabf41311aaa308e",
+          "title": "汇金、证金退出茅台意味着什么？",
+          "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "1957",
+          "heat": {
+            "value": 1957,
             "unit": "",
-            "raw": "280"
+            "raw": "1957"
           },
           "published_at": ""
         },
@@ -1750,27 +1735,27 @@
           "url": "http://caifuhao.eastmoney.com/news/20260815081758697239460",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 11,
-          "extra": "542",
+          "rank": 10,
+          "extra": "564",
           "heat": {
-            "value": 542,
+            "value": 564,
             "unit": "",
-            "raw": "542"
+            "raw": "564"
           },
           "published_at": ""
         },
         {
-          "id": "3772e80cf8778cf9",
-          "title": "最坏时刻已过？平安银行上半年三大亮点，三重隐患",
-          "url": "http://caifuhao.eastmoney.com/news/20260815205050488185350",
+          "id": "9800fa9e6ce38a53",
+          "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
+          "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 12,
-          "extra": "288",
+          "rank": 11,
+          "extra": "301",
           "heat": {
-            "value": 288,
+            "value": 301,
             "unit": "",
-            "raw": "288"
+            "raw": "301"
           },
           "published_at": ""
         },
@@ -1780,27 +1765,12 @@
           "url": "http://caifuhao.eastmoney.com/news/20260815215640890556460",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 13,
-          "extra": "2984",
+          "rank": 12,
+          "extra": "3545",
           "heat": {
-            "value": 2984,
+            "value": 3545,
             "unit": "",
-            "raw": "2984"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "157dd059f41237be",
-          "title": "液冷赛道硬核标的，依米康对比英维克：被低估的温控力量，估值修复一触即发！---摘自《曰明月朗》",
-          "url": "http://caifuhao.eastmoney.com/news/20260815062607689192260",
-          "source": "今日热榜-股吧",
-          "source_type": "热榜",
-          "rank": 14,
-          "extra": "1473",
-          "heat": {
-            "value": 1473,
-            "unit": "",
-            "raw": "1473"
+            "raw": "3545"
           },
           "published_at": ""
         },
@@ -1810,12 +1780,42 @@
           "url": "http://caifuhao.eastmoney.com/news/20260815113713616857710",
           "source": "今日热榜-股吧",
           "source_type": "热榜",
-          "rank": 15,
-          "extra": "1113",
+          "rank": 13,
+          "extra": "1159",
           "heat": {
-            "value": 1113,
+            "value": 1159,
             "unit": "",
-            "raw": "1113"
+            "raw": "1159"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "3772e80cf8778cf9",
+          "title": "最坏时刻已过？平安银行上半年三大亮点，三重隐患",
+          "url": "http://caifuhao.eastmoney.com/news/20260815205050488185350",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 14,
+          "extra": "338",
+          "heat": {
+            "value": 338,
+            "unit": "",
+            "raw": "338"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "157dd059f41237be",
+          "title": "液冷赛道硬核标的，依米康对比英维克：被低估的温控力量，估值修复一触即发！---摘自《曰明月朗》",
+          "url": "http://caifuhao.eastmoney.com/news/20260815062607689192260",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 15,
+          "extra": "1538",
+          "heat": {
+            "value": 1538,
+            "unit": "",
+            "raw": "1538"
           },
           "published_at": ""
         }
@@ -1832,11 +1832,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 1,
-          "extra": "1192",
+          "extra": "1301",
           "heat": {
-            "value": 1192,
+            "value": 1301,
             "unit": "",
-            "raw": "1192"
+            "raw": "1301"
           },
           "published_at": ""
         },
@@ -1847,11 +1847,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 2,
-          "extra": "2055",
+          "extra": "2072",
           "heat": {
-            "value": 2055,
+            "value": 2072,
             "unit": "",
-            "raw": "2055"
+            "raw": "2072"
           },
           "published_at": ""
         },
@@ -1862,11 +1862,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 3,
-          "extra": "455",
+          "extra": "471",
           "heat": {
-            "value": 455,
+            "value": 471,
             "unit": "",
-            "raw": "455"
+            "raw": "471"
           },
           "published_at": ""
         },
@@ -1877,41 +1877,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 4,
-          "extra": "306",
+          "extra": "397",
           "heat": {
-            "value": 306,
+            "value": 397,
             "unit": "",
-            "raw": "306"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "94e2fbe707debbb3",
-          "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
-          "url": "https://www.jisilu.cn/question/524430",
-          "source": "今日热榜-集思录",
-          "source_type": "热榜",
-          "rank": 5,
-          "extra": "232",
-          "heat": {
-            "value": 232,
-            "unit": "",
-            "raw": "232"
-          },
-          "published_at": ""
-        },
-        {
-          "id": "204a0f7e01dd4a62",
-          "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
-          "url": "https://www.jisilu.cn/question/524443",
-          "source": "今日热榜-集思录",
-          "source_type": "热榜",
-          "rank": 6,
-          "extra": "312",
-          "heat": {
-            "value": 312,
-            "unit": "",
-            "raw": "312"
+            "raw": "397"
           },
           "published_at": ""
         },
@@ -1921,12 +1891,42 @@
           "url": "https://www.jisilu.cn/question/524447",
           "source": "今日热榜-集思录",
           "source_type": "热榜",
-          "rank": 7,
-          "extra": "177",
+          "rank": 5,
+          "extra": "315",
           "heat": {
-            "value": 177,
+            "value": 315,
             "unit": "",
-            "raw": "177"
+            "raw": "315"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "94e2fbe707debbb3",
+          "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
+          "url": "https://www.jisilu.cn/question/524430",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "248",
+          "heat": {
+            "value": 248,
+            "unit": "",
+            "raw": "248"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "204a0f7e01dd4a62",
+          "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
+          "url": "https://www.jisilu.cn/question/524443",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "326",
+          "heat": {
+            "value": 326,
+            "unit": "",
+            "raw": "326"
           },
           "published_at": ""
         },
@@ -1937,11 +1937,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 8,
-          "extra": "196",
+          "extra": "210",
           "heat": {
-            "value": 196,
+            "value": 210,
             "unit": "",
-            "raw": "196"
+            "raw": "210"
           },
           "published_at": ""
         },
@@ -1952,11 +1952,11 @@
           "source": "今日热榜-集思录",
           "source_type": "热榜",
           "rank": 9,
-          "extra": "75",
+          "extra": "94",
           "heat": {
-            "value": 75,
+            "value": 94,
             "unit": "",
-            "raw": "75"
+            "raw": "94"
           },
           "published_at": ""
         }
@@ -2307,18 +2307,18 @@
       "coverage": "充足",
       "top_titles": [
         "博通一夜跌6%：AI的下一道坎，是融资成本",
-        "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-        "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-        "央行明确新信号 利率端改革多点推进",
-        "伊朗首次展示美军机残骸 想传递什么信息？"
+        "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
+        "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
+        "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+        "特朗普爆粗口：“没有比这更大的侮辱”"
       ]
     },
     "财富": {
       "count": 157,
       "topic_counts": {
         "一般资讯": 141,
-        "监管处罚": 1,
-        "经营承压": 6,
+        "监管处罚": 2,
+        "经营承压": 5,
         "风险暴露": 2,
         "增长改善": 6,
         "政策支持": 1
@@ -2349,10 +2349,11 @@
     }
   },
   "situation_analysis": {
-    "overall_situation": "今日共抓取 220 条金融相关新闻，覆盖五大类金融赛道。今日热点赛道（新闻量较多）：保险、信贷、财富、银行。当日全局高频主题：经营承压、增长改善、风险暴露。今日建议销售优先沟通：保险、信贷、财富类客户。建议销售/运营团队：① 按赛道重排客户清单，优先沟通与当日主题高度相关的客户；② 准备「政策解读 + 产品机会 + 成功案例」组合素材；③ 提前进行合规与品牌安全审查，避免敏感词和绝对化措辞。",
+    "overall_situation": "今日共抓取 220 条金融相关新闻，覆盖五大类金融赛道。今日热点赛道（新闻量较多）：保险、信贷、财富、银行。当日全局高频主题：增长改善、经营承压、监管处罚、风险暴露。今日建议销售优先沟通：保险、信贷、财富类客户。建议销售/运营团队：① 按赛道重排客户清单，优先沟通与当日主题高度相关的客户；② 准备「政策解读 + 产品机会 + 成功案例」组合素材；③ 提前进行合规与品牌安全审查，避免敏感词和绝对化措辞。",
     "core_themes": [
-      "经营承压",
       "增长改善",
+      "经营承压",
+      "监管处罚",
       "风险暴露",
       "品牌安全与合规",
       "内容种草与活动运营配合"
@@ -2440,7 +2441,7 @@
         "topic_counts": {}
       },
       "信贷": {
-        "insight": "信贷赛道今日共 8 条相关新闻。核心主题：行业动态。代表性新闻：博通一夜跌6%：AI的下一道坎，是融资成本；特朗普：“很快会宣布霍尔木兹海峡为美国领土”。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与行业动态直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
+        "insight": "信贷赛道今日共 8 条相关新闻。核心主题：行业动态。代表性新闻：博通一夜跌6%：AI的下一道坎，是融资成本；中央气象台预警:今天到明天 浙江、福建、广东、广西、…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与行业动态直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
         "advertisers": [
           "消费金融公司",
           "助贷/贷款服务平台",
@@ -2459,7 +2460,7 @@
           "围绕 LPR 下调、消费贷利率下行，面向消费金融/助贷平台客户准备「低利率 + 审批快」素材",
           "结合小微融资支持政策，为中小微企业信贷客户制作「政策红利 + 成功案例」内容",
           "关注房贷/经营贷置换需求，准备「利率科普 + 资质对比」型落地页与内容种草",
-          "当日可直接复用的话题锚点：博通一夜跌6%：AI的下一道坎，是融资成本；特朗普：“很快会宣布霍尔木兹海峡为美国领土”"
+          "当日可直接复用的话题锚点：博通一夜跌6%：AI的下一道坎，是融资成本；中央气象台预警:今天到明天 浙江、福建、广东、广…"
         ],
         "compliance_points": [
           "贷款利率不得超过法定上限，费用构成必须清晰透明并在合同/落地页显著位置披露",
@@ -2473,17 +2474,17 @@
         ],
         "top_titles": [
           "博通一夜跌6%：AI的下一道坎，是融资成本",
-          "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-          "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-          "央行明确新信号 利率端改革多点推进",
-          "伊朗首次展示美军机残骸 想传递什么信息？"
+          "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
+          "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
+          "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+          "特朗普爆粗口：“没有比这更大的侮辱”"
         ],
         "topic_counts": {
           "一般资讯": 8
         }
       },
       "财富": {
-        "insight": "财富赛道今日共 157 条相关新闻。核心主题：经营承压、增长改善。代表性新闻：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺术中…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”给骗…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与经营承压直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
+        "insight": "财富赛道今日共 157 条相关新闻。核心主题：增长改善、经营承压。代表性新闻：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺术中…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”给骗…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与增长改善直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
         "advertisers": [
           "公募/私募基金品牌",
           "信托/财富管理公司",
@@ -2503,7 +2504,7 @@
           "结合个人养老金、养老理财、信托产品动态，面向高净值客户推送「长期资产配置」话题",
           "关注券商佣金战和投顾升级，为券商资管/投顾客户准备品牌 + 效果投放方案",
           "当日可直接复用的话题锚点：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”…",
-          "内容关键词建议叠加：经营承压、增长改善"
+          "内容关键词建议叠加：增长改善、经营承压"
         ],
         "compliance_points": [
           "基金/理财宣传不得预测收益、承诺保本、使用历史业绩暗示未来表现",
@@ -2524,8 +2525,8 @@
         ],
         "topic_counts": {
           "一般资讯": 141,
-          "监管处罚": 1,
-          "经营承压": 6,
+          "监管处罚": 2,
+          "经营承压": 5,
           "风险暴露": 2,
           "增长改善": 6,
           "政策支持": 1
@@ -2578,7 +2579,7 @@
       }
     },
     "sales_today_actions": [
-      "按赛道整理当前在跟客户清单，优先沟通与当日高频主题（经营承压、增长改善）相关的客户",
+      "按赛道整理当前在跟客户清单，优先沟通与当日高频主题（增长改善、经营承压）相关的客户",
       "准备「政策解读 + 产品机会 + 成功案例」内容素材，用于客户拜访和投放落地页",
       "检查广告素材是否显著披露年化利率/风险等级/持牌信息，避免绝对化措辞",
       "联动运营同事准备相关活动位、内容种草、搜索词包调整计划",
@@ -2587,10 +2588,11 @@
     "generated_by": "keyword_fallback"
   },
   "marketing_insights": {
-    "overall_situation": "今日共抓取 220 条金融相关新闻，覆盖五大类金融赛道。今日热点赛道（新闻量较多）：保险、信贷、财富、银行。当日全局高频主题：经营承压、增长改善、风险暴露。今日建议销售优先沟通：保险、信贷、财富类客户。建议销售/运营团队：① 按赛道重排客户清单，优先沟通与当日主题高度相关的客户；② 准备「政策解读 + 产品机会 + 成功案例」组合素材；③ 提前进行合规与品牌安全审查，避免敏感词和绝对化措辞。",
+    "overall_situation": "今日共抓取 220 条金融相关新闻，覆盖五大类金融赛道。今日热点赛道（新闻量较多）：保险、信贷、财富、银行。当日全局高频主题：增长改善、经营承压、监管处罚、风险暴露。今日建议销售优先沟通：保险、信贷、财富类客户。建议销售/运营团队：① 按赛道重排客户清单，优先沟通与当日主题高度相关的客户；② 准备「政策解读 + 产品机会 + 成功案例」组合素材；③ 提前进行合规与品牌安全审查，避免敏感词和绝对化措辞。",
     "core_themes": [
-      "经营承压",
       "增长改善",
+      "经营承压",
+      "监管处罚",
       "风险暴露",
       "品牌安全与合规",
       "内容种草与活动运营配合"
@@ -2678,7 +2680,7 @@
         "topic_counts": {}
       },
       "信贷": {
-        "insight": "信贷赛道今日共 8 条相关新闻。核心主题：行业动态。代表性新闻：博通一夜跌6%：AI的下一道坎，是融资成本；特朗普：“很快会宣布霍尔木兹海峡为美国领土”。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与行业动态直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
+        "insight": "信贷赛道今日共 8 条相关新闻。核心主题：行业动态。代表性新闻：博通一夜跌6%：AI的下一道坎，是融资成本；中央气象台预警:今天到明天 浙江、福建、广东、广西、…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与行业动态直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
         "advertisers": [
           "消费金融公司",
           "助贷/贷款服务平台",
@@ -2697,7 +2699,7 @@
           "围绕 LPR 下调、消费贷利率下行，面向消费金融/助贷平台客户准备「低利率 + 审批快」素材",
           "结合小微融资支持政策，为中小微企业信贷客户制作「政策红利 + 成功案例」内容",
           "关注房贷/经营贷置换需求，准备「利率科普 + 资质对比」型落地页与内容种草",
-          "当日可直接复用的话题锚点：博通一夜跌6%：AI的下一道坎，是融资成本；特朗普：“很快会宣布霍尔木兹海峡为美国领土”"
+          "当日可直接复用的话题锚点：博通一夜跌6%：AI的下一道坎，是融资成本；中央气象台预警:今天到明天 浙江、福建、广东、广…"
         ],
         "compliance_points": [
           "贷款利率不得超过法定上限，费用构成必须清晰透明并在合同/落地页显著位置披露",
@@ -2711,17 +2713,17 @@
         ],
         "top_titles": [
           "博通一夜跌6%：AI的下一道坎，是融资成本",
-          "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-          "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-          "央行明确新信号 利率端改革多点推进",
-          "伊朗首次展示美军机残骸 想传递什么信息？"
+          "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
+          "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
+          "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+          "特朗普爆粗口：“没有比这更大的侮辱”"
         ],
         "topic_counts": {
           "一般资讯": 8
         }
       },
       "财富": {
-        "insight": "财富赛道今日共 157 条相关新闻。核心主题：经营承压、增长改善。代表性新闻：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺术中…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”给骗…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与经营承压直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
+        "insight": "财富赛道今日共 157 条相关新闻。核心主题：增长改善、经营承压。代表性新闻：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺术中…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”给骗…。销售/运营建议：围绕上述主题重新梳理客户清单，优先沟通与增长改善直接相关的广告主，并检查广告素材是否满足合规和品牌安全要求。",
         "advertisers": [
           "公募/私募基金品牌",
           "信托/财富管理公司",
@@ -2741,7 +2743,7 @@
           "结合个人养老金、养老理财、信托产品动态，面向高净值客户推送「长期资产配置」话题",
           "关注券商佣金战和投顾升级，为券商资管/投顾客户准备品牌 + 效果投放方案",
           "当日可直接复用的话题锚点：一场跨越两千多年的金工对话 L'ÉCOLE珠宝艺…；壹快评｜14人被骗去地铁站上假班，“潜规则信仰”…",
-          "内容关键词建议叠加：经营承压、增长改善"
+          "内容关键词建议叠加：增长改善、经营承压"
         ],
         "compliance_points": [
           "基金/理财宣传不得预测收益、承诺保本、使用历史业绩暗示未来表现",
@@ -2762,8 +2764,8 @@
         ],
         "topic_counts": {
           "一般资讯": 141,
-          "监管处罚": 1,
-          "经营承压": 6,
+          "监管处罚": 2,
+          "经营承压": 5,
           "风险暴露": 2,
           "增长改善": 6,
           "政策支持": 1
@@ -2816,7 +2818,7 @@
       }
     },
     "sales_today_actions": [
-      "按赛道整理当前在跟客户清单，优先沟通与当日高频主题（经营承压、增长改善）相关的客户",
+      "按赛道整理当前在跟客户清单，优先沟通与当日高频主题（增长改善、经营承压）相关的客户",
       "准备「政策解读 + 产品机会 + 成功案例」内容素材，用于客户拜访和投放落地页",
       "检查广告素材是否显著披露年化利率/风险等级/持牌信息，避免绝对化措辞",
       "联动运营同事准备相关活动位、内容种草、搜索词包调整计划",
@@ -4205,17 +4207,66 @@
         }
       },
       {
+        "id": "25736c97f808ddf3",
+        "title": "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
+        "url": "https://finance.sina.com.cn/tob/2026-08-15/doc-ininmane3330830.shtml",
+        "source": "今日热榜-新浪财经新闻",
+        "source_type": "热榜",
+        "rank": 2,
+        "extra": "1,621",
+        "heat": {
+          "value": 1621,
+          "unit": "",
+          "raw": "1,621"
+        },
+        "published_at": "",
+        "sector": "信贷",
+        "topic_type": "一般资讯",
+        "confidence": 0.47,
+        "matched_rules": [],
+        "relevance_reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
+        "reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword_coverage_adjusted_coverage_adjusted",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
         "id": "ea938ab3189ceb2c",
         "title": "博通一夜跌6%：AI的下一道坎，是融资成本",
         "url": "https://wallstreetcn.com/articles/3779512",
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
-        "rank": 7,
-        "extra": "3.8万",
+        "rank": 6,
+        "extra": "4.1万",
         "heat": {
-          "value": 38000,
+          "value": 41000,
           "unit": "万",
-          "raw": "3.8万"
+          "raw": "4.1万"
         },
         "published_at": "",
         "sector": "信贷",
@@ -4304,17 +4355,17 @@
         }
       },
       {
-        "id": "942344e64a1afc27",
-        "title": "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyys3646083.shtml",
+        "id": "5423790975818e5a",
+        "title": "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
+        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyyv2371423.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 1,
-        "extra": "6,072",
+        "extra": "1,704",
         "heat": {
-          "value": 6072,
+          "value": 1704,
           "unit": "",
-          "raw": "6,072"
+          "raw": "1,704"
         },
         "published_at": "",
         "sector": "信贷",
@@ -4354,66 +4405,17 @@
         }
       },
       {
-        "id": "197d37bcf94a3a17",
-        "title": "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-        "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-15/doc-ininkfht2353963.shtml",
-        "source": "今日热榜-新浪财经新闻",
-        "source_type": "热榜",
-        "rank": 2,
-        "extra": "3,656",
-        "heat": {
-          "value": 3656,
-          "unit": "",
-          "raw": "3,656"
-        },
-        "published_at": "",
-        "sector": "信贷",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
-        "reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword_coverage_adjusted_coverage_adjusted",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "edb13bfc430ea945",
-        "title": "央行明确新信号 利率端改革多点推进",
-        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininikcc2669662.shtml",
+        "id": "025fb93d17cf566d",
+        "title": "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkrwr8632413.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 3,
-        "extra": "3,354",
+        "extra": "1,520",
         "heat": {
-          "value": 3354,
+          "value": 1520,
           "unit": "",
-          "raw": "3,354"
+          "raw": "1,520"
         },
         "published_at": "",
         "sector": "信贷",
@@ -4440,7 +4442,8 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "围绕利率变动准备「产品对比 + 场景案例」型内容，面向零售信贷/存款/信用卡客户沟通"
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -4452,17 +4455,17 @@
         }
       },
       {
-        "id": "9751a548d265a6d9",
-        "title": "伊朗首次展示美军机残骸 想传递什么信息？",
-        "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkmqn3523688.shtml",
+        "id": "756eaad91283d314",
+        "title": "特朗普爆粗口：“没有比这更大的侮辱”",
+        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkmqt8725573.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 4,
-        "extra": "3,319",
+        "extra": "1,429",
         "heat": {
-          "value": 3319,
+          "value": 1429,
           "unit": "",
-          "raw": "3,319"
+          "raw": "1,429"
         },
         "published_at": "",
         "sector": "信贷",
@@ -5010,12 +5013,12 @@
         }
       },
       {
-        "id": "f24de3ed6f212e7e",
-        "title": "社保基金、QFII调仓动向曝光！QFII大幅加仓的绩优股出炉",
-        "url": "https://finance.eastmoney.com/a/202608153842312840.html",
-        "source": "东方财富-财经",
+        "id": "5c9b026809f47fad",
+        "title": "DeepSeek V4 Pro正式版来了",
+        "url": "https://topic.eastmoney.com/detail/dsv4zsb.html",
+        "source": "东方财富-证券",
         "source_type": "财经媒体",
-        "rank": 15,
+        "rank": 12,
         "extra": "",
         "heat": {
           "value": 0,
@@ -5047,7 +5050,8 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "面向基金公司/理财子客户准备「新发基金解读 + 定投教育」内容和投放方案"
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -5558,6 +5562,65 @@
         }
       },
       {
+        "id": "25684677ecc936e6",
+        "title": "郭德纲被立案调查，湖北文旅厅回应，此前西安站演出已取消",
+        "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkrwr8660094.shtml",
+        "source": "今日热榜-新浪财经新闻",
+        "source_type": "热榜",
+        "rank": 8,
+        "extra": "1,098",
+        "heat": {
+          "value": 1098,
+          "unit": "",
+          "raw": "1,098"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "监管处罚",
+        "confidence": 0.51,
+        "matched_rules": [
+          {
+            "topic_type": "监管处罚",
+            "keywords": [
+              "立案",
+              "调查"
+            ],
+            "hit_count": 2
+          }
+        ],
+        "relevance_reason": "归入财富赛道，主题为监管处罚，命中关键词：立案、调查。",
+        "reason": "归入财富赛道，主题为监管处罚，命中关键词：立案、调查。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          ],
+          "compliance_notes": [
+            "该条含监管/处罚信号，客户广告文案需完成内部合规审查后再上线"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "监管处罚"
+        }
+      },
+      {
         "id": "40ed7a1c86af89c0",
         "title": "德龙汇能凭什么10天拉了6个板",
         "url": "https://finance.eastmoney.com/a/202608133840772319.html",
@@ -5807,6 +5870,55 @@
         }
       },
       {
+        "id": "563ab20e19cb661b",
+        "title": "养老金增持股名单出炉！下周2股解禁比例超50%（附股）",
+        "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmanm8480768.shtml",
+        "source": "今日热榜-新浪财经新闻",
+        "source_type": "热榜",
+        "rank": 7,
+        "extra": "1,114",
+        "heat": {
+          "value": 1114,
+          "unit": "",
+          "raw": "1,114"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.47,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
         "id": "92a45296f3074d4e",
         "title": "中芯国际华虹宏力二季度业绩齐增",
         "url": "https://finance.eastmoney.com/a/202608133840755654.html",
@@ -5956,17 +6068,17 @@
         }
       },
       {
-        "id": "25736c97f808ddf3",
-        "title": "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
-        "url": "https://finance.sina.com.cn/tob/2026-08-15/doc-ininmane3330830.shtml",
+        "id": "8bb4f182cec0ee5e",
+        "title": "社保基金、QFII调仓动向曝光！QFII大幅加仓的绩优股出炉",
+        "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininiyyx8841052.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 10,
-        "extra": "1,621",
+        "extra": "968",
         "heat": {
-          "value": 1621,
+          "value": 968,
           "unit": "",
-          "raw": "1,621"
+          "raw": "968"
         },
         "published_at": "",
         "sector": "财富",
@@ -5993,56 +6105,7 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "686731cc88ff3f80",
-        "title": "养老金增持股名单出炉！下周2股解禁比例超50%（附股）",
-        "url": "https://m.21jingji.com/article/20260815/herald/b1bac9bb38b8f21d9c1ce367e314357e.html",
-        "source": "今日热榜-21财经",
-        "source_type": "热榜",
-        "rank": 11,
-        "extra": "投资",
-        "heat": {
-          "value": 0,
-          "unit": "",
-          "raw": "投资"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.47,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
+            "面向基金公司/理财子客户准备「新发基金解读 + 定投教育」内容和投放方案"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -6658,11 +6721,11 @@
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 2,
-        "extra": "2.2万",
+        "extra": "2.5万",
         "heat": {
-          "value": 22000,
+          "value": 25000,
           "unit": "万",
-          "raw": "2.2万"
+          "raw": "2.5万"
         },
         "published_at": "",
         "sector": "财富",
@@ -6829,7 +6892,7 @@
         "url": "http://caifuhao.eastmoney.com/news/20260815074124413512120",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
-        "rank": 6,
+        "rank": 7,
         "extra": "1.7万",
         "heat": {
           "value": 17000,
@@ -6878,64 +6941,6 @@
             "该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情"
           ],
           "topic_type": "风险暴露"
-        }
-      },
-      {
-        "id": "cf5f8be1d17973e6",
-        "title": "贵州茅台半年报：净利下滑，“i茅台”猛增274%",
-        "url": "https://www.gelonghui.com/p/6083352",
-        "source": "今日热榜-格隆汇",
-        "source_type": "热榜",
-        "rank": 7,
-        "extra": "",
-        "heat": {
-          "value": 0,
-          "unit": "",
-          "raw": ""
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "经营承压",
-        "confidence": 0.43,
-        "matched_rules": [
-          {
-            "topic_type": "经营承压",
-            "keywords": [
-              "下滑"
-            ],
-            "hit_count": 1
-          }
-        ],
-        "relevance_reason": "归入财富赛道，主题为经营承压，命中关键词：下滑。",
-        "reason": "归入财富赛道，主题为经营承压，命中关键词：下滑。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "经营承压"
         }
       },
       {
@@ -6997,74 +7002,17 @@
         }
       },
       {
-        "id": "9800fa9e6ce38a53",
-        "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
-        "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
-        "source": "今日热榜-股吧",
-        "source_type": "热榜",
-        "rank": 10,
-        "extra": "280",
-        "heat": {
-          "value": 280,
-          "unit": "",
-          "raw": "280"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "增长改善",
-        "confidence": 0.43,
-        "matched_rules": [
-          {
-            "topic_type": "增长改善",
-            "keywords": [
-              "增长"
-            ],
-            "hit_count": 1
-          }
-        ],
-        "relevance_reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
-        "reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以「保费增长、新业务价值改善」为话题，向寿险/财险品牌客户沟通品牌 + 投放计划"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "增长改善"
-        }
-      },
-      {
         "id": "1a343c22c345aa67",
         "title": "时间的玫瑰凋零了吗? 贵州茅台净利润下滑，30万散户成功接盘还是抄底?",
         "url": "http://caifuhao.eastmoney.com/news/20260815081758697239460",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
-        "rank": 11,
-        "extra": "542",
+        "rank": 10,
+        "extra": "564",
         "heat": {
-          "value": 542,
+          "value": 564,
           "unit": "",
-          "raw": "542"
+          "raw": "564"
         },
         "published_at": "",
         "sector": "财富",
@@ -7112,17 +7060,74 @@
         }
       },
       {
+        "id": "9800fa9e6ce38a53",
+        "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
+        "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
+        "source": "今日热榜-股吧",
+        "source_type": "热榜",
+        "rank": 11,
+        "extra": "301",
+        "heat": {
+          "value": 301,
+          "unit": "",
+          "raw": "301"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "增长改善",
+        "confidence": 0.43,
+        "matched_rules": [
+          {
+            "topic_type": "增长改善",
+            "keywords": [
+              "增长"
+            ],
+            "hit_count": 1
+          }
+        ],
+        "relevance_reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
+        "reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "以「保费增长、新业务价值改善」为话题，向寿险/财险品牌客户沟通品牌 + 投放计划"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "增长改善"
+        }
+      },
+      {
         "id": "157dd059f41237be",
         "title": "液冷赛道硬核标的，依米康对比英维克：被低估的温控力量，估值修复一触即发！---摘自《曰明月朗》",
         "url": "http://caifuhao.eastmoney.com/news/20260815062607689192260",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
-        "rank": 14,
-        "extra": "1473",
+        "rank": 15,
+        "extra": "1538",
         "heat": {
-          "value": 1473,
+          "value": 1538,
           "unit": "",
-          "raw": "1473"
+          "raw": "1538"
         },
         "published_at": "",
         "sector": "财富",
@@ -7270,17 +7275,17 @@
         }
       },
       {
-        "id": "c8988ea2762ad5e7",
-        "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
-        "url": "https://wallstreetcn.com/articles/3779437",
+        "id": "a4449e53f46c0ec1",
+        "title": "8月，华尔街的“牛市”又回来了，“赌性”也回来了",
+        "url": "https://wallstreetcn.com/articles/3779498",
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 1,
-        "extra": "10.7万",
+        "extra": "8.3万",
         "heat": {
-          "value": 107000,
+          "value": 83000,
           "unit": "万",
-          "raw": "10.7万"
+          "raw": "8.3万"
         },
         "published_at": "",
         "sector": "财富",
@@ -7419,9 +7424,9 @@
         }
       },
       {
-        "id": "62088499cb606f44",
-        "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
-        "url": "https://www.gelonghui.com/p/6083953",
+        "id": "7d4cf334cdff7cb4",
+        "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
+        "url": "https://www.gelonghui.com/p/6083390",
         "source": "今日热榜-格隆汇",
         "source_type": "热榜",
         "rank": 1,
@@ -7475,11 +7480,11 @@
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 1,
-        "extra": "1027",
+        "extra": "1211",
         "heat": {
-          "value": 1027,
+          "value": 1211,
           "unit": "",
-          "raw": "1027"
+          "raw": "1211"
         },
         "published_at": "",
         "sector": "财富",
@@ -7524,11 +7529,11 @@
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 1,
-        "extra": "1192",
+        "extra": "1301",
         "heat": {
-          "value": 1192,
+          "value": 1301,
           "unit": "",
-          "raw": "1192"
+          "raw": "1301"
         },
         "published_at": "",
         "sector": "财富",
@@ -7768,17 +7773,17 @@
         }
       },
       {
-        "id": "a4449e53f46c0ec1",
-        "title": "8月，华尔街的“牛市”又回来了，“赌性”也回来了",
-        "url": "https://wallstreetcn.com/articles/3779498",
+        "id": "c8988ea2762ad5e7",
+        "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
+        "url": "https://wallstreetcn.com/articles/3779437",
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 2,
-        "extra": "7.9万",
+        "extra": "5.9万",
         "heat": {
-          "value": 79000,
+          "value": 59000,
           "unit": "万",
-          "raw": "7.9万"
+          "raw": "5.9万"
         },
         "published_at": "",
         "sector": "财富",
@@ -7968,9 +7973,9 @@
         }
       },
       {
-        "id": "7d4cf334cdff7cb4",
-        "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
-        "url": "https://www.gelonghui.com/p/6083390",
+        "id": "62088499cb606f44",
+        "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
+        "url": "https://www.gelonghui.com/p/6083953",
         "source": "今日热榜-格隆汇",
         "source_type": "热榜",
         "rank": 2,
@@ -8024,11 +8029,11 @@
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 2,
-        "extra": "2055",
+        "extra": "2072",
         "heat": {
-          "value": 2055,
+          "value": 2072,
           "unit": "",
-          "raw": "2055"
+          "raw": "2072"
         },
         "published_at": "",
         "sector": "财富",
@@ -8416,17 +8421,17 @@
         }
       },
       {
-        "id": "52efa3faf2cb310a",
-        "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
-        "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
+        "id": "1b0650f3936092d3",
+        "title": "多少人输给了经验，千万别让过往的成功变成通向未来的枷锁！",
+        "url": "http://caifuhao.eastmoney.com/news/20260815184728882986550",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 3,
-        "extra": "2825",
+        "extra": "272",
         "heat": {
-          "value": 2825,
+          "value": 272,
           "unit": "",
-          "raw": "2825"
+          "raw": "272"
         },
         "published_at": "",
         "sector": "财富",
@@ -8472,11 +8477,11 @@
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 3,
-        "extra": "455",
+        "extra": "471",
         "heat": {
-          "value": 455,
+          "value": 471,
           "unit": "",
-          "raw": "455"
+          "raw": "471"
         },
         "published_at": "",
         "sector": "财富",
@@ -8672,11 +8677,11 @@
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 4,
-        "extra": "4.5万",
+        "extra": "4.7万",
         "heat": {
-          "value": 45000,
+          "value": 47000,
           "unit": "万",
-          "raw": "4.5万"
+          "raw": "4.7万"
         },
         "published_at": "",
         "sector": "财富",
@@ -8864,17 +8869,17 @@
         }
       },
       {
-        "id": "1b0650f3936092d3",
-        "title": "多少人输给了经验，千万别让过往的成功变成通向未来的枷锁！",
-        "url": "http://caifuhao.eastmoney.com/news/20260815184728882986550",
+        "id": "52efa3faf2cb310a",
+        "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
+        "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 4,
-        "extra": "229",
+        "extra": "3104",
         "heat": {
-          "value": 229,
+          "value": 3104,
           "unit": "",
-          "raw": "229"
+          "raw": "3104"
         },
         "published_at": "",
         "sector": "财富",
@@ -8920,11 +8925,11 @@
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 4,
-        "extra": "306",
+        "extra": "397",
         "heat": {
-          "value": 306,
+          "value": 397,
           "unit": "",
-          "raw": "306"
+          "raw": "397"
         },
         "published_at": "",
         "sector": "财富",
@@ -9120,11 +9125,11 @@
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 5,
-        "extra": "4.0万",
+        "extra": "4.2万",
         "heat": {
-          "value": 40000,
+          "value": 42000,
           "unit": "万",
-          "raw": "4.0万"
+          "raw": "4.2万"
         },
         "published_at": "",
         "sector": "财富",
@@ -9164,17 +9169,17 @@
         }
       },
       {
-        "id": "3e752af79936d43a",
-        "title": "直击印尼7.7级强震：建筑剧烈摇晃倒塌 民众拼命奔逃 海水大幅度退潮",
-        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkfhv8779742.shtml",
+        "id": "acc49ba54a5a79fb",
+        "title": "段永平、李录，最新美股持仓曝光！",
+        "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininkmqn3568631.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 5,
-        "extra": "2,789",
+        "extra": "1,262",
         "heat": {
-          "value": 2789,
+          "value": 1262,
           "unit": "",
-          "raw": "2,789"
+          "raw": "1,262"
         },
         "published_at": "",
         "sector": "财富",
@@ -9203,6 +9208,55 @@
           "suggested_actions": [
             "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
             "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
+        "id": "45241c87345cb392",
+        "title": "520元/股！宇树科技，未上市先疯抢！场外“暗盘”兴起，谁在豪赌？",
+        "url": "https://wallstreetcn.com/articles/3779509",
+        "source": "今日热榜-华尔街见闻",
+        "source_type": "热榜",
+        "rank": 5,
+        "extra": "券商中国",
+        "heat": {
+          "value": 0,
+          "unit": "",
+          "raw": "券商中国"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.35,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -9314,17 +9368,17 @@
         }
       },
       {
-        "id": "aabf41311aaa308e",
-        "title": "汇金、证金退出茅台意味着什么？",
-        "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
+        "id": "7afa3086b8815766",
+        "title": "出什么事了？近期北向资金疯狂买入A股第一真龙，业绩大涨330%，日赚4000万的低估真龙要起飞？",
+        "url": "http://caifuhao.eastmoney.com/news/20260815190403903212950",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 5,
-        "extra": "1753",
+        "extra": "1.0万",
         "heat": {
-          "value": 1753,
-          "unit": "",
-          "raw": "1753"
+          "value": 10000,
+          "unit": "万",
+          "raw": "1.0万"
         },
         "published_at": "",
         "sector": "财富",
@@ -9364,17 +9418,17 @@
         }
       },
       {
-        "id": "94e2fbe707debbb3",
-        "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
-        "url": "https://www.jisilu.cn/question/524430",
+        "id": "5984b072edb0d55c",
+        "title": "低估了100多万的威力",
+        "url": "https://www.jisilu.cn/question/524447",
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 5,
-        "extra": "232",
+        "extra": "315",
         "heat": {
-          "value": 232,
+          "value": 315,
           "unit": "",
-          "raw": "232"
+          "raw": "315"
         },
         "published_at": "",
         "sector": "财富",
@@ -9401,13 +9455,14 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "【风险提示】负面风险/违约类新闻集中，建议客户调低「承诺型/收益型」创意比例，增加品牌安全词包"
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
           ],
           "compliance_notes": [
-            "涉及收益/回报型说法，广告不得使用绝对化措辞，需披露投资风险"
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
           ],
           "risk_notes": [
-            "该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情"
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
           ],
           "topic_type": "一般资讯"
         }
@@ -9613,67 +9668,17 @@
         }
       },
       {
-        "id": "ef35123866677777",
-        "title": "A股牛市第三阶段的新叙事",
-        "url": "https://wallstreetcn.com/articles/3779505",
-        "source": "今日热榜-华尔街见闻",
-        "source_type": "热榜",
-        "rank": 6,
-        "extra": "3.9万",
-        "heat": {
-          "value": 39000,
-          "unit": "万",
-          "raw": "3.9万"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "25cbff030dbb0b28",
-        "title": "唐守正同志逝世",
-        "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhu1995098.shtml",
+        "id": "2ae067d8451b0462",
+        "title": "“积极信号”！万亿级赛道，崛起新力量",
+        "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmane3331449.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 6,
-        "extra": "2,477",
+        "extra": "1,255",
         "heat": {
-          "value": 2477,
+          "value": 1255,
           "unit": "",
-          "raw": "2,477"
+          "raw": "1,255"
         },
         "published_at": "",
         "sector": "财富",
@@ -9912,17 +9917,17 @@
         }
       },
       {
-        "id": "204a0f7e01dd4a62",
-        "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
-        "url": "https://www.jisilu.cn/question/524443",
-        "source": "今日热榜-集思录",
+        "id": "df6891c6c53c05c4",
+        "title": "“宝丰能源”赚嗨了！",
+        "url": "http://caifuhao.eastmoney.com/news/20260815221441815620760",
+        "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 6,
-        "extra": "312",
+        "extra": "8622",
         "heat": {
-          "value": 312,
+          "value": 8622,
           "unit": "",
-          "raw": "312"
+          "raw": "8622"
         },
         "published_at": "",
         "sector": "财富",
@@ -9957,6 +9962,55 @@
           ],
           "risk_notes": [
             "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
+        "id": "94e2fbe707debbb3",
+        "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
+        "url": "https://www.jisilu.cn/question/524430",
+        "source": "今日热榜-集思录",
+        "source_type": "热榜",
+        "rank": 6,
+        "extra": "248",
+        "heat": {
+          "value": 248,
+          "unit": "",
+          "raw": "248"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.35,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "【风险提示】负面风险/违约类新闻集中，建议客户调低「承诺型/收益型」创意比例，增加品牌安全词包"
+          ],
+          "compliance_notes": [
+            "涉及收益/回报型说法，广告不得使用绝对化措辞，需披露投资风险"
+          ],
+          "risk_notes": [
+            "该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情"
           ],
           "topic_type": "一般资讯"
         }
@@ -10112,17 +10166,17 @@
         }
       },
       {
-        "id": "1db62f3fdc16a7d0",
-        "title": "上半年各地财政运行情况如何？31个省区市“晒账本”",
-        "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininiyyv2382012.shtml",
-        "source": "今日热榜-新浪财经新闻",
+        "id": "ef35123866677777",
+        "title": "A股牛市第三阶段的新叙事",
+        "url": "https://wallstreetcn.com/articles/3779505",
+        "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 7,
-        "extra": "1,736",
+        "extra": "4.1万",
         "heat": {
-          "value": 1736,
-          "unit": "",
-          "raw": "1,736"
+          "value": 41000,
+          "unit": "万",
+          "raw": "4.1万"
         },
         "published_at": "",
         "sector": "财富",
@@ -10312,17 +10366,67 @@
         }
       },
       {
-        "id": "5984b072edb0d55c",
-        "title": "低估了100多万的威力",
-        "url": "https://www.jisilu.cn/question/524447",
+        "id": "d95be0aef665f081",
+        "title": "伯克希尔Q2大手笔加仓谷歌，Alphabet跃居第三",
+        "url": "https://www.gelonghui.com/p/6083886",
+        "source": "今日热榜-格隆汇",
+        "source_type": "热榜",
+        "rank": 7,
+        "extra": "",
+        "heat": {
+          "value": 0,
+          "unit": "",
+          "raw": ""
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.35,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
+        "id": "204a0f7e01dd4a62",
+        "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
+        "url": "https://www.jisilu.cn/question/524443",
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 7,
-        "extra": "177",
+        "extra": "326",
         "heat": {
-          "value": 177,
+          "value": 326,
           "unit": "",
-          "raw": "177"
+          "raw": "326"
         },
         "published_at": "",
         "sector": "财富",
@@ -10566,11 +10670,11 @@
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 8,
-        "extra": "3.8万",
+        "extra": "3.9万",
         "heat": {
-          "value": 38000,
+          "value": 39000,
           "unit": "万",
-          "raw": "3.8万"
+          "raw": "3.9万"
         },
         "published_at": "",
         "sector": "财富",
@@ -10598,56 +10702,6 @@
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
             "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "c3fcb801b1ae10a4",
-        "title": "特朗普威胁宣布霍尔木兹为美国领土，美国将对伊朗采取“前所未见”的经济手段",
-        "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiusu3749972.shtml",
-        "source": "今日热榜-新浪财经新闻",
-        "source_type": "热榜",
-        "rank": 8,
-        "extra": "1,722",
-        "heat": {
-          "value": 1722,
-          "unit": "",
-          "raw": "1,722"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -10759,9 +10813,9 @@
         }
       },
       {
-        "id": "d95be0aef665f081",
-        "title": "伯克希尔Q2大手笔加仓谷歌，Alphabet跃居第三",
-        "url": "https://www.gelonghui.com/p/6083886",
+        "id": "21cd00c521d2f641",
+        "title": "英伟达或削减对OpenAI的2500亿美元担保承诺",
+        "url": "https://www.gelonghui.com/p/6083384",
         "source": "今日热榜-格隆汇",
         "source_type": "热榜",
         "rank": 8,
@@ -10796,8 +10850,8 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容",
+            "面向支付结算/担保/AMC 等客户准备场景解决方案、案例研究型内容"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -10809,17 +10863,17 @@
         }
       },
       {
-        "id": "5cde078b90848c6d",
-        "title": "业绩暴增694%，日赚5000万！机器人赛道的\"印钞机\"来了，社保、养老已经提前上车？",
-        "url": "http://caifuhao.eastmoney.com/news/20260815173501922025920",
+        "id": "aabf41311aaa308e",
+        "title": "汇金、证金退出茅台意味着什么？",
+        "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 8,
-        "extra": "3198",
+        "extra": "1957",
         "heat": {
-          "value": 3198,
+          "value": 1957,
           "unit": "",
-          "raw": "3198"
+          "raw": "1957"
         },
         "published_at": "",
         "sector": "财富",
@@ -10846,7 +10900,8 @@
         "item_suggestions": {
           "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
           "suggested_actions": [
-            "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
           ],
           "compliance_notes": [
             "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -11064,11 +11119,11 @@
         "source": "今日热榜-华尔街见闻",
         "source_type": "热榜",
         "rank": 9,
-        "extra": "3.4万",
+        "extra": "3.5万",
         "heat": {
-          "value": 34000,
+          "value": 35000,
           "unit": "万",
-          "raw": "3.4万"
+          "raw": "3.5万"
         },
         "published_at": "",
         "sector": "财富",
@@ -11107,17 +11162,17 @@
         }
       },
       {
-        "id": "5423790975818e5a",
-        "title": "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
-        "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyyv2371423.shtml",
+        "id": "d661dc272e6311f0",
+        "title": "8月15日收盘：美股三大指数周五收跌，标普500周线三连阳",
+        "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiqkw3862105.shtml",
         "source": "今日热榜-新浪财经新闻",
         "source_type": "热榜",
         "rank": 9,
-        "extra": "1,704",
+        "extra": "1,008",
         "heat": {
-          "value": 1704,
+          "value": 1008,
           "unit": "",
-          "raw": "1,704"
+          "raw": "1,008"
         },
         "published_at": "",
         "sector": "财富",
@@ -11207,117 +11262,17 @@
         }
       },
       {
-        "id": "21cd00c521d2f641",
-        "title": "英伟达或削减对OpenAI的2500亿美元担保承诺",
-        "url": "https://www.gelonghui.com/p/6083384",
-        "source": "今日热榜-格隆汇",
-        "source_type": "热榜",
-        "rank": 9,
-        "extra": "",
-        "heat": {
-          "value": 0,
-          "unit": "",
-          "raw": ""
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容",
-            "面向支付结算/担保/AMC 等客户准备场景解决方案、案例研究型内容"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "df6891c6c53c05c4",
-        "title": "“宝丰能源”赚嗨了！",
-        "url": "http://caifuhao.eastmoney.com/news/20260815221441815620760",
-        "source": "今日热榜-股吧",
-        "source_type": "热榜",
-        "rank": 9,
-        "extra": "7831",
-        "heat": {
-          "value": 7831,
-          "unit": "",
-          "raw": "7831"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
         "id": "953c825ab5e3b5db",
         "title": "力合转债下修到底——两次下修+下修到底，促转股意图拉满",
         "url": "https://www.jisilu.cn/question/524445",
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 9,
-        "extra": "75",
+        "extra": "94",
         "heat": {
-          "value": 75,
+          "value": 94,
           "unit": "",
-          "raw": "75"
+          "raw": "94"
         },
         "published_at": "",
         "sector": "财富",
@@ -11705,6 +11660,56 @@
         }
       },
       {
+        "id": "00f32a15feaa7830",
+        "title": "特朗普宣称“很快”将霍尔木兹海峡划为美国领土",
+        "url": "https://www.gelonghui.com/p/6083415",
+        "source": "今日热榜-格隆汇",
+        "source_type": "热榜",
+        "rank": 10,
+        "extra": "",
+        "heat": {
+          "value": 0,
+          "unit": "",
+          "raw": ""
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.35,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
         "id": "9aed4e6e7989423d",
         "title": "直击业绩会｜京东2026年第二季度业绩发布电话会议",
         "url": "https://www.yicai.com/live/103316295.html",
@@ -12054,6 +12059,56 @@
         }
       },
       {
+        "id": "52738afad69db8a7",
+        "title": "我理解的存储和兆易创新",
+        "url": "http://caifuhao.eastmoney.com/news/20260815215640890556460",
+        "source": "今日热榜-股吧",
+        "source_type": "热榜",
+        "rank": 12,
+        "extra": "3545",
+        "heat": {
+          "value": 3545,
+          "unit": "",
+          "raw": "3545"
+        },
+        "published_at": "",
+        "sector": "财富",
+        "topic_type": "一般资讯",
+        "confidence": 0.35,
+        "matched_rules": [],
+        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+        "customer_segments": [
+          "公募/私募基金品牌",
+          "信托/财富管理公司",
+          "券商资管/投顾业务",
+          "养老金/养老金融产品",
+          "高净值客户服务"
+        ],
+        "actions": [
+          "联系基金、理财、信托、券商资管客户沟通推广计划",
+          "准备市场回暖、基金发行、养老金开户等素材",
+          "安排财富客户内容种草+产品跳转组合投放"
+        ],
+        "classified_by": "keyword",
+        "item_suggestions": {
+          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+          "suggested_actions": [
+            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          ],
+          "compliance_notes": [
+            "常规审查：年化利率、风险提示、资质披露、个保法合规"
+          ],
+          "risk_notes": [
+            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+          ],
+          "topic_type": "一般资讯"
+        }
+      },
+      {
         "id": "94ddf5bec4a00289",
         "title": "聊聊铝的分析方法",
         "url": "http://xueqiu.com/1006269237/404989839",
@@ -12154,17 +12209,17 @@
         }
       },
       {
-        "id": "52738afad69db8a7",
-        "title": "我理解的存储和兆易创新",
-        "url": "http://caifuhao.eastmoney.com/news/20260815215640890556460",
+        "id": "17629948fad122f5",
+        "title": "超跌反弹基本结束，小盘情绪票分化后继续",
+        "url": "http://caifuhao.eastmoney.com/news/20260815113713616857710",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
         "rank": 13,
-        "extra": "2984",
+        "extra": "1159",
         "heat": {
-          "value": 2984,
+          "value": 1159,
           "unit": "",
-          "raw": "2984"
+          "raw": "1159"
         },
         "published_at": "",
         "sector": "财富",
@@ -12365,56 +12420,6 @@
           "value": 0,
           "unit": "",
           "raw": "全球"
-        },
-        "published_at": "",
-        "sector": "财富",
-        "topic_type": "一般资讯",
-        "confidence": 0.35,
-        "matched_rules": [],
-        "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-        "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-        "customer_segments": [
-          "公募/私募基金品牌",
-          "信托/财富管理公司",
-          "券商资管/投顾业务",
-          "养老金/养老金融产品",
-          "高净值客户服务"
-        ],
-        "actions": [
-          "联系基金、理财、信托、券商资管客户沟通推广计划",
-          "准备市场回暖、基金发行、养老金开户等素材",
-          "安排财富客户内容种草+产品跳转组合投放"
-        ],
-        "classified_by": "keyword",
-        "item_suggestions": {
-          "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-          "suggested_actions": [
-            "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-            "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-          ],
-          "compliance_notes": [
-            "常规审查：年化利率、风险提示、资质披露、个保法合规"
-          ],
-          "risk_notes": [
-            "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-          ],
-          "topic_type": "一般资讯"
-        }
-      },
-      {
-        "id": "17629948fad122f5",
-        "title": "超跌反弹基本结束，小盘情绪票分化后继续",
-        "url": "http://caifuhao.eastmoney.com/news/20260815113713616857710",
-        "source": "今日热榜-股吧",
-        "source_type": "热榜",
-        "rank": 15,
-        "extra": "1113",
-        "heat": {
-          "value": 1113,
-          "unit": "",
-          "raw": "1113"
         },
         "published_at": "",
         "sector": "财富",
@@ -12718,12 +12723,12 @@
         "url": "http://caifuhao.eastmoney.com/news/20260815205050488185350",
         "source": "今日热榜-股吧",
         "source_type": "热榜",
-        "rank": 12,
-        "extra": "288",
+        "rank": 14,
+        "extra": "338",
         "heat": {
-          "value": 288,
+          "value": 338,
           "unit": "",
-          "raw": "288"
+          "raw": "338"
         },
         "published_at": "",
         "sector": "银行",
@@ -13265,11 +13270,11 @@
         "source": "今日热榜-集思录",
         "source_type": "热榜",
         "rank": 8,
-        "extra": "196",
+        "extra": "210",
         "heat": {
-          "value": 196,
+          "value": 210,
           "unit": "",
-          "raw": "196"
+          "raw": "210"
         },
         "published_at": "",
         "sector": "银行",
@@ -15207,17 +15212,17 @@
       }
     },
     {
-      "id": "c8988ea2762ad5e7",
-      "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
-      "url": "https://wallstreetcn.com/articles/3779437",
+      "id": "a4449e53f46c0ec1",
+      "title": "8月，华尔街的“牛市”又回来了，“赌性”也回来了",
+      "url": "https://wallstreetcn.com/articles/3779498",
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 1,
-      "extra": "10.7万",
+      "extra": "8.3万",
       "heat": {
-        "value": 107000,
+        "value": 83000,
         "unit": "万",
-        "raw": "10.7万"
+        "raw": "8.3万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15257,17 +15262,17 @@
       }
     },
     {
-      "id": "a4449e53f46c0ec1",
-      "title": "8月，华尔街的“牛市”又回来了，“赌性”也回来了",
-      "url": "https://wallstreetcn.com/articles/3779498",
+      "id": "c8988ea2762ad5e7",
+      "title": "美股指小幅收跌，存储、光通信股集体拉升，闪迪涨超7%，金油齐涨，美债跌",
+      "url": "https://wallstreetcn.com/articles/3779437",
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 2,
-      "extra": "7.9万",
+      "extra": "5.9万",
       "heat": {
-        "value": 79000,
+        "value": 59000,
         "unit": "万",
-        "raw": "7.9万"
+        "raw": "5.9万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15363,11 +15368,11 @@
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 4,
-      "extra": "4.5万",
+      "extra": "4.7万",
       "heat": {
-        "value": 45000,
+        "value": 47000,
         "unit": "万",
-        "raw": "4.5万"
+        "raw": "4.7万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15413,61 +15418,11 @@
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 5,
-      "extra": "4.0万",
+      "extra": "4.2万",
       "heat": {
-        "value": 40000,
+        "value": 42000,
         "unit": "万",
-        "raw": "4.0万"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "ef35123866677777",
-      "title": "A股牛市第三阶段的新叙事",
-      "url": "https://wallstreetcn.com/articles/3779505",
-      "source": "今日热榜-华尔街见闻",
-      "source_type": "热榜",
-      "rank": 6,
-      "extra": "3.9万",
-      "heat": {
-        "value": 39000,
-        "unit": "万",
-        "raw": "3.9万"
+        "raw": "4.2万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15512,12 +15467,12 @@
       "url": "https://wallstreetcn.com/articles/3779512",
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
-      "rank": 7,
-      "extra": "3.8万",
+      "rank": 6,
+      "extra": "4.1万",
       "heat": {
-        "value": 38000,
+        "value": 41000,
         "unit": "万",
-        "raw": "3.8万"
+        "raw": "4.1万"
       },
       "published_at": "",
       "sector": "信贷",
@@ -15556,17 +15511,67 @@
       }
     },
     {
+      "id": "ef35123866677777",
+      "title": "A股牛市第三阶段的新叙事",
+      "url": "https://wallstreetcn.com/articles/3779505",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "4.1万",
+      "heat": {
+        "value": 41000,
+        "unit": "万",
+        "raw": "4.1万"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
       "id": "1afa0094fac2e8c0",
       "title": "“AI版金融创新”：CDO vs CCO=2008 vs 2026？",
       "url": "https://wallstreetcn.com/articles/3779499",
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 8,
-      "extra": "3.8万",
+      "extra": "3.9万",
       "heat": {
-        "value": 38000,
+        "value": 39000,
         "unit": "万",
-        "raw": "3.8万"
+        "raw": "3.9万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15611,11 +15616,11 @@
       "source": "今日热榜-华尔街见闻",
       "source_type": "热榜",
       "rank": 9,
-      "extra": "3.4万",
+      "extra": "3.5万",
       "heat": {
-        "value": 34000,
+        "value": 35000,
         "unit": "万",
-        "raw": "3.4万"
+        "raw": "3.5万"
       },
       "published_at": "",
       "sector": "财富",
@@ -15704,17 +15709,17 @@
       }
     },
     {
-      "id": "942344e64a1afc27",
-      "title": "特朗普：“很快会宣布霍尔木兹海峡为美国领土”",
-      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyys3646083.shtml",
+      "id": "5423790975818e5a",
+      "title": "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
+      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyyv2371423.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 1,
-      "extra": "6,072",
+      "extra": "1,704",
       "heat": {
-        "value": 6072,
+        "value": 1704,
         "unit": "",
-        "raw": "6,072"
+        "raw": "1,704"
       },
       "published_at": "",
       "sector": "信贷",
@@ -15754,22 +15759,22 @@
       }
     },
     {
-      "id": "197d37bcf94a3a17",
-      "title": "520元/股！宇树科技未上市先疯抢！场外“暗盘”兴起 谁在豪赌？",
-      "url": "https://finance.sina.com.cn/stock/relnews/cn/2026-08-15/doc-ininkfht2353963.shtml",
+      "id": "25736c97f808ddf3",
+      "title": "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
+      "url": "https://finance.sina.com.cn/tob/2026-08-15/doc-ininmane3330830.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 2,
-      "extra": "3,656",
+      "extra": "1,621",
       "heat": {
-        "value": 3656,
+        "value": 1621,
         "unit": "",
-        "raw": "3,656"
+        "raw": "1,621"
       },
       "published_at": "",
       "sector": "信贷",
       "topic_type": "一般资讯",
-      "confidence": 0.35,
+      "confidence": 0.47,
       "matched_rules": [],
       "relevance_reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
       "reason": "为增强信贷赛道新闻覆盖，按来源或关键词相关性归入该赛道。",
@@ -15803,17 +15808,17 @@
       }
     },
     {
-      "id": "edb13bfc430ea945",
-      "title": "央行明确新信号 利率端改革多点推进",
-      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininikcc2669662.shtml",
+      "id": "025fb93d17cf566d",
+      "title": "胖东来再招20名刑释人员，于东来：首批刑释职工无人离职",
+      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkrwr8632413.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 3,
-      "extra": "3,354",
+      "extra": "1,520",
       "heat": {
-        "value": 3354,
+        "value": 1520,
         "unit": "",
-        "raw": "3,354"
+        "raw": "1,520"
       },
       "published_at": "",
       "sector": "信贷",
@@ -15840,7 +15845,8 @@
       "item_suggestions": {
         "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
         "suggested_actions": [
-          "围绕利率变动准备「产品对比 + 场景案例」型内容，面向零售信贷/存款/信用卡客户沟通"
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
         ],
         "compliance_notes": [
           "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -15852,17 +15858,17 @@
       }
     },
     {
-      "id": "9751a548d265a6d9",
-      "title": "伊朗首次展示美军机残骸 想传递什么信息？",
-      "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkmqn3523688.shtml",
+      "id": "756eaad91283d314",
+      "title": "特朗普爆粗口：“没有比这更大的侮辱”",
+      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkmqt8725573.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 4,
-      "extra": "3,319",
+      "extra": "1,429",
       "heat": {
-        "value": 3319,
+        "value": 1429,
         "unit": "",
-        "raw": "3,319"
+        "raw": "1,429"
       },
       "published_at": "",
       "sector": "信贷",
@@ -15902,17 +15908,17 @@
       }
     },
     {
-      "id": "3e752af79936d43a",
-      "title": "直击印尼7.7级强震：建筑剧烈摇晃倒塌 民众拼命奔逃 海水大幅度退潮",
-      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininkfhv8779742.shtml",
+      "id": "acc49ba54a5a79fb",
+      "title": "段永平、李录，最新美股持仓曝光！",
+      "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininkmqn3568631.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 5,
-      "extra": "2,789",
+      "extra": "1,262",
       "heat": {
-        "value": 2789,
+        "value": 1262,
         "unit": "",
-        "raw": "2,789"
+        "raw": "1,262"
       },
       "published_at": "",
       "sector": "财富",
@@ -15952,17 +15958,17 @@
       }
     },
     {
-      "id": "25cbff030dbb0b28",
-      "title": "唐守正同志逝世",
-      "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkfhu1995098.shtml",
+      "id": "2ae067d8451b0462",
+      "title": "“积极信号”！万亿级赛道，崛起新力量",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmane3331449.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 6,
-      "extra": "2,477",
+      "extra": "1,255",
       "heat": {
-        "value": 2477,
+        "value": 1255,
         "unit": "",
-        "raw": "2,477"
+        "raw": "1,255"
       },
       "published_at": "",
       "sector": "财富",
@@ -16002,167 +16008,17 @@
       }
     },
     {
-      "id": "1db62f3fdc16a7d0",
-      "title": "上半年各地财政运行情况如何？31个省区市“晒账本”",
-      "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininiyyv2382012.shtml",
+      "id": "563ab20e19cb661b",
+      "title": "养老金增持股名单出炉！下周2股解禁比例超50%（附股）",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-08-15/doc-ininmanm8480768.shtml",
       "source": "今日热榜-新浪财经新闻",
       "source_type": "热榜",
       "rank": 7,
-      "extra": "1,736",
+      "extra": "1,114",
       "heat": {
-        "value": 1736,
+        "value": 1114,
         "unit": "",
-        "raw": "1,736"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "c3fcb801b1ae10a4",
-      "title": "特朗普威胁宣布霍尔木兹为美国领土，美国将对伊朗采取“前所未见”的经济手段",
-      "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiusu3749972.shtml",
-      "source": "今日热榜-新浪财经新闻",
-      "source_type": "热榜",
-      "rank": 8,
-      "extra": "1,722",
-      "heat": {
-        "value": 1722,
-        "unit": "",
-        "raw": "1,722"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "5423790975818e5a",
-      "title": "中央气象台预警:今天到明天 浙江、福建、广东、广西、云南等地有大到暴雨 浙江东部有大暴雨 局地有雷暴大风",
-      "url": "https://finance.sina.com.cn/roll/2026-08-15/doc-ininiyyv2371423.shtml",
-      "source": "今日热榜-新浪财经新闻",
-      "source_type": "热榜",
-      "rank": 9,
-      "extra": "1,704",
-      "heat": {
-        "value": 1704,
-        "unit": "",
-        "raw": "1,704"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "25736c97f808ddf3",
-      "title": "魏牌V8X上市：搭载双VLA原生AI舱驾智能体，限时权益价22.68万元起",
-      "url": "https://finance.sina.com.cn/tob/2026-08-15/doc-ininmane3330830.shtml",
-      "source": "今日热榜-新浪财经新闻",
-      "source_type": "热榜",
-      "rank": 10,
-      "extra": "1,621",
-      "heat": {
-        "value": 1621,
-        "unit": "",
-        "raw": "1,621"
+        "raw": "1,114"
       },
       "published_at": "",
       "sector": "财富",
@@ -16189,7 +16045,165 @@
       "item_suggestions": {
         "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
         "suggested_actions": [
-          "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
+          "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "25684677ecc936e6",
+      "title": "郭德纲被立案调查，湖北文旅厅回应，此前西安站演出已取消",
+      "url": "https://finance.sina.com.cn/jjxw/2026-08-15/doc-ininkrwr8660094.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "1,098",
+      "heat": {
+        "value": 1098,
+        "unit": "",
+        "raw": "1,098"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "监管处罚",
+      "confidence": 0.51,
+      "matched_rules": [
+        {
+          "topic_type": "监管处罚",
+          "keywords": [
+            "立案",
+            "调查"
+          ],
+          "hit_count": 2
+        }
+      ],
+      "relevance_reason": "归入财富赛道，主题为监管处罚，命中关键词：立案、调查。",
+      "reason": "归入财富赛道，主题为监管处罚，命中关键词：立案、调查。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "该条含监管/处罚信号，客户广告文案需完成内部合规审查后再上线"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "监管处罚"
+      }
+    },
+    {
+      "id": "d661dc272e6311f0",
+      "title": "8月15日收盘：美股三大指数周五收跌，标普500周线三连阳",
+      "url": "https://finance.sina.com.cn/world/2026-08-15/doc-ininiqkw3862105.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "1,008",
+      "heat": {
+        "value": 1008,
+        "unit": "",
+        "raw": "1,008"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "8bb4f182cec0ee5e",
+      "title": "社保基金、QFII调仓动向曝光！QFII大幅加仓的绩优股出炉",
+      "url": "https://finance.sina.com.cn/stock/zqgd/2026-08-15/doc-ininiyyx8841052.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "968",
+      "heat": {
+        "value": 968,
+        "unit": "",
+        "raw": "968"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.47,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "面向基金公司/理财子客户准备「新发基金解读 + 定投教育」内容和投放方案"
         ],
         "compliance_notes": [
           "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -16714,55 +16728,6 @@
       }
     },
     {
-      "id": "686731cc88ff3f80",
-      "title": "养老金增持股名单出炉！下周2股解禁比例超50%（附股）",
-      "url": "https://m.21jingji.com/article/20260815/herald/b1bac9bb38b8f21d9c1ce367e314357e.html",
-      "source": "今日热榜-21财经",
-      "source_type": "热榜",
-      "rank": 11,
-      "extra": "投资",
-      "heat": {
-        "value": 0,
-        "unit": "",
-        "raw": "投资"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.47,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
       "id": "ca336b2961f97329",
       "title": "宇树人形机器人下线1.8万台，但上半年被智元反超",
       "url": "https://m.21jingji.com/article/20260815/herald/ec0b6e6821489bd662d1234377d1a6cb.html",
@@ -17073,6 +17038,55 @@
         "value": 0,
         "unit": "",
         "raw": ""
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "45241c87345cb392",
+      "title": "520元/股！宇树科技，未上市先疯抢！场外“暗盘”兴起，谁在豪赌？",
+      "url": "https://wallstreetcn.com/articles/3779509",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "券商中国",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "券商中国"
       },
       "published_at": "",
       "sector": "财富",
@@ -17931,9 +17945,9 @@
       }
     },
     {
-      "id": "62088499cb606f44",
-      "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
-      "url": "https://www.gelonghui.com/p/6083953",
+      "id": "7d4cf334cdff7cb4",
+      "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
+      "url": "https://www.gelonghui.com/p/6083390",
       "source": "今日热榜-格隆汇",
       "source_type": "热榜",
       "rank": 1,
@@ -17981,9 +17995,9 @@
       }
     },
     {
-      "id": "7d4cf334cdff7cb4",
-      "title": "金川国际（02362.HK）中报验证成长逻辑，刚果（金）精矿禁令短期扰动有限、中长期红利确定",
-      "url": "https://www.gelonghui.com/p/6083390",
+      "id": "62088499cb606f44",
+      "title": "英伟达披露SpaceX持仓：210亿美元押注马斯克火箭",
+      "url": "https://www.gelonghui.com/p/6083953",
       "source": "今日热榜-格隆汇",
       "source_type": "热榜",
       "rank": 2,
@@ -18230,70 +18244,12 @@
       }
     },
     {
-      "id": "cf5f8be1d17973e6",
-      "title": "贵州茅台半年报：净利下滑，“i茅台”猛增274%",
-      "url": "https://www.gelonghui.com/p/6083352",
-      "source": "今日热榜-格隆汇",
-      "source_type": "热榜",
-      "rank": 7,
-      "extra": "",
-      "heat": {
-        "value": 0,
-        "unit": "",
-        "raw": ""
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "经营承压",
-      "confidence": 0.43,
-      "matched_rules": [
-        {
-          "topic_type": "经营承压",
-          "keywords": [
-            "下滑"
-          ],
-          "hit_count": 1
-        }
-      ],
-      "relevance_reason": "归入财富赛道，主题为经营承压，命中关键词：下滑。",
-      "reason": "归入财富赛道，主题为经营承压，命中关键词：下滑。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "经营承压"
-      }
-    },
-    {
       "id": "d95be0aef665f081",
       "title": "伯克希尔Q2大手笔加仓谷歌，Alphabet跃居第三",
       "url": "https://www.gelonghui.com/p/6083886",
       "source": "今日热榜-格隆汇",
       "source_type": "热榜",
-      "rank": 8,
+      "rank": 7,
       "extra": "",
       "heat": {
         "value": 0,
@@ -18343,7 +18299,7 @@
       "url": "https://www.gelonghui.com/p/6083384",
       "source": "今日热榜-格隆汇",
       "source_type": "热榜",
-      "rank": 9,
+      "rank": 8,
       "extra": "",
       "heat": {
         "value": 0,
@@ -18388,17 +18344,67 @@
       }
     },
     {
+      "id": "00f32a15feaa7830",
+      "title": "特朗普宣称“很快”将霍尔木兹海峡划为美国领土",
+      "url": "https://www.gelonghui.com/p/6083415",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
       "id": "2837ed463de5b495",
       "title": "白酒扛把子增收不增利，消费老登股路在何方？留给白酒的时间不多了。",
       "url": "http://caifuhao.eastmoney.com/news/20260815191619799218990",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
       "rank": 1,
-      "extra": "1027",
+      "extra": "1211",
       "heat": {
-        "value": 1027,
+        "value": 1211,
         "unit": "",
-        "raw": "1027"
+        "raw": "1211"
       },
       "published_at": "",
       "sector": "财富",
@@ -18443,11 +18449,11 @@
       "source": "今日热榜-股吧",
       "source_type": "热榜",
       "rank": 2,
-      "extra": "2.2万",
+      "extra": "2.5万",
       "heat": {
-        "value": 22000,
+        "value": 25000,
         "unit": "万",
-        "raw": "2.2万"
+        "raw": "2.5万"
       },
       "published_at": "",
       "sector": "财富",
@@ -18494,67 +18500,17 @@
       }
     },
     {
-      "id": "52efa3faf2cb310a",
-      "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
-      "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
-      "source": "今日热榜-股吧",
-      "source_type": "热榜",
-      "rank": 3,
-      "extra": "2825",
-      "heat": {
-        "value": 2825,
-        "unit": "",
-        "raw": "2825"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
       "id": "1b0650f3936092d3",
       "title": "多少人输给了经验，千万别让过往的成功变成通向未来的枷锁！",
       "url": "http://caifuhao.eastmoney.com/news/20260815184728882986550",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 4,
-      "extra": "229",
+      "rank": 3,
+      "extra": "272",
       "heat": {
-        "value": 229,
+        "value": 272,
         "unit": "",
-        "raw": "229"
+        "raw": "272"
       },
       "published_at": "",
       "sector": "财富",
@@ -18594,17 +18550,117 @@
       }
     },
     {
-      "id": "aabf41311aaa308e",
-      "title": "汇金、证金退出茅台意味着什么？",
-      "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
+      "id": "52efa3faf2cb310a",
+      "title": "CXO是什么？不卖药却比药企更赚钱，本周暴涨7.96%，排名第一，下周或继续逼空？",
+      "url": "http://caifuhao.eastmoney.com/news/20260815172853855285220",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "3104",
+      "heat": {
+        "value": 3104,
+        "unit": "",
+        "raw": "3104"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "7afa3086b8815766",
+      "title": "出什么事了？近期北向资金疯狂买入A股第一真龙，业绩大涨330%，日赚4000万的低估真龙要起飞？",
+      "url": "http://caifuhao.eastmoney.com/news/20260815190403903212950",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
       "rank": 5,
-      "extra": "1753",
+      "extra": "1.0万",
       "heat": {
-        "value": 1753,
+        "value": 10000,
+        "unit": "万",
+        "raw": "1.0万"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "df6891c6c53c05c4",
+      "title": "“宝丰能源”赚嗨了！",
+      "url": "http://caifuhao.eastmoney.com/news/20260815221441815620760",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "8622",
+      "heat": {
+        "value": 8622,
         "unit": "",
-        "raw": "1753"
+        "raw": "8622"
       },
       "published_at": "",
       "sector": "财富",
@@ -18649,7 +18705,7 @@
       "url": "http://caifuhao.eastmoney.com/news/20260815074124413512120",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 6,
+      "rank": 7,
       "extra": "1.7万",
       "heat": {
         "value": 17000,
@@ -18701,66 +18757,17 @@
       }
     },
     {
-      "id": "5cde078b90848c6d",
-      "title": "业绩暴增694%，日赚5000万！机器人赛道的\"印钞机\"来了，社保、养老已经提前上车？",
-      "url": "http://caifuhao.eastmoney.com/news/20260815173501922025920",
+      "id": "aabf41311aaa308e",
+      "title": "汇金、证金退出茅台意味着什么？",
+      "url": "http://caifuhao.eastmoney.com/news/20260815181037865573850",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
       "rank": 8,
-      "extra": "3198",
+      "extra": "1957",
       "heat": {
-        "value": 3198,
+        "value": 1957,
         "unit": "",
-        "raw": "3198"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "准备养老金融专题内容，面向养老险、养老理财、个人养老金开户类客户推送"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "df6891c6c53c05c4",
-      "title": "“宝丰能源”赚嗨了！",
-      "url": "http://caifuhao.eastmoney.com/news/20260815221441815620760",
-      "source": "今日热榜-股吧",
-      "source_type": "热榜",
-      "rank": 9,
-      "extra": "7831",
-      "heat": {
-        "value": 7831,
-        "unit": "",
-        "raw": "7831"
+        "raw": "1957"
       },
       "published_at": "",
       "sector": "财富",
@@ -18800,74 +18807,17 @@
       }
     },
     {
-      "id": "9800fa9e6ce38a53",
-      "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
-      "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
-      "source": "今日热榜-股吧",
-      "source_type": "热榜",
-      "rank": 10,
-      "extra": "280",
-      "heat": {
-        "value": 280,
-        "unit": "",
-        "raw": "280"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "增长改善",
-      "confidence": 0.43,
-      "matched_rules": [
-        {
-          "topic_type": "增长改善",
-          "keywords": [
-            "增长"
-          ],
-          "hit_count": 1
-        }
-      ],
-      "relevance_reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
-      "reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以「保费增长、新业务价值改善」为话题，向寿险/财险品牌客户沟通品牌 + 投放计划"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "增长改善"
-      }
-    },
-    {
       "id": "1a343c22c345aa67",
       "title": "时间的玫瑰凋零了吗? 贵州茅台净利润下滑，30万散户成功接盘还是抄底?",
       "url": "http://caifuhao.eastmoney.com/news/20260815081758697239460",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 11,
-      "extra": "542",
+      "rank": 10,
+      "extra": "564",
       "heat": {
-        "value": 542,
+        "value": 564,
         "unit": "",
-        "raw": "542"
+        "raw": "564"
       },
       "published_at": "",
       "sector": "财富",
@@ -18915,45 +18865,52 @@
       }
     },
     {
-      "id": "3772e80cf8778cf9",
-      "title": "最坏时刻已过？平安银行上半年三大亮点，三重隐患",
-      "url": "http://caifuhao.eastmoney.com/news/20260815205050488185350",
+      "id": "9800fa9e6ce38a53",
+      "title": "营收稳健、i茅台增长274.18% 贵州茅台半年报：改革筑底，长期增长空间全面打开",
+      "url": "http://caifuhao.eastmoney.com/news/20260815164314473447780",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 12,
-      "extra": "288",
+      "rank": 11,
+      "extra": "301",
       "heat": {
-        "value": 288,
+        "value": 301,
         "unit": "",
-        "raw": "288"
+        "raw": "301"
       },
       "published_at": "",
-      "sector": "银行",
-      "topic_type": "一般资讯",
-      "confidence": 0.59,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入银行赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入银行赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 零售信贷：LPR下调窗口，突出利率优惠和审批效率\n• 信用卡：权益升级、新卡种发布、分期费率优惠\n• 私行/财富：高净值客户资产配置、家族传承需求\n• 存款产品：利率对比、安全性背书、专属服务\n\n【内容角度】\n• 产品对比：不同期限、不同银行产品差异\n• 场景营销：装修贷款、购车分期、旅游消费\n• 品牌故事：数字化转型成果、服务创新案例",
-      "marketing_angle": "【投放切入点】\n• 零售信贷：LPR下调窗口，突出利率优惠和审批效率\n• 信用卡：权益升级、新卡种发布、分期费率优惠\n• 私行/财富：高净值客户资产配置、家族传承需求\n• 存款产品：利率对比、安全性背书、专属服务\n\n【内容角度】\n• 产品对比：不同期限、不同银行产品差异\n• 场景营销：装修贷款、购车分期、旅游消费\n• 品牌故事：数字化转型成果、服务创新案例",
+      "sector": "财富",
+      "topic_type": "增长改善",
+      "confidence": 0.43,
+      "matched_rules": [
+        {
+          "topic_type": "增长改善",
+          "keywords": [
+            "增长"
+          ],
+          "hit_count": 1
+        }
+      ],
+      "relevance_reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
+      "reason": "归入财富赛道，主题为增长改善，命中关键词：增长。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
       "customer_segments": [
-        "银行零售信贷广告主",
-        "信用卡/消费分期品牌",
-        "私行/财富管理运营",
-        "中小企业信贷部门",
-        "存款/理财产品营销"
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
       ],
       "actions": [
-        "盘点零售信贷、信用卡、私行/财富客户营销机会",
-        "准备品牌故事+效果转化素材组合",
-        "联动银行客户做投放方案沟通"
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
       ],
       "classified_by": "keyword",
       "item_suggestions": {
-        "suggested_advertisers": "银行零售信贷、信用卡/消费分期品牌、私行/财富运营、中小企业信贷部、存款/理财营销团队",
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
         "suggested_actions": [
-          "以该条新闻为话题，面向银行零售信贷、信用卡/消费分期品牌、私行/财富运营、中小企业信贷部、存款/理财营销团队沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+          "以「保费增长、新业务价值改善」为话题，向寿险/财险品牌客户沟通品牌 + 投放计划"
         ],
         "compliance_notes": [
           "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -18961,7 +18918,7 @@
         "risk_notes": [
           "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
         ],
-        "topic_type": "一般资讯"
+        "topic_type": "增长改善"
       }
     },
     {
@@ -18970,12 +18927,12 @@
       "url": "http://caifuhao.eastmoney.com/news/20260815215640890556460",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 13,
-      "extra": "2984",
+      "rank": 12,
+      "extra": "3545",
       "heat": {
-        "value": 2984,
+        "value": 3545,
         "unit": "",
-        "raw": "2984"
+        "raw": "3545"
       },
       "published_at": "",
       "sector": "财富",
@@ -19015,17 +18972,117 @@
       }
     },
     {
+      "id": "17629948fad122f5",
+      "title": "超跌反弹基本结束，小盘情绪票分化后继续",
+      "url": "http://caifuhao.eastmoney.com/news/20260815113713616857710",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 13,
+      "extra": "1159",
+      "heat": {
+        "value": 1159,
+        "unit": "",
+        "raw": "1159"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "3772e80cf8778cf9",
+      "title": "最坏时刻已过？平安银行上半年三大亮点，三重隐患",
+      "url": "http://caifuhao.eastmoney.com/news/20260815205050488185350",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 14,
+      "extra": "338",
+      "heat": {
+        "value": 338,
+        "unit": "",
+        "raw": "338"
+      },
+      "published_at": "",
+      "sector": "银行",
+      "topic_type": "一般资讯",
+      "confidence": 0.59,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入银行赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入银行赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 零售信贷：LPR下调窗口，突出利率优惠和审批效率\n• 信用卡：权益升级、新卡种发布、分期费率优惠\n• 私行/财富：高净值客户资产配置、家族传承需求\n• 存款产品：利率对比、安全性背书、专属服务\n\n【内容角度】\n• 产品对比：不同期限、不同银行产品差异\n• 场景营销：装修贷款、购车分期、旅游消费\n• 品牌故事：数字化转型成果、服务创新案例",
+      "marketing_angle": "【投放切入点】\n• 零售信贷：LPR下调窗口，突出利率优惠和审批效率\n• 信用卡：权益升级、新卡种发布、分期费率优惠\n• 私行/财富：高净值客户资产配置、家族传承需求\n• 存款产品：利率对比、安全性背书、专属服务\n\n【内容角度】\n• 产品对比：不同期限、不同银行产品差异\n• 场景营销：装修贷款、购车分期、旅游消费\n• 品牌故事：数字化转型成果、服务创新案例",
+      "customer_segments": [
+        "银行零售信贷广告主",
+        "信用卡/消费分期品牌",
+        "私行/财富管理运营",
+        "中小企业信贷部门",
+        "存款/理财产品营销"
+      ],
+      "actions": [
+        "盘点零售信贷、信用卡、私行/财富客户营销机会",
+        "准备品牌故事+效果转化素材组合",
+        "联动银行客户做投放方案沟通"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "银行零售信贷、信用卡/消费分期品牌、私行/财富运营、中小企业信贷部、存款/理财营销团队",
+        "suggested_actions": [
+          "以该条新闻为话题，面向银行零售信贷、信用卡/消费分期品牌、私行/财富运营、中小企业信贷部、存款/理财营销团队沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
       "id": "157dd059f41237be",
       "title": "液冷赛道硬核标的，依米康对比英维克：被低估的温控力量，估值修复一触即发！---摘自《曰明月朗》",
       "url": "http://caifuhao.eastmoney.com/news/20260815062607689192260",
       "source": "今日热榜-股吧",
       "source_type": "热榜",
-      "rank": 14,
-      "extra": "1473",
+      "rank": 15,
+      "extra": "1538",
       "heat": {
-        "value": 1473,
+        "value": 1538,
         "unit": "",
-        "raw": "1473"
+        "raw": "1538"
       },
       "published_at": "",
       "sector": "财富",
@@ -19073,67 +19130,17 @@
       }
     },
     {
-      "id": "17629948fad122f5",
-      "title": "超跌反弹基本结束，小盘情绪票分化后继续",
-      "url": "http://caifuhao.eastmoney.com/news/20260815113713616857710",
-      "source": "今日热榜-股吧",
-      "source_type": "热榜",
-      "rank": 15,
-      "extra": "1113",
-      "heat": {
-        "value": 1113,
-        "unit": "",
-        "raw": "1113"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
       "id": "b8503400a41151b7",
       "title": "茅台雷了？",
       "url": "https://www.jisilu.cn/question/524431",
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 1,
-      "extra": "1192",
+      "extra": "1301",
       "heat": {
-        "value": 1192,
+        "value": 1301,
         "unit": "",
-        "raw": "1192"
+        "raw": "1301"
       },
       "published_at": "",
       "sector": "财富",
@@ -19179,11 +19186,11 @@
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 2,
-      "extra": "2055",
+      "extra": "2072",
       "heat": {
-        "value": 2055,
+        "value": 2072,
         "unit": "",
-        "raw": "2055"
+        "raw": "2072"
       },
       "published_at": "",
       "sector": "财富",
@@ -19229,11 +19236,11 @@
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 3,
-      "extra": "455",
+      "extra": "471",
       "heat": {
-        "value": 455,
+        "value": 471,
         "unit": "",
-        "raw": "455"
+        "raw": "471"
       },
       "published_at": "",
       "sector": "财富",
@@ -19279,110 +19286,11 @@
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 4,
-      "extra": "306",
+      "extra": "397",
       "heat": {
-        "value": 306,
+        "value": 397,
         "unit": "",
-        "raw": "306"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
-          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "94e2fbe707debbb3",
-      "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
-      "url": "https://www.jisilu.cn/question/524430",
-      "source": "今日热榜-集思录",
-      "source_type": "热榜",
-      "rank": 5,
-      "extra": "232",
-      "heat": {
-        "value": 232,
-        "unit": "",
-        "raw": "232"
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.35,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "【风险提示】负面风险/违约类新闻集中，建议客户调低「承诺型/收益型」创意比例，增加品牌安全词包"
-        ],
-        "compliance_notes": [
-          "涉及收益/回报型说法，广告不得使用绝对化措辞，需披露投资风险"
-        ],
-        "risk_notes": [
-          "该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "204a0f7e01dd4a62",
-      "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
-      "url": "https://www.jisilu.cn/question/524443",
-      "source": "今日热榜-集思录",
-      "source_type": "热榜",
-      "rank": 6,
-      "extra": "312",
-      "heat": {
-        "value": 312,
-        "unit": "",
-        "raw": "312"
+        "raw": "397"
       },
       "published_at": "",
       "sector": "财富",
@@ -19427,12 +19335,111 @@
       "url": "https://www.jisilu.cn/question/524447",
       "source": "今日热榜-集思录",
       "source_type": "热榜",
-      "rank": 7,
-      "extra": "177",
+      "rank": 5,
+      "extra": "315",
       "heat": {
-        "value": 177,
+        "value": 315,
         "unit": "",
-        "raw": "177"
+        "raw": "315"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "94e2fbe707debbb3",
+      "title": "假如我创业，而不是选择做投资，我的收益与风险分析",
+      "url": "https://www.jisilu.cn/question/524430",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "248",
+      "heat": {
+        "value": 248,
+        "unit": "",
+        "raw": "248"
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.35,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "【风险提示】负面风险/违约类新闻集中，建议客户调低「承诺型/收益型」创意比例，增加品牌安全词包"
+        ],
+        "compliance_notes": [
+          "涉及收益/回报型说法，广告不得使用绝对化措辞，需披露投资风险"
+        ],
+        "risk_notes": [
+          "该条含负面风险信号，建议客户临时暂停高风险创意并关注品牌舆情"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "204a0f7e01dd4a62",
+      "title": "特纸转债 会不会强赎，五洲特纸会不被柚子利用，看个图",
+      "url": "https://www.jisilu.cn/question/524443",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "326",
+      "heat": {
+        "value": 326,
+        "unit": "",
+        "raw": "326"
       },
       "published_at": "",
       "sector": "财富",
@@ -19478,11 +19485,11 @@
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 8,
-      "extra": "196",
+      "extra": "210",
       "heat": {
-        "value": 196,
+        "value": 210,
         "unit": "",
-        "raw": "196"
+        "raw": "210"
       },
       "published_at": "",
       "sector": "银行",
@@ -19527,11 +19534,11 @@
       "source": "今日热榜-集思录",
       "source_type": "热榜",
       "rank": 9,
-      "extra": "75",
+      "extra": "94",
       "heat": {
-        "value": 75,
+        "value": 94,
         "unit": "",
-        "raw": "75"
+        "raw": "94"
       },
       "published_at": "",
       "sector": "财富",
@@ -21142,55 +21149,6 @@
         "suggested_actions": [
           "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
           "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
-        ],
-        "compliance_notes": [
-          "常规审查：年化利率、风险提示、资质披露、个保法合规"
-        ],
-        "risk_notes": [
-          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
-        ],
-        "topic_type": "一般资讯"
-      }
-    },
-    {
-      "id": "f24de3ed6f212e7e",
-      "title": "社保基金、QFII调仓动向曝光！QFII大幅加仓的绩优股出炉",
-      "url": "https://finance.eastmoney.com/a/202608153842312840.html",
-      "source": "东方财富-财经",
-      "source_type": "财经媒体",
-      "rank": 15,
-      "extra": "",
-      "heat": {
-        "value": 0,
-        "unit": "",
-        "raw": ""
-      },
-      "published_at": "",
-      "sector": "财富",
-      "topic_type": "一般资讯",
-      "confidence": 0.59,
-      "matched_rules": [],
-      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
-      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
-      "customer_segments": [
-        "公募/私募基金品牌",
-        "信托/财富管理公司",
-        "券商资管/投顾业务",
-        "养老金/养老金融产品",
-        "高净值客户服务"
-      ],
-      "actions": [
-        "联系基金、理财、信托、券商资管客户沟通推广计划",
-        "准备市场回暖、基金发行、养老金开户等素材",
-        "安排财富客户内容种草+产品跳转组合投放"
-      ],
-      "classified_by": "keyword",
-      "item_suggestions": {
-        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
-        "suggested_actions": [
-          "面向基金公司/理财子客户准备「新发基金解读 + 定投教育」内容和投放方案"
         ],
         "compliance_notes": [
           "常规审查：年化利率、风险提示、资质披露、个保法合规"
@@ -25070,6 +25028,56 @@
         "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
         "suggested_actions": [
           "面向金融科技/综合金融平台客户沟通「AI风控、数字金融」技术展示和案例内容"
+        ],
+        "compliance_notes": [
+          "常规审查：年化利率、风险提示、资质披露、个保法合规"
+        ],
+        "risk_notes": [
+          "常规提醒：关注市场/监管/舆情三方面风险对投放 ROI 的影响"
+        ],
+        "topic_type": "一般资讯"
+      }
+    },
+    {
+      "id": "5c9b026809f47fad",
+      "title": "DeepSeek V4 Pro正式版来了",
+      "url": "https://topic.eastmoney.com/detail/dsv4zsb.html",
+      "source": "东方财富-证券",
+      "source_type": "财经媒体",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": "",
+      "sector": "财富",
+      "topic_type": "一般资讯",
+      "confidence": 0.59,
+      "matched_rules": [],
+      "relevance_reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "reason": "按来源和金融相关性归入财富赛道，未命中更细主题关键词。",
+      "sector_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "marketing_angle": "【投放切入点】\n• 基金发行：市场回暖期首发/新发基金推广\n• 理财产品：净值波动解读，稳健型产品突出\n• 养老金开户：政策红利窗口期，强调税收优惠\n• 券商开户：佣金战、投顾服务升级\n\n【内容角度】\n• 市场解读：宏观经济、行业趋势分析\n• 投资教育：资产配置理念、风险管理\n• 产品测评：不同基金/理财对比分析",
+      "customer_segments": [
+        "公募/私募基金品牌",
+        "信托/财富管理公司",
+        "券商资管/投顾业务",
+        "养老金/养老金融产品",
+        "高净值客户服务"
+      ],
+      "actions": [
+        "联系基金、理财、信托、券商资管客户沟通推广计划",
+        "准备市场回暖、基金发行、养老金开户等素材",
+        "安排财富客户内容种草+产品跳转组合投放"
+      ],
+      "classified_by": "keyword",
+      "item_suggestions": {
+        "suggested_advertisers": "公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构",
+        "suggested_actions": [
+          "以该条新闻为话题，面向公募/私募基金品牌、信托/财富管理公司、券商资管/投顾业务、养老金/养老金融产品方、高净值客户服务机构沟通定制化投放方案",
+          "准备「行业趋势 + 产品机会」型内容，用作品牌投放/内容种草的承接"
         ],
         "compliance_notes": [
           "常规审查：年化利率、风险提示、资质披露、个保法合规"
