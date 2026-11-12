@@ -1,0 +1,5596 @@
+{
+  "fetched_at": "2026-11-13T05:56:42.420545+08:00",
+  "fetched_at_utc": "2026-11-12T21:56:42.420552+00:00",
+  "date": "2026-11-13",
+  "time": "05:56:42",
+  "source_status": [
+    {
+      "name": "东方财富-财经",
+      "url": "https://finance.eastmoney.com/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "东方财富-银行",
+      "url": "https://bank.eastmoney.com/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "东方财富-保险",
+      "url": "https://insurance.eastmoney.com/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "东方财富-证券",
+      "url": "https://stock.eastmoney.com/a/cgsxw.html",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "财联社-电报",
+      "url": "https://www.cls.cn/telegraph",
+      "type": "财经媒体",
+      "items_count": 3,
+      "ok": true
+    },
+    {
+      "name": "财联社-金融",
+      "url": "https://www.cls.cn/finance",
+      "type": "财经媒体",
+      "items_count": 3,
+      "ok": true
+    },
+    {
+      "name": "第一财经",
+      "url": "https://www.yicai.com/news/",
+      "type": "财经媒体",
+      "items_count": 24,
+      "ok": true
+    },
+    {
+      "name": "21财经",
+      "url": "https://www.21jingji.com/channel/readnumber/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "证券时报",
+      "url": "https://www.stcn.com/",
+      "type": "财经媒体",
+      "items_count": 0,
+      "ok": false
+    },
+    {
+      "name": "每日经济新闻",
+      "url": "https://www.nbd.com.cn/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "新浪财经",
+      "url": "https://finance.sina.com.cn/",
+      "type": "财经媒体",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "央行",
+      "url": "https://www.pbc.gov.cn/goutongjiaoliu/113456/113469/index.html",
+      "type": "监管机构",
+      "items_count": 19,
+      "ok": true
+    },
+    {
+      "name": "国家金融监督管理总局",
+      "url": "https://www.nfra.gov.cn/cn/view/pages/index/index.html",
+      "type": "监管机构",
+      "items_count": 5,
+      "ok": true
+    },
+    {
+      "name": "证监会",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/zfxxgk_zdgk.shtml",
+      "type": "监管机构",
+      "items_count": 30,
+      "ok": true
+    },
+    {
+      "name": "财政部",
+      "url": "https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/",
+      "type": "监管机构",
+      "items_count": 23,
+      "ok": true
+    },
+    {
+      "name": "外汇局",
+      "url": "https://www.safe.gov.cn/",
+      "type": "监管机构",
+      "items_count": 30,
+      "ok": true
+    }
+  ],
+  "raw_boards": [
+    {
+      "board_name": "第一财经",
+      "board_subtitle": "新闻排行周榜",
+      "items": [
+        {
+          "id": "fd473d1b4d7fa917",
+          "title": "A股停牌提示：7股今日停牌",
+          "url": "https://www.yicai.com/news/103433381.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "8e9326c9897136d8",
+          "title": "多个小城长满外国人 越来越多外国人来华买买买",
+          "url": "https://www.yicai.com/news/103430754.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b2ae1e0f4a2a916a",
+          "title": "山姆卖始祖鸟加拿大鹅，最高便宜5000元，逻辑是什么｜乐言商业",
+          "url": "https://www.yicai.com/news/103434516.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "1aeef6baab186ebd",
+          "title": "聚焦“双11”｜迪士尼门票0.1元、大平层降价逾300万：噱头还是以价换量",
+          "url": "https://www.yicai.com/news/103436985.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d6db5424a466f5eb",
+          "title": "聚焦“双11”｜金店排长队：验金要等半小时，有人趁机攒够“三金”",
+          "url": "https://www.yicai.com/news/103435747.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "83bca4fd9f2d0fe0",
+          "title": "壹快评｜“居民参保减少8300万”，读懂网民误解背后的真实关切",
+          "url": "https://www.yicai.com/news/103431052.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "e3dda9a150d4c1cf",
+          "title": "晚间公告丨11月9日这些公告有看头",
+          "url": "https://www.yicai.com/news/103432780.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "9ef13d5fc96bc92f",
+          "title": "晚间公告丨11月6日这些公告有看头",
+          "url": "https://www.yicai.com/news/103429837.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7fc6d6cfddc19732",
+          "title": "税款滞纳金上不封顶或将成历史",
+          "url": "https://www.yicai.com/news/103430533.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "07d25261122478d4",
+          "title": "聚焦进博会：婴配粉“技术竞赛”再升级，乳企集体押注全龄营养",
+          "url": "https://www.yicai.com/news/103432102.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "雪球",
+      "board_subtitle": "今日话题",
+      "items": [
+        {
+          "id": "f35a402bd4bf0e50",
+          "title": "A股核心红利股数据观察记录-2026/11/11",
+          "url": "http://www.xueqiu.com/6828304753/416496726",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "14111113193c46a0",
+          "title": "别困在 “持有还是减仓” 里",
+          "url": "http://www.xueqiu.com/8201662520/416436229",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "102b6b4009a82e1d",
+          "title": "招商轮船安全垫探究",
+          "url": "http://www.xueqiu.com/4531216350/416467387",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b7c1ba9747906a6a",
+          "title": "潮水没有退，它只是换了个方向",
+          "url": "http://www.xueqiu.com/5963406195/416497656",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "08d972d4097e4460",
+          "title": "题材炒作和价值投资的根本逻辑",
+          "url": "http://www.xueqiu.com/4957928282/416519336",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ed3418c7cf61a294",
+          "title": "红利和科技是冤家？让我用七年数据里的三个反常识，告诉你跷跷板是个错觉。",
+          "url": "http://www.xueqiu.com/2884313460/416520968",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "adae73a102a8bcbe",
+          "title": "警惕！纳指ETF溢价超20%，如何应对？（11.12）",
+          "url": "http://www.xueqiu.com/9391624441/416516984",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a79bbdd1c543a83a",
+          "title": "谈谈Anthropic当下的估值与定价博弈",
+          "url": "http://www.xueqiu.com/5332385101/416504716",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "45b9d0a23dbb9c0f",
+          "title": "A股上市企业都是周期股？不值得投资？",
+          "url": "http://www.xueqiu.com/1843761023/416349240",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "fcf437d0f422ffae",
+          "title": "从左侧到右侧：光模块反转还差这八块拼图",
+          "url": "http://www.xueqiu.com/3196557688/416370980",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b3574586f90c5cee",
+          "title": "从CoreWeave财报谈谈新云债务与算力博弈",
+          "url": "http://www.xueqiu.com/5332385101/416357406",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 11,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7e5ce6c2082f15a9",
+          "title": "泡沫不在估值里，而在时间线上",
+          "url": "http://www.xueqiu.com/7271353740/416401769",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 12,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "fc098b2d12a0d10e",
+          "title": "随想387 产能不是开关",
+          "url": "http://www.xueqiu.com/1438190065/416358691",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 13,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "8c7406a64bab5f6b",
+          "title": "2026三季报解读（公共事业）：移动通信、港口、高速、航运",
+          "url": "http://www.xueqiu.com/5385800475/416430804",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 14,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b7e459425ad4cd17",
+          "title": "红利指数的三大流派",
+          "url": "http://www.xueqiu.com/8867390119/416409883",
+          "source": "今日热榜-雪球",
+          "source_type": "热榜",
+          "rank": 15,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "华尔街见闻",
+      "board_subtitle": "日排行",
+      "items": [
+        {
+          "id": "4148517497439f68",
+          "title": "黄仁勋突然离任震动AI行业！英伟达大跌、新云与硬件承压、AMD大涨，Anthropic IPO受审视",
+          "url": "https://wallstreetcn.com/articles/3785829",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "39.1万",
+          "heat": {
+            "value": 391000,
+            "unit": "万",
+            "raw": "39.1万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "52bac26b819f33fb",
+          "title": "黄仁勋再曝新婚外情，董事会准备罢免！英伟达盘后跌幅达8%",
+          "url": "https://wallstreetcn.com/articles/3785765",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "27.2万",
+          "heat": {
+            "value": 272000,
+            "unit": "万",
+            "raw": "27.2万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d200207cfa856978",
+          "title": "今日开会决定“黄仁勋是否下台”！英伟达董事会已开始遴选新CEO，考虑任命过渡CEO",
+          "url": "https://wallstreetcn.com/articles/3785773",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "20.4万",
+          "heat": {
+            "value": 204000,
+            "unit": "万",
+            "raw": "20.4万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "993381079188807f",
+          "title": "“拯救黄仁勋”！马斯克等硅谷大佬集体声援：调查结束前不应解雇",
+          "url": "https://wallstreetcn.com/articles/3785804",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "17.0万",
+          "heat": {
+            "value": 170000,
+            "unit": "万",
+            "raw": "17.0万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "e139ebb61c76c7a7",
+          "title": "华尔街见闻早餐FM-Radio | 2026年11月12日",
+          "url": "https://wallstreetcn.com/articles/3785764",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "12.0万",
+          "heat": {
+            "value": 120000,
+            "unit": "万",
+            "raw": "12.0万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "afb4f80b2af82d94",
+          "title": "黄仁勋辞职，英伟达跌5%，美股三大指数转涨，油价短线上扬",
+          "url": "https://wallstreetcn.com/articles/3785806",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "11.8万",
+          "heat": {
+            "value": 118000,
+            "unit": "万",
+            "raw": "11.8万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "9064238f63132a7d",
+          "title": "AI交易重燃，美股指反弹，CoreWeave飙升24%，美元续涨，黄金跌破4000",
+          "url": "https://wallstreetcn.com/articles/3785732",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "10.8万",
+          "heat": {
+            "value": 108000,
+            "unit": "万",
+            "raw": "10.8万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b32e6da3ee2d365a",
+          "title": "英伟达关于黄仁勋辞职及领导团队调整的声明全文",
+          "url": "https://wallstreetcn.com/articles/3785832",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "9.5万",
+          "heat": {
+            "value": 95000,
+            "unit": "万",
+            "raw": "9.5万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "1e41879bf0abaa8b",
+          "title": "英伟达美股盘后跳水，媒体报道称：黄仁勋曾与英伟达高管有过婚外情",
+          "url": "https://wallstreetcn.com/articles/3785762",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "9.1万",
+          "heat": {
+            "value": 91000,
+            "unit": "万",
+            "raw": "9.1万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a52eb248ea89ef38",
+          "title": "苏姿丰、库克、陈立武…谁能接黄仁勋的班？“Nobody”！分权或是更好的解法",
+          "url": "https://wallstreetcn.com/articles/3785791",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "7.3万",
+          "heat": {
+            "value": 73000,
+            "unit": "万",
+            "raw": "7.3万"
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "新浪财经新闻",
+      "board_subtitle": "点击量排行",
+      "items": [
+        {
+          "id": "994c49553114448d",
+          "title": "意大利国家电力公司首席财务官：集团将于2月公布最新业务计划。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekt1569298.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "1,019",
+          "heat": {
+            "value": 1019,
+            "unit": "",
+            "raw": "1,019"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a97f780a8c5f4c6f",
+          "title": "伦敦可可期货上涨超过3%，至每公吨4011英镑。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekv3713189.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "879",
+          "heat": {
+            "value": 879,
+            "unit": "",
+            "raw": "879"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "efbe7c7425b97203",
+          "title": "国际货币基金组织认为美国通胀将推迟回到美联储2%的目标水平。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypeku8324674.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "798",
+          "heat": {
+            "value": 798,
+            "unit": "",
+            "raw": "798"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "59ab11bde03d8e05",
+          "title": "在岸人民币兑美元夜盘收盘报6.6745，较上一交易日上涨4点。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1470095.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "729",
+          "heat": {
+            "value": 729,
+            "unit": "",
+            "raw": "729"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "56e316132d2b6c42",
+          "title": "Semafor 记者发文称，超微电脑表示 Megaspeed 现在不是、也从未是超微电脑的客户。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypkst3729758.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "700",
+          "heat": {
+            "value": 700,
+            "unit": "",
+            "raw": "700"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c25ba5b4758753ca",
+          "title": "阿根廷国家统计与人口普查研究所（INDEC）数据显示，该国 10 月消费者物价较上月上涨 2.2%。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1470289.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "690",
+          "heat": {
+            "value": 690,
+            "unit": "",
+            "raw": "690"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "25865b5c4c4da3e0",
+          "title": "美联储戴利表示，经济正受到科技繁荣的推动。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypkss8231588.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "665",
+          "heat": {
+            "value": 665,
+            "unit": "",
+            "raw": "665"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "50a2d1281f40bada",
+          "title": "美联储确认将2027年10月会议从FOMC日程中移除后，联邦基金期货10月27日/11月27日价差合约出现一波交易活动",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekp1099867.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "640",
+          "heat": {
+            "value": 640,
+            "unit": "",
+            "raw": "640"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "23b375ec08129652",
+          "title": "微软就宕机事件回应：我们已确认，该问题可能会影响任何地区用户的微软365服务连接。",
+          "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1454620.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "637",
+          "heat": {
+            "value": 637,
+            "unit": "",
+            "raw": "637"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "bf95b9e13cb1056a",
+          "title": "马斯克放出话有意聘用黄仁勋 预测市场借这起风波开展押注",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypekt1532217.shtml",
+          "source": "今日热榜-新浪财经新闻",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "634",
+          "heat": {
+            "value": 634,
+            "unit": "",
+            "raw": "634"
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "21财经",
+      "board_subtitle": "热门",
+      "items": [
+        {
+          "id": "f8359b098cd08d48",
+          "title": "央企十亿订单是如何炼成的？",
+          "url": "https://m.21jingji.com/article/20261112/herald/4f8aa1e2cf2424f6026474fdc23fb135.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "0fef201f42251059",
+          "title": "伦敦金现低见3945美元/盎司",
+          "url": "https://m.21jingji.com/article/20261112/herald/0bb39eddc754a8c9d98fbe4b4304d9a0.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "金融",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "金融"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d9a38bffdee9e9fd",
+          "title": "机器人投资不再只盯“本体”",
+          "url": "https://m.21jingji.com/article/20261112/herald/625d68f132d9cccea3f993a50869508c.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "255fb0253dfee727",
+          "title": "英伟达宣布黄仁勋辞任CEO，董事会寻找继任者",
+          "url": "https://m.21jingji.com/article/20261112/herald/5dcecfa88c4c61a17e2aebdf289ab15e.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "cf03c05ff5a5e983",
+          "title": "英伟达市值跌破4万亿美元，美股科技股重挫，闪迪跌超9%，中概股多数下跌",
+          "url": "https://m.21jingji.com/article/20261112/herald/0792c2fd6bbaf4243cf86cd027e7e428.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "投资",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "投资"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "061f09dbbbd5352b",
+          "title": "巨头算力订单拉动数据中心扩张，AI基建融资路径迎检验",
+          "url": "https://m.21jingji.com/article/20261112/herald/6494d3da3bd064a38049634f713d7ec9.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "411ce9004a85ddd3",
+          "title": "2026年中央八项规定精神贯彻执行情况网络调查问卷正式开启",
+          "url": "https://m.21jingji.com/article/20261110/herald/b990e52ac6155fc133618a84e6688cf5.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "4b5b852312b813ee",
+          "title": "Anthropic“史上最严”封号政策生效，为何选在上市前？",
+          "url": "https://m.21jingji.com/article/20261112/herald/5f11ad1b12b278dc533176b161f35965.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "91bad8b96d4ebfda",
+          "title": "Cloudera刘隶放：企业级AI走向规模化，数据底座成关键",
+          "url": "https://m.21jingji.com/article/20261112/herald/64423554b5eb89d705296cd5059e71a0.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "1f964c524d9167a8",
+          "title": "美国上周初请失业金人数为20万人",
+          "url": "https://m.21jingji.com/timeline/476d8214c348738ff5e7bde3e1fd053a.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "21财经雷达",
+          "heat": {
+            "value": 21,
+            "unit": "",
+            "raw": "21财经雷达"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ab48f550487cb295",
+          "title": "草原上的“星际之门”：AI大厂扎堆乌兰察布",
+          "url": "https://m.21jingji.com/article/20261112/herald/9a36f72bafdcfce8741db45d24f5a519.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 11,
+          "extra": "公司",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "公司"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a4713344882356e8",
+          "title": "多家银行上调！美元定存利率、理财业绩基准均值超4%",
+          "url": "https://m.21jingji.com/article/20261112/herald/d6a41487fd227dd27d975534e3defe88.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 12,
+          "extra": "金融",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "金融"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d358169bc1ca00d5",
+          "title": "连续两周加仓！百亿私募仓位抬升，扎堆调研电子、医药龙头",
+          "url": "https://m.21jingji.com/article/20261112/herald/e27e0b000c81ddec83d8bced4bc251d2.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 13,
+          "extra": "证券",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "证券"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "6e3cedfd82a1a4bb",
+          "title": "越声智投App上线：从工具到陪伴，数智投顾全天候在线",
+          "url": "https://m.21jingji.com/article/20261112/herald/a58ee0723fbe0c039ef7132ae83e3215.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 14,
+          "extra": "投资",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "投资"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "8278bb100727a3d1",
+          "title": "扎根中国，投资中国，百胜中国门店迎来两万家里程碑",
+          "url": "https://m.21jingji.com/article/20261112/herald/050551f6598270315ed06dcac85610f1.html",
+          "source": "今日热榜-21财经",
+          "source_type": "热榜",
+          "rank": 15,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "华尔街见闻",
+      "board_subtitle": "最新资讯",
+      "items": [
+        {
+          "id": "057d4c01200426db",
+          "title": "Cerebras大涨！Q3营收超预期，上调全年业绩指引｜财报见闻",
+          "url": "https://wallstreetcn.com/articles/3785843",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "3f54e9572c6d1f4c",
+          "title": "不用Flash命名，谷歌发布Gemini 4 Hydrogen：幻觉减少5倍，速度翻倍",
+          "url": "https://wallstreetcn.com/articles/3785836",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ecb464c69669e114",
+          "title": "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心",
+          "url": "https://wallstreetcn.com/articles/3785835",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "f542f590b1e52f68",
+          "title": "思科预计全年调整后每股收益（EPS）为5.47-5.53美元，公司原本预计预期5.05-5.11美元",
+          "url": "https://wallstreetcn.com/articles/3785840",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c710df133fddbe16",
+          "title": "史上最大IPO蓄势待发：Anthropic IPO据称获约六倍超额认购",
+          "url": "https://wallstreetcn.com/articles/3785841",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "4148517497439f68",
+          "title": "黄仁勋突然离任震动AI行业！英伟达大跌、新云与硬件承压、AMD大涨，Anthropic IPO受审视",
+          "url": "https://wallstreetcn.com/articles/3785829",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "杨宸、卜淑情",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "杨宸、卜淑情"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "1ac9e5bb391c1a5f",
+          "title": "黄仁勋再次被曝与第二名女员工有染",
+          "url": "https://wallstreetcn.com/articles/3785837",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "2faa627cb50e308d",
+          "title": "英伟达新任董事会主席致全体员工：公司实力源于团队、技术和生态",
+          "url": "https://wallstreetcn.com/articles/3785834",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "5d4e5c2fe7c629ba",
+          "title": "通胀就业双重暴击！12月到底加25还是50bp？",
+          "url": "https://wallstreetcn.com/member/articles/3785727",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "afb4f80b2af82d94",
+          "title": "黄仁勋辞职，英伟达跌5%，美股三大指数转涨，油价短线上扬",
+          "url": "https://wallstreetcn.com/articles/3785806",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "卜淑情、张雅琦、杨宸",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "卜淑情、张雅琦、杨宸"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c82e10e839db1c10",
+          "title": "见闻历11.11大促最后1天！买日历送超千元知识礼包，送什么都不如送“搞钱的智慧”！",
+          "url": "https://wallstreetcn.com/articles/3782813",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 11,
+          "extra": "华尔街见闻",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "华尔街见闻"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "83f6188b1e0959c4",
+          "title": "美国成屋销售跌至16年低点，高利率与通胀持续压制购房需求",
+          "url": "https://wallstreetcn.com/articles/3785831",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 12,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b32e6da3ee2d365a",
+          "title": "英伟达关于黄仁勋辞职及领导团队调整的声明全文",
+          "url": "https://wallstreetcn.com/articles/3785832",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 13,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "2f29e5ce434241ac",
+          "title": "美联储哈马克：需进一步加息以压制通胀",
+          "url": "https://wallstreetcn.com/articles/3785828",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 14,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "dfb5d918d69b543c",
+          "title": "OpenAI融资缩水新证？据称新一轮已融150亿美元，最初目标300亿",
+          "url": "https://wallstreetcn.com/articles/3785830",
+          "source": "今日热榜-华尔街见闻",
+          "source_type": "热榜",
+          "rank": 15,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "第一财经商业数据中心",
+      "board_subtitle": "CBNData资讯",
+      "items": [
+        {
+          "id": "b908538a53721ee8",
+          "title": "胖东来“卡蓓诺洗发水”疑云",
+          "url": "https://cbndata.com/information/296009",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "青眼",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "青眼"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "54c59918c95d169a",
+          "title": "被“高蛋白”包围的年轻人：吃不起、补不够、躲不过",
+          "url": "https://cbndata.com/information/296008",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "后浪OhYouth",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "后浪OhYouth"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c9ab0aa5097899d3",
+          "title": "大肥鱼取代豆包，DeepSeek 被用户共创 OC 带火了",
+          "url": "https://cbndata.com/information/296007",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "TopMarketing",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "TopMarketing"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "19150b596a91dea1",
+          "title": "寿喜烧赛道洗牌时刻：热度分化下的生存博弈",
+          "url": "https://cbndata.com/information/296006",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "餐企老板内参",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "餐企老板内参"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "91cfd5ed1fbaf9bc",
+          "title": "SKIMS 千元圣诞盲盒翻车，“像从车座缝里抠出来的破烂”惹怒中产？",
+          "url": "https://cbndata.com/information/296005",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "Vista氢商业",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "Vista氢商业"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d47d53b3b943c4f3",
+          "title": "在奥莱，运动品牌拒绝“掉价”",
+          "url": "https://cbndata.com/information/296004",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "体育产业生态圈",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "体育产业生态圈"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ee7288cebe402db3",
+          "title": "保暖内衣年销176亿：从穿在里面到穿得出去",
+          "url": "https://cbndata.com/information/296003",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "魔镜洞察",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "魔镜洞察"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "fbae91e7cb5f8164",
+          "title": "卡牌赛道遇冷，Hitcard 为何另寻上市路径？",
+          "url": "https://cbndata.com/information/296002",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "剁椒Spicy",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "剁椒Spicy"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "924616e61c683018",
+          "title": "HYROX 赛场走红的鼻贴，为什么成了资本青睐的 “明星装备”？",
+          "url": "https://cbndata.com/information/296001",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "精练GymSquare",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "精练GymSquare"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d6678f01ca227988",
+          "title": "拼不过门店规模，7-Eleven 靠什么在广东突围？",
+          "url": "https://cbndata.com/information/296000",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "灵兽",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "灵兽"
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "格隆汇",
+      "board_subtitle": "热文日排行",
+      "items": [
+        {
+          "id": "1a32d7813176573c",
+          "title": "早报（11.12）| AI交易一夜沸腾，英伟达盘后狂泻逾10%！黄仁勋再曝出轨女下属，董事会或考虑罢免；霍尔木兹海峡突传大消息！",
+          "url": "https://www.gelonghui.com/p/7392758",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "73c3fcec0a83d7e4",
+          "title": "AI正在杀死廉价劳动力",
+          "url": "https://www.gelonghui.com/p/7410196",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "3ddb00a8ae185d93",
+          "title": "A股收评：创业板指跌2.44%，贵金属、游戏股大跌",
+          "url": "https://www.gelonghui.com/p/7406590",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "18c67298ada474f8",
+          "title": "港股收评：恒指险守24000点！贵金属重挫，半导体回落",
+          "url": "https://www.gelonghui.com/p/7407761",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "8962260ae5233b7d",
+          "title": "24小时环球政经要闻 | 11月12日",
+          "url": "https://www.gelonghui.com/p/7392760",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "50c3c9b02bc94fd6",
+          "title": "预测市场数据速览：谁能成为英伟达下一任CEO？",
+          "url": "https://www.gelonghui.com/p/7394384",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "e4f86300818c8cee",
+          "title": "造船业确立上行周期、船用配套加速国产替代，中国联塑(2128.HK)高端工业管道卡位海洋经济",
+          "url": "https://www.gelonghui.com/p/7405569",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "016554fb7fba71e0",
+          "title": "如果英伟达没有了黄仁勋",
+          "url": "https://www.gelonghui.com/p/7398721",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "012397d61dec8d44",
+          "title": "谷歌内部测试Gemini 4“Hydrogen”，主打速度与效率",
+          "url": "https://www.gelonghui.com/p/7392751",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "34106cef5a2a4693",
+          "title": "中芯国际即将放榜，几大核心关注点",
+          "url": "https://www.gelonghui.com/p/7407086",
+          "source": "今日热榜-格隆汇",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "股吧",
+      "board_subtitle": "热榜",
+      "items": [
+        {
+          "id": "5b318cee8b081d85",
+          "title": "惊天大瓜: 刚刚黄仁勋和英伟达分道扬镳，要来中国创立中伟达?",
+          "url": "http://caifuhao.eastmoney.com/news/20261112221505666826860",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "5.9万",
+          "heat": {
+            "value": 59000,
+            "unit": "万",
+            "raw": "5.9万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "e7aaa9cb5b9e6a03",
+          "title": "操作丨硬科技大幅冲高回落，市场抛压加剧！怎么看？",
+          "url": "http://caifuhao.eastmoney.com/news/20261112140908199693020",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "1.1万",
+          "heat": {
+            "value": 11000,
+            "unit": "万",
+            "raw": "1.1万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "eaf4addcf887dc15",
+          "title": "冲高回落 做好一个准备",
+          "url": "http://caifuhao.eastmoney.com/news/20261112145054618381220",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "2.2万",
+          "heat": {
+            "value": 22000,
+            "unit": "万",
+            "raw": "2.2万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "cf61ab8029b18dea",
+          "title": "亏到怀疑策略",
+          "url": "http://caifuhao.eastmoney.com/news/20261112224326282388750",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "429",
+          "heat": {
+            "value": 429,
+            "unit": "",
+            "raw": "429"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "faface7da6177f91",
+          "title": "跟踪新疆广汇集团动作的轨迹，剖析它会如何解决广汇汽车危机，2027年决战，重生。",
+          "url": "http://caifuhao.eastmoney.com/news/20261112202902968048300",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "1286",
+          "heat": {
+            "value": 1286,
+            "unit": "",
+            "raw": "1286"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "f9b3a1ad9c31d33f",
+          "title": "黄仁勋再曝婚外情，要被英伟达罢免了！",
+          "url": "http://caifuhao.eastmoney.com/news/20261112083256856416420",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "16.4万",
+          "heat": {
+            "value": 164000,
+            "unit": "万",
+            "raw": "16.4万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "c5672935e5b55748",
+          "title": "黄仁勋再曝婚外情，英伟达大跌8%，董事长要换人？",
+          "url": "http://caifuhao.eastmoney.com/news/20261112075030316126940",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "9.2万",
+          "heat": {
+            "value": 92000,
+            "unit": "万",
+            "raw": "9.2万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "aac5861b99ca3e07",
+          "title": "科技暴涨 央妈助攻 今天红周四？",
+          "url": "http://caifuhao.eastmoney.com/news/20261112064843665132650",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "2.9万",
+          "heat": {
+            "value": 29000,
+            "unit": "万",
+            "raw": "2.9万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "311b79770065c2c6",
+          "title": "全球首个！信诺维旗下首个创新药获批上市",
+          "url": "http://caifuhao.eastmoney.com/news/20261112145740000114010",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "886",
+          "heat": {
+            "value": 886,
+            "unit": "",
+            "raw": "886"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "3ab751568d6557fa",
+          "title": "黄仁勋再爆三奶，董事会位置悬了！英伟达盘后大跌",
+          "url": "http://caifuhao.eastmoney.com/news/20261112092239040369880",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 11,
+          "extra": "2.8万",
+          "heat": {
+            "value": 28000,
+            "unit": "万",
+            "raw": "2.8万"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a6aeabe69747b4e3",
+          "title": "【新债上市】千红转债，11月13日上市价格分析！",
+          "url": "http://caifuhao.eastmoney.com/news/20261112193542959041990",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 12,
+          "extra": "2129",
+          "heat": {
+            "value": 2129,
+            "unit": "",
+            "raw": "2129"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "cd9b34a550096f6d",
+          "title": "仓位最重的两家公司！",
+          "url": "http://caifuhao.eastmoney.com/news/20261112211504039814000",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 13,
+          "extra": "474",
+          "heat": {
+            "value": 474,
+            "unit": "",
+            "raw": "474"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "dcd40a581bb2c81d",
+          "title": "高开低走不意外，反复震荡非坏事，硬核科技磨底中",
+          "url": "http://caifuhao.eastmoney.com/news/20261112190104755457750",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 14,
+          "extra": "552",
+          "heat": {
+            "value": 552,
+            "unit": "",
+            "raw": "552"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "56ee1e4b896e4f30",
+          "title": "【新债上市】佐力转债，11月13日上市价格分析！",
+          "url": "http://caifuhao.eastmoney.com/news/20261112200352812207610",
+          "source": "今日热榜-股吧",
+          "source_type": "热榜",
+          "rank": 15,
+          "extra": "2071",
+          "heat": {
+            "value": 2071,
+            "unit": "",
+            "raw": "2071"
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "集思录",
+      "board_subtitle": "今日热门榜",
+      "items": [
+        {
+          "id": "d6fb239e36158a2f",
+          "title": "郭树清：建议尽快启动遗产和赠与税立法",
+          "url": "https://www.jisilu.cn/question/526731",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "4760",
+          "heat": {
+            "value": 4760,
+            "unit": "",
+            "raw": "4760"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "36001c838ce908e6",
+          "title": "黄仁勋，马斯克，贝索斯，比尔盖茨可以给我们普通男人什么启示？",
+          "url": "https://www.jisilu.cn/question/526740",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "2993",
+          "heat": {
+            "value": 2993,
+            "unit": "",
+            "raw": "2993"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7ad4052ffd809e5d",
+          "title": "转债怎么还是这么贵呀",
+          "url": "https://www.jisilu.cn/question/526735",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "2343",
+          "heat": {
+            "value": 2343,
+            "unit": "",
+            "raw": "2343"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "5bbb4608f759da20",
+          "title": "2026-11-12 可转债 调仓",
+          "url": "https://www.jisilu.cn/question/526728",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "2063",
+          "heat": {
+            "value": 2063,
+            "unit": "",
+            "raw": "2063"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "bfd4fa9be2b28dd3",
+          "title": "“持有豆粕ETF躺吃贴水”已失效：今年平均升水，近三年净值仍低于2023年底",
+          "url": "https://www.jisilu.cn/question/526745",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "921",
+          "heat": {
+            "value": 921,
+            "unit": "",
+            "raw": "921"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "63c4148bafceb415",
+          "title": "2026年11月13日投资提示：佩蒂转债不下修",
+          "url": "https://www.jisilu.cn/question/526748",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "724",
+          "heat": {
+            "value": 724,
+            "unit": "",
+            "raw": "724"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "93e2468647732e8e",
+          "title": "宏图转债，反反复复活跃",
+          "url": "https://www.jisilu.cn/question/526736",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "886",
+          "heat": {
+            "value": 886,
+            "unit": "",
+            "raw": "886"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "d4736656a59433b2",
+          "title": "建研院到底该跌还是该涨？AI真是不会用",
+          "url": "https://www.jisilu.cn/question/526739",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "627",
+          "heat": {
+            "value": 627,
+            "unit": "",
+            "raw": "627"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "ff3ceb5cf61158da",
+          "title": "固收+配转债的基金经理都是傻福么？",
+          "url": "https://www.jisilu.cn/question/526743",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "414",
+          "heat": {
+            "value": 414,
+            "unit": "",
+            "raw": "414"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "e256ea27a83b3bed",
+          "title": "全仓押注四傻：三房、宏图、闻泰、美锦，是否能战胜可转债指数？",
+          "url": "https://www.jisilu.cn/question/526750",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "424",
+          "heat": {
+            "value": 424,
+            "unit": "",
+            "raw": "424"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "6b558598242727ba",
+          "title": "英伟达宣布CEO黄仁勋辞职 CFO科莱特·克雷斯出任临时CEO",
+          "url": "https://www.jisilu.cn/question/526751",
+          "source": "今日热榜-集思录",
+          "source_type": "热榜",
+          "rank": 11,
+          "extra": "409",
+          "heat": {
+            "value": 409,
+            "unit": "",
+            "raw": "409"
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "第一财经",
+      "board_subtitle": "大直播排行周榜",
+      "items": [
+        {
+          "id": "ce49cc4731955ee0",
+          "title": "直播丨2026上海全球资产管理论坛",
+          "url": "https://www.yicai.com/live/103427339.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "caa0bfcea06b6efa",
+          "title": "每个交易日8:30直播丨从华尔街到陆家嘴",
+          "url": "https://www.yicai.com/live/102930514.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a09310933aa283ed",
+          "title": "直击进博会丨历“九”弥新，直播探展感受进博时刻",
+          "url": "https://www.yicai.com/live/103425596.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "3af0588117904e13",
+          "title": "直播丨2026 Shanghai Global Asset Management Forum",
+          "url": "https://www.yicai.com/live/103427343.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "6addc9a6d1812161",
+          "title": "直击进博会丨第九届中国国际进口博览会中外人文交流演出活动",
+          "url": "https://www.yicai.com/live/103425654.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "0e8d2dbdcbfa157d",
+          "title": "图文直播 | 第九届虹桥国际经济论坛消费焕新分论坛",
+          "url": "https://www.yicai.com/live/103423508.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7884c966cc344118",
+          "title": "直播丨2026上海全球资产管理论坛·国际化专场",
+          "url": "https://www.yicai.com/live/103432615.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b7eb07f353483808",
+          "title": "直播丨2026 Shanghai Global Asset Management Forum–International Session",
+          "url": "https://www.yicai.com/live/103432634.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b113a1c43c92e976",
+          "title": "直播丨围观2026世界人形机器人运动会 从赛场看见未来生活",
+          "url": "https://www.yicai.com/live/103328457.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        },
+        {
+          "id": "b1b9392fa7428a81",
+          "title": "直播｜算力再强也怕“断水”？被低估的AI隐形命门",
+          "url": "https://www.yicai.com/live/103428281.html",
+          "source": "今日热榜-第一财经",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": ""
+          },
+          "published_at": ""
+        }
+      ]
+    },
+    {
+      "board_name": "第一财经商业数据中心",
+      "board_subtitle": "CBNData报告",
+      "items": [
+        {
+          "id": "5b864986e00b2f5b",
+          "title": "2026上海AI+文旅消费趋势报告",
+          "url": "https://cbndata.com/report/3372/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 1,
+          "extra": "消费AI观察",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "消费AI观察"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "56c7ca631db047f4",
+          "title": "2026精致育儿睡眠健康白皮书",
+          "url": "https://cbndata.com/report/3371/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 2,
+          "extra": "儿童",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "儿童"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "fea89e2e73e08be5",
+          "title": "了不起的小花园：全龄女性私处护理指南",
+          "url": "https://cbndata.com/report/3370/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 3,
+          "extra": "洗护清洁",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "洗护清洁"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "97a843a1c36cbe7e",
+          "title": "2026中国成人护理与家庭照护趋势白皮书",
+          "url": "https://cbndata.com/report/3369/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 4,
+          "extra": "家庭保健",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "家庭保健"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "7cfce7e488565018",
+          "title": "家的友好高度：2026天猫居家适老化趋势报告",
+          "url": "https://cbndata.com/report/3368/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 5,
+          "extra": "银发族",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "银发族"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "a2a5f6a21e5fc1e1",
+          "title": "2026淘宝天猫婴童卫浴趋势报告",
+          "url": "https://cbndata.com/report/3366/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 6,
+          "extra": "母婴",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "母婴"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "db63d30392f1d3e2",
+          "title": "AI搜索时代：2026品牌营销策略洞察——智能硬件篇",
+          "url": "https://cbndata.com/report/3365/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 7,
+          "extra": "消费AI观察",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "消费AI观察"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "81beb3f753c0584b",
+          "title": "2026打工人夏日崩溃瞬间报告",
+          "url": "https://cbndata.com/report/3364/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 8,
+          "extra": "大健康",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "大健康"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "544177591148082b",
+          "title": "全民升舱白皮书VI",
+          "url": "https://cbndata.com/report/3363/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 9,
+          "extra": "消费趋势",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "消费趋势"
+          },
+          "published_at": ""
+        },
+        {
+          "id": "967c862dbcf74c71",
+          "title": "中国时尚消费品牌出海趋势白皮书",
+          "url": "https://cbndata.com/report/3362/detail",
+          "source": "今日热榜-第一财经商业数据中心",
+          "source_type": "热榜",
+          "rank": 10,
+          "extra": "时尚经济",
+          "heat": {
+            "value": 0,
+            "unit": "",
+            "raw": "时尚经济"
+          },
+          "published_at": ""
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "fd473d1b4d7fa917",
+      "title": "A股停牌提示：7股今日停牌",
+      "url": "https://www.yicai.com/news/103433381.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8e9326c9897136d8",
+      "title": "多个小城长满外国人 越来越多外国人来华买买买",
+      "url": "https://www.yicai.com/news/103430754.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b2ae1e0f4a2a916a",
+      "title": "山姆卖始祖鸟加拿大鹅，最高便宜5000元，逻辑是什么｜乐言商业",
+      "url": "https://www.yicai.com/news/103434516.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1aeef6baab186ebd",
+      "title": "聚焦“双11”｜迪士尼门票0.1元、大平层降价逾300万：噱头还是以价换量",
+      "url": "https://www.yicai.com/news/103436985.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d6db5424a466f5eb",
+      "title": "聚焦“双11”｜金店排长队：验金要等半小时，有人趁机攒够“三金”",
+      "url": "https://www.yicai.com/news/103435747.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "83bca4fd9f2d0fe0",
+      "title": "壹快评｜“居民参保减少8300万”，读懂网民误解背后的真实关切",
+      "url": "https://www.yicai.com/news/103431052.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e3dda9a150d4c1cf",
+      "title": "晚间公告丨11月9日这些公告有看头",
+      "url": "https://www.yicai.com/news/103432780.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "9ef13d5fc96bc92f",
+      "title": "晚间公告丨11月6日这些公告有看头",
+      "url": "https://www.yicai.com/news/103429837.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7fc6d6cfddc19732",
+      "title": "税款滞纳金上不封顶或将成历史",
+      "url": "https://www.yicai.com/news/103430533.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "07d25261122478d4",
+      "title": "聚焦进博会：婴配粉“技术竞赛”再升级，乳企集体押注全龄营养",
+      "url": "https://www.yicai.com/news/103432102.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f35a402bd4bf0e50",
+      "title": "A股核心红利股数据观察记录-2026/11/11",
+      "url": "http://www.xueqiu.com/6828304753/416496726",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "14111113193c46a0",
+      "title": "别困在 “持有还是减仓” 里",
+      "url": "http://www.xueqiu.com/8201662520/416436229",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "102b6b4009a82e1d",
+      "title": "招商轮船安全垫探究",
+      "url": "http://www.xueqiu.com/4531216350/416467387",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b7c1ba9747906a6a",
+      "title": "潮水没有退，它只是换了个方向",
+      "url": "http://www.xueqiu.com/5963406195/416497656",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "08d972d4097e4460",
+      "title": "题材炒作和价值投资的根本逻辑",
+      "url": "http://www.xueqiu.com/4957928282/416519336",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ed3418c7cf61a294",
+      "title": "红利和科技是冤家？让我用七年数据里的三个反常识，告诉你跷跷板是个错觉。",
+      "url": "http://www.xueqiu.com/2884313460/416520968",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "adae73a102a8bcbe",
+      "title": "警惕！纳指ETF溢价超20%，如何应对？（11.12）",
+      "url": "http://www.xueqiu.com/9391624441/416516984",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a79bbdd1c543a83a",
+      "title": "谈谈Anthropic当下的估值与定价博弈",
+      "url": "http://www.xueqiu.com/5332385101/416504716",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "45b9d0a23dbb9c0f",
+      "title": "A股上市企业都是周期股？不值得投资？",
+      "url": "http://www.xueqiu.com/1843761023/416349240",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "fcf437d0f422ffae",
+      "title": "从左侧到右侧：光模块反转还差这八块拼图",
+      "url": "http://www.xueqiu.com/3196557688/416370980",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b3574586f90c5cee",
+      "title": "从CoreWeave财报谈谈新云债务与算力博弈",
+      "url": "http://www.xueqiu.com/5332385101/416357406",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 11,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7e5ce6c2082f15a9",
+      "title": "泡沫不在估值里，而在时间线上",
+      "url": "http://www.xueqiu.com/7271353740/416401769",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "fc098b2d12a0d10e",
+      "title": "随想387 产能不是开关",
+      "url": "http://www.xueqiu.com/1438190065/416358691",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 13,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8c7406a64bab5f6b",
+      "title": "2026三季报解读（公共事业）：移动通信、港口、高速、航运",
+      "url": "http://www.xueqiu.com/5385800475/416430804",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 14,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b7e459425ad4cd17",
+      "title": "红利指数的三大流派",
+      "url": "http://www.xueqiu.com/8867390119/416409883",
+      "source": "今日热榜-雪球",
+      "source_type": "热榜",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "4148517497439f68",
+      "title": "黄仁勋突然离任震动AI行业！英伟达大跌、新云与硬件承压、AMD大涨，Anthropic IPO受审视",
+      "url": "https://wallstreetcn.com/articles/3785829",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "39.1万",
+      "heat": {
+        "value": 391000,
+        "unit": "万",
+        "raw": "39.1万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "52bac26b819f33fb",
+      "title": "黄仁勋再曝新婚外情，董事会准备罢免！英伟达盘后跌幅达8%",
+      "url": "https://wallstreetcn.com/articles/3785765",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "27.2万",
+      "heat": {
+        "value": 272000,
+        "unit": "万",
+        "raw": "27.2万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d200207cfa856978",
+      "title": "今日开会决定“黄仁勋是否下台”！英伟达董事会已开始遴选新CEO，考虑任命过渡CEO",
+      "url": "https://wallstreetcn.com/articles/3785773",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "20.4万",
+      "heat": {
+        "value": 204000,
+        "unit": "万",
+        "raw": "20.4万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "993381079188807f",
+      "title": "“拯救黄仁勋”！马斯克等硅谷大佬集体声援：调查结束前不应解雇",
+      "url": "https://wallstreetcn.com/articles/3785804",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "17.0万",
+      "heat": {
+        "value": 170000,
+        "unit": "万",
+        "raw": "17.0万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e139ebb61c76c7a7",
+      "title": "华尔街见闻早餐FM-Radio | 2026年11月12日",
+      "url": "https://wallstreetcn.com/articles/3785764",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "12.0万",
+      "heat": {
+        "value": 120000,
+        "unit": "万",
+        "raw": "12.0万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "afb4f80b2af82d94",
+      "title": "黄仁勋辞职，英伟达跌5%，美股三大指数转涨，油价短线上扬",
+      "url": "https://wallstreetcn.com/articles/3785806",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "11.8万",
+      "heat": {
+        "value": 118000,
+        "unit": "万",
+        "raw": "11.8万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "9064238f63132a7d",
+      "title": "AI交易重燃，美股指反弹，CoreWeave飙升24%，美元续涨，黄金跌破4000",
+      "url": "https://wallstreetcn.com/articles/3785732",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "10.8万",
+      "heat": {
+        "value": 108000,
+        "unit": "万",
+        "raw": "10.8万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b32e6da3ee2d365a",
+      "title": "英伟达关于黄仁勋辞职及领导团队调整的声明全文",
+      "url": "https://wallstreetcn.com/articles/3785832",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "9.5万",
+      "heat": {
+        "value": 95000,
+        "unit": "万",
+        "raw": "9.5万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1e41879bf0abaa8b",
+      "title": "英伟达美股盘后跳水，媒体报道称：黄仁勋曾与英伟达高管有过婚外情",
+      "url": "https://wallstreetcn.com/articles/3785762",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "9.1万",
+      "heat": {
+        "value": 91000,
+        "unit": "万",
+        "raw": "9.1万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a52eb248ea89ef38",
+      "title": "苏姿丰、库克、陈立武…谁能接黄仁勋的班？“Nobody”！分权或是更好的解法",
+      "url": "https://wallstreetcn.com/articles/3785791",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "7.3万",
+      "heat": {
+        "value": 73000,
+        "unit": "万",
+        "raw": "7.3万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "994c49553114448d",
+      "title": "意大利国家电力公司首席财务官：集团将于2月公布最新业务计划。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekt1569298.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "1,019",
+      "heat": {
+        "value": 1019,
+        "unit": "",
+        "raw": "1,019"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a97f780a8c5f4c6f",
+      "title": "伦敦可可期货上涨超过3%，至每公吨4011英镑。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekv3713189.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "879",
+      "heat": {
+        "value": 879,
+        "unit": "",
+        "raw": "879"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "efbe7c7425b97203",
+      "title": "国际货币基金组织认为美国通胀将推迟回到美联储2%的目标水平。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypeku8324674.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "798",
+      "heat": {
+        "value": 798,
+        "unit": "",
+        "raw": "798"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "59ab11bde03d8e05",
+      "title": "在岸人民币兑美元夜盘收盘报6.6745，较上一交易日上涨4点。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1470095.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "729",
+      "heat": {
+        "value": 729,
+        "unit": "",
+        "raw": "729"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "56e316132d2b6c42",
+      "title": "Semafor 记者发文称，超微电脑表示 Megaspeed 现在不是、也从未是超微电脑的客户。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypkst3729758.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "700",
+      "heat": {
+        "value": 700,
+        "unit": "",
+        "raw": "700"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c25ba5b4758753ca",
+      "title": "阿根廷国家统计与人口普查研究所（INDEC）数据显示，该国 10 月消费者物价较上月上涨 2.2%。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1470289.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "690",
+      "heat": {
+        "value": 690,
+        "unit": "",
+        "raw": "690"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "25865b5c4c4da3e0",
+      "title": "美联储戴利表示，经济正受到科技繁荣的推动。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypkss8231588.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "665",
+      "heat": {
+        "value": 665,
+        "unit": "",
+        "raw": "665"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "50a2d1281f40bada",
+      "title": "美联储确认将2027年10月会议从FOMC日程中移除后，联邦基金期货10月27日/11月27日价差合约出现一波交易活动",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypekp1099867.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "640",
+      "heat": {
+        "value": 640,
+        "unit": "",
+        "raw": "640"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "23b375ec08129652",
+      "title": "微软就宕机事件回应：我们已确认，该问题可能会影响任何地区用户的微软365服务连接。",
+      "url": "https://finance.sina.com.cn/7x24/2026-11-13/doc-iniypksr1454620.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "637",
+      "heat": {
+        "value": 637,
+        "unit": "",
+        "raw": "637"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "bf95b9e13cb1056a",
+      "title": "马斯克放出话有意聘用黄仁勋 预测市场借这起风波开展押注",
+      "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypekt1532217.shtml",
+      "source": "今日热榜-新浪财经新闻",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "634",
+      "heat": {
+        "value": 634,
+        "unit": "",
+        "raw": "634"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f8359b098cd08d48",
+      "title": "央企十亿订单是如何炼成的？",
+      "url": "https://m.21jingji.com/article/20261112/herald/4f8aa1e2cf2424f6026474fdc23fb135.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0fef201f42251059",
+      "title": "伦敦金现低见3945美元/盎司",
+      "url": "https://m.21jingji.com/article/20261112/herald/0bb39eddc754a8c9d98fbe4b4304d9a0.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "金融",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "金融"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d9a38bffdee9e9fd",
+      "title": "机器人投资不再只盯“本体”",
+      "url": "https://m.21jingji.com/article/20261112/herald/625d68f132d9cccea3f993a50869508c.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "255fb0253dfee727",
+      "title": "英伟达宣布黄仁勋辞任CEO，董事会寻找继任者",
+      "url": "https://m.21jingji.com/article/20261112/herald/5dcecfa88c4c61a17e2aebdf289ab15e.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "cf03c05ff5a5e983",
+      "title": "英伟达市值跌破4万亿美元，美股科技股重挫，闪迪跌超9%，中概股多数下跌",
+      "url": "https://m.21jingji.com/article/20261112/herald/0792c2fd6bbaf4243cf86cd027e7e428.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "投资",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "投资"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "061f09dbbbd5352b",
+      "title": "巨头算力订单拉动数据中心扩张，AI基建融资路径迎检验",
+      "url": "https://m.21jingji.com/article/20261112/herald/6494d3da3bd064a38049634f713d7ec9.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "411ce9004a85ddd3",
+      "title": "2026年中央八项规定精神贯彻执行情况网络调查问卷正式开启",
+      "url": "https://m.21jingji.com/article/20261110/herald/b990e52ac6155fc133618a84e6688cf5.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "4b5b852312b813ee",
+      "title": "Anthropic“史上最严”封号政策生效，为何选在上市前？",
+      "url": "https://m.21jingji.com/article/20261112/herald/5f11ad1b12b278dc533176b161f35965.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "91bad8b96d4ebfda",
+      "title": "Cloudera刘隶放：企业级AI走向规模化，数据底座成关键",
+      "url": "https://m.21jingji.com/article/20261112/herald/64423554b5eb89d705296cd5059e71a0.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1f964c524d9167a8",
+      "title": "美国上周初请失业金人数为20万人",
+      "url": "https://m.21jingji.com/timeline/476d8214c348738ff5e7bde3e1fd053a.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "21财经雷达",
+      "heat": {
+        "value": 21,
+        "unit": "",
+        "raw": "21财经雷达"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ab48f550487cb295",
+      "title": "草原上的“星际之门”：AI大厂扎堆乌兰察布",
+      "url": "https://m.21jingji.com/article/20261112/herald/9a36f72bafdcfce8741db45d24f5a519.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 11,
+      "extra": "公司",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "公司"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a4713344882356e8",
+      "title": "多家银行上调！美元定存利率、理财业绩基准均值超4%",
+      "url": "https://m.21jingji.com/article/20261112/herald/d6a41487fd227dd27d975534e3defe88.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 12,
+      "extra": "金融",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "金融"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d358169bc1ca00d5",
+      "title": "连续两周加仓！百亿私募仓位抬升，扎堆调研电子、医药龙头",
+      "url": "https://m.21jingji.com/article/20261112/herald/e27e0b000c81ddec83d8bced4bc251d2.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 13,
+      "extra": "证券",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "证券"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6e3cedfd82a1a4bb",
+      "title": "越声智投App上线：从工具到陪伴，数智投顾全天候在线",
+      "url": "https://m.21jingji.com/article/20261112/herald/a58ee0723fbe0c039ef7132ae83e3215.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 14,
+      "extra": "投资",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "投资"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8278bb100727a3d1",
+      "title": "扎根中国，投资中国，百胜中国门店迎来两万家里程碑",
+      "url": "https://m.21jingji.com/article/20261112/herald/050551f6598270315ed06dcac85610f1.html",
+      "source": "今日热榜-21财经",
+      "source_type": "热榜",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "057d4c01200426db",
+      "title": "Cerebras大涨！Q3营收超预期，上调全年业绩指引｜财报见闻",
+      "url": "https://wallstreetcn.com/articles/3785843",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3f54e9572c6d1f4c",
+      "title": "不用Flash命名，谷歌发布Gemini 4 Hydrogen：幻觉减少5倍，速度翻倍",
+      "url": "https://wallstreetcn.com/articles/3785836",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ecb464c69669e114",
+      "title": "SpaceX计划投资740亿美元，在亚利桑那州和德克萨斯州建设数据中心",
+      "url": "https://wallstreetcn.com/articles/3785835",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f542f590b1e52f68",
+      "title": "思科预计全年调整后每股收益（EPS）为5.47-5.53美元，公司原本预计预期5.05-5.11美元",
+      "url": "https://wallstreetcn.com/articles/3785840",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c710df133fddbe16",
+      "title": "史上最大IPO蓄势待发：Anthropic IPO据称获约六倍超额认购",
+      "url": "https://wallstreetcn.com/articles/3785841",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1ac9e5bb391c1a5f",
+      "title": "黄仁勋再次被曝与第二名女员工有染",
+      "url": "https://wallstreetcn.com/articles/3785837",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "2faa627cb50e308d",
+      "title": "英伟达新任董事会主席致全体员工：公司实力源于团队、技术和生态",
+      "url": "https://wallstreetcn.com/articles/3785834",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5d4e5c2fe7c629ba",
+      "title": "通胀就业双重暴击！12月到底加25还是50bp？",
+      "url": "https://wallstreetcn.com/member/articles/3785727",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c82e10e839db1c10",
+      "title": "见闻历11.11大促最后1天！买日历送超千元知识礼包，送什么都不如送“搞钱的智慧”！",
+      "url": "https://wallstreetcn.com/articles/3782813",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 11,
+      "extra": "华尔街见闻",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "华尔街见闻"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "83f6188b1e0959c4",
+      "title": "美国成屋销售跌至16年低点，高利率与通胀持续压制购房需求",
+      "url": "https://wallstreetcn.com/articles/3785831",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "2f29e5ce434241ac",
+      "title": "美联储哈马克：需进一步加息以压制通胀",
+      "url": "https://wallstreetcn.com/articles/3785828",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 14,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "dfb5d918d69b543c",
+      "title": "OpenAI融资缩水新证？据称新一轮已融150亿美元，最初目标300亿",
+      "url": "https://wallstreetcn.com/articles/3785830",
+      "source": "今日热榜-华尔街见闻",
+      "source_type": "热榜",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b908538a53721ee8",
+      "title": "胖东来“卡蓓诺洗发水”疑云",
+      "url": "https://cbndata.com/information/296009",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "青眼",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "青眼"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "54c59918c95d169a",
+      "title": "被“高蛋白”包围的年轻人：吃不起、补不够、躲不过",
+      "url": "https://cbndata.com/information/296008",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "后浪OhYouth",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "后浪OhYouth"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c9ab0aa5097899d3",
+      "title": "大肥鱼取代豆包，DeepSeek 被用户共创 OC 带火了",
+      "url": "https://cbndata.com/information/296007",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "TopMarketing",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "TopMarketing"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "19150b596a91dea1",
+      "title": "寿喜烧赛道洗牌时刻：热度分化下的生存博弈",
+      "url": "https://cbndata.com/information/296006",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "餐企老板内参",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "餐企老板内参"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "91cfd5ed1fbaf9bc",
+      "title": "SKIMS 千元圣诞盲盒翻车，“像从车座缝里抠出来的破烂”惹怒中产？",
+      "url": "https://cbndata.com/information/296005",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "Vista氢商业",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "Vista氢商业"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d47d53b3b943c4f3",
+      "title": "在奥莱，运动品牌拒绝“掉价”",
+      "url": "https://cbndata.com/information/296004",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "体育产业生态圈",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "体育产业生态圈"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ee7288cebe402db3",
+      "title": "保暖内衣年销176亿：从穿在里面到穿得出去",
+      "url": "https://cbndata.com/information/296003",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "魔镜洞察",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "魔镜洞察"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "fbae91e7cb5f8164",
+      "title": "卡牌赛道遇冷，Hitcard 为何另寻上市路径？",
+      "url": "https://cbndata.com/information/296002",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "剁椒Spicy",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "剁椒Spicy"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "924616e61c683018",
+      "title": "HYROX 赛场走红的鼻贴，为什么成了资本青睐的 “明星装备”？",
+      "url": "https://cbndata.com/information/296001",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "精练GymSquare",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "精练GymSquare"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d6678f01ca227988",
+      "title": "拼不过门店规模，7-Eleven 靠什么在广东突围？",
+      "url": "https://cbndata.com/information/296000",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "灵兽",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "灵兽"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1a32d7813176573c",
+      "title": "早报（11.12）| AI交易一夜沸腾，英伟达盘后狂泻逾10%！黄仁勋再曝出轨女下属，董事会或考虑罢免；霍尔木兹海峡突传大消息！",
+      "url": "https://www.gelonghui.com/p/7392758",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "73c3fcec0a83d7e4",
+      "title": "AI正在杀死廉价劳动力",
+      "url": "https://www.gelonghui.com/p/7410196",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3ddb00a8ae185d93",
+      "title": "A股收评：创业板指跌2.44%，贵金属、游戏股大跌",
+      "url": "https://www.gelonghui.com/p/7406590",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "18c67298ada474f8",
+      "title": "港股收评：恒指险守24000点！贵金属重挫，半导体回落",
+      "url": "https://www.gelonghui.com/p/7407761",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8962260ae5233b7d",
+      "title": "24小时环球政经要闻 | 11月12日",
+      "url": "https://www.gelonghui.com/p/7392760",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "50c3c9b02bc94fd6",
+      "title": "预测市场数据速览：谁能成为英伟达下一任CEO？",
+      "url": "https://www.gelonghui.com/p/7394384",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e4f86300818c8cee",
+      "title": "造船业确立上行周期、船用配套加速国产替代，中国联塑(2128.HK)高端工业管道卡位海洋经济",
+      "url": "https://www.gelonghui.com/p/7405569",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "016554fb7fba71e0",
+      "title": "如果英伟达没有了黄仁勋",
+      "url": "https://www.gelonghui.com/p/7398721",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "012397d61dec8d44",
+      "title": "谷歌内部测试Gemini 4“Hydrogen”，主打速度与效率",
+      "url": "https://www.gelonghui.com/p/7392751",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "34106cef5a2a4693",
+      "title": "中芯国际即将放榜，几大核心关注点",
+      "url": "https://www.gelonghui.com/p/7407086",
+      "source": "今日热榜-格隆汇",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5b318cee8b081d85",
+      "title": "惊天大瓜: 刚刚黄仁勋和英伟达分道扬镳，要来中国创立中伟达?",
+      "url": "http://caifuhao.eastmoney.com/news/20261112221505666826860",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "5.9万",
+      "heat": {
+        "value": 59000,
+        "unit": "万",
+        "raw": "5.9万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e7aaa9cb5b9e6a03",
+      "title": "操作丨硬科技大幅冲高回落，市场抛压加剧！怎么看？",
+      "url": "http://caifuhao.eastmoney.com/news/20261112140908199693020",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "1.1万",
+      "heat": {
+        "value": 11000,
+        "unit": "万",
+        "raw": "1.1万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "eaf4addcf887dc15",
+      "title": "冲高回落 做好一个准备",
+      "url": "http://caifuhao.eastmoney.com/news/20261112145054618381220",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "2.2万",
+      "heat": {
+        "value": 22000,
+        "unit": "万",
+        "raw": "2.2万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "cf61ab8029b18dea",
+      "title": "亏到怀疑策略",
+      "url": "http://caifuhao.eastmoney.com/news/20261112224326282388750",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "429",
+      "heat": {
+        "value": 429,
+        "unit": "",
+        "raw": "429"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "faface7da6177f91",
+      "title": "跟踪新疆广汇集团动作的轨迹，剖析它会如何解决广汇汽车危机，2027年决战，重生。",
+      "url": "http://caifuhao.eastmoney.com/news/20261112202902968048300",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "1286",
+      "heat": {
+        "value": 1286,
+        "unit": "",
+        "raw": "1286"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f9b3a1ad9c31d33f",
+      "title": "黄仁勋再曝婚外情，要被英伟达罢免了！",
+      "url": "http://caifuhao.eastmoney.com/news/20261112083256856416420",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "16.4万",
+      "heat": {
+        "value": 164000,
+        "unit": "万",
+        "raw": "16.4万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c5672935e5b55748",
+      "title": "黄仁勋再曝婚外情，英伟达大跌8%，董事长要换人？",
+      "url": "http://caifuhao.eastmoney.com/news/20261112075030316126940",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "9.2万",
+      "heat": {
+        "value": 92000,
+        "unit": "万",
+        "raw": "9.2万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "aac5861b99ca3e07",
+      "title": "科技暴涨 央妈助攻 今天红周四？",
+      "url": "http://caifuhao.eastmoney.com/news/20261112064843665132650",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "2.9万",
+      "heat": {
+        "value": 29000,
+        "unit": "万",
+        "raw": "2.9万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "311b79770065c2c6",
+      "title": "全球首个！信诺维旗下首个创新药获批上市",
+      "url": "http://caifuhao.eastmoney.com/news/20261112145740000114010",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "886",
+      "heat": {
+        "value": 886,
+        "unit": "",
+        "raw": "886"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3ab751568d6557fa",
+      "title": "黄仁勋再爆三奶，董事会位置悬了！英伟达盘后大跌",
+      "url": "http://caifuhao.eastmoney.com/news/20261112092239040369880",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 11,
+      "extra": "2.8万",
+      "heat": {
+        "value": 28000,
+        "unit": "万",
+        "raw": "2.8万"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a6aeabe69747b4e3",
+      "title": "【新债上市】千红转债，11月13日上市价格分析！",
+      "url": "http://caifuhao.eastmoney.com/news/20261112193542959041990",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 12,
+      "extra": "2129",
+      "heat": {
+        "value": 2129,
+        "unit": "",
+        "raw": "2129"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "cd9b34a550096f6d",
+      "title": "仓位最重的两家公司！",
+      "url": "http://caifuhao.eastmoney.com/news/20261112211504039814000",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 13,
+      "extra": "474",
+      "heat": {
+        "value": 474,
+        "unit": "",
+        "raw": "474"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "dcd40a581bb2c81d",
+      "title": "高开低走不意外，反复震荡非坏事，硬核科技磨底中",
+      "url": "http://caifuhao.eastmoney.com/news/20261112190104755457750",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 14,
+      "extra": "552",
+      "heat": {
+        "value": 552,
+        "unit": "",
+        "raw": "552"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "56ee1e4b896e4f30",
+      "title": "【新债上市】佐力转债，11月13日上市价格分析！",
+      "url": "http://caifuhao.eastmoney.com/news/20261112200352812207610",
+      "source": "今日热榜-股吧",
+      "source_type": "热榜",
+      "rank": 15,
+      "extra": "2071",
+      "heat": {
+        "value": 2071,
+        "unit": "",
+        "raw": "2071"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d6fb239e36158a2f",
+      "title": "郭树清：建议尽快启动遗产和赠与税立法",
+      "url": "https://www.jisilu.cn/question/526731",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "4760",
+      "heat": {
+        "value": 4760,
+        "unit": "",
+        "raw": "4760"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "36001c838ce908e6",
+      "title": "黄仁勋，马斯克，贝索斯，比尔盖茨可以给我们普通男人什么启示？",
+      "url": "https://www.jisilu.cn/question/526740",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "2993",
+      "heat": {
+        "value": 2993,
+        "unit": "",
+        "raw": "2993"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7ad4052ffd809e5d",
+      "title": "转债怎么还是这么贵呀",
+      "url": "https://www.jisilu.cn/question/526735",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "2343",
+      "heat": {
+        "value": 2343,
+        "unit": "",
+        "raw": "2343"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5bbb4608f759da20",
+      "title": "2026-11-12 可转债 调仓",
+      "url": "https://www.jisilu.cn/question/526728",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "2063",
+      "heat": {
+        "value": 2063,
+        "unit": "",
+        "raw": "2063"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "bfd4fa9be2b28dd3",
+      "title": "“持有豆粕ETF躺吃贴水”已失效：今年平均升水，近三年净值仍低于2023年底",
+      "url": "https://www.jisilu.cn/question/526745",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "921",
+      "heat": {
+        "value": 921,
+        "unit": "",
+        "raw": "921"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "63c4148bafceb415",
+      "title": "2026年11月13日投资提示：佩蒂转债不下修",
+      "url": "https://www.jisilu.cn/question/526748",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "724",
+      "heat": {
+        "value": 724,
+        "unit": "",
+        "raw": "724"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "93e2468647732e8e",
+      "title": "宏图转债，反反复复活跃",
+      "url": "https://www.jisilu.cn/question/526736",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "886",
+      "heat": {
+        "value": 886,
+        "unit": "",
+        "raw": "886"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d4736656a59433b2",
+      "title": "建研院到底该跌还是该涨？AI真是不会用",
+      "url": "https://www.jisilu.cn/question/526739",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "627",
+      "heat": {
+        "value": 627,
+        "unit": "",
+        "raw": "627"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ff3ceb5cf61158da",
+      "title": "固收+配转债的基金经理都是傻福么？",
+      "url": "https://www.jisilu.cn/question/526743",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "414",
+      "heat": {
+        "value": 414,
+        "unit": "",
+        "raw": "414"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e256ea27a83b3bed",
+      "title": "全仓押注四傻：三房、宏图、闻泰、美锦，是否能战胜可转债指数？",
+      "url": "https://www.jisilu.cn/question/526750",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "424",
+      "heat": {
+        "value": 424,
+        "unit": "",
+        "raw": "424"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6b558598242727ba",
+      "title": "英伟达宣布CEO黄仁勋辞职 CFO科莱特·克雷斯出任临时CEO",
+      "url": "https://www.jisilu.cn/question/526751",
+      "source": "今日热榜-集思录",
+      "source_type": "热榜",
+      "rank": 11,
+      "extra": "409",
+      "heat": {
+        "value": 409,
+        "unit": "",
+        "raw": "409"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "ce49cc4731955ee0",
+      "title": "直播丨2026上海全球资产管理论坛",
+      "url": "https://www.yicai.com/live/103427339.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "caa0bfcea06b6efa",
+      "title": "每个交易日8:30直播丨从华尔街到陆家嘴",
+      "url": "https://www.yicai.com/live/102930514.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a09310933aa283ed",
+      "title": "直击进博会丨历“九”弥新，直播探展感受进博时刻",
+      "url": "https://www.yicai.com/live/103425596.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3af0588117904e13",
+      "title": "直播丨2026 Shanghai Global Asset Management Forum",
+      "url": "https://www.yicai.com/live/103427343.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6addc9a6d1812161",
+      "title": "直击进博会丨第九届中国国际进口博览会中外人文交流演出活动",
+      "url": "https://www.yicai.com/live/103425654.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0e8d2dbdcbfa157d",
+      "title": "图文直播 | 第九届虹桥国际经济论坛消费焕新分论坛",
+      "url": "https://www.yicai.com/live/103423508.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7884c966cc344118",
+      "title": "直播丨2026上海全球资产管理论坛·国际化专场",
+      "url": "https://www.yicai.com/live/103432615.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b7eb07f353483808",
+      "title": "直播丨2026 Shanghai Global Asset Management Forum–International Session",
+      "url": "https://www.yicai.com/live/103432634.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b113a1c43c92e976",
+      "title": "直播丨围观2026世界人形机器人运动会 从赛场看见未来生活",
+      "url": "https://www.yicai.com/live/103328457.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b1b9392fa7428a81",
+      "title": "直播｜算力再强也怕“断水”？被低估的AI隐形命门",
+      "url": "https://www.yicai.com/live/103428281.html",
+      "source": "今日热榜-第一财经",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5b864986e00b2f5b",
+      "title": "2026上海AI+文旅消费趋势报告",
+      "url": "https://cbndata.com/report/3372/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 1,
+      "extra": "消费AI观察",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "消费AI观察"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "56c7ca631db047f4",
+      "title": "2026精致育儿睡眠健康白皮书",
+      "url": "https://cbndata.com/report/3371/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 2,
+      "extra": "儿童",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "儿童"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "fea89e2e73e08be5",
+      "title": "了不起的小花园：全龄女性私处护理指南",
+      "url": "https://cbndata.com/report/3370/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 3,
+      "extra": "洗护清洁",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "洗护清洁"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "97a843a1c36cbe7e",
+      "title": "2026中国成人护理与家庭照护趋势白皮书",
+      "url": "https://cbndata.com/report/3369/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 4,
+      "extra": "家庭保健",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "家庭保健"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7cfce7e488565018",
+      "title": "家的友好高度：2026天猫居家适老化趋势报告",
+      "url": "https://cbndata.com/report/3368/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 5,
+      "extra": "银发族",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "银发族"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a2a5f6a21e5fc1e1",
+      "title": "2026淘宝天猫婴童卫浴趋势报告",
+      "url": "https://cbndata.com/report/3366/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 6,
+      "extra": "母婴",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "母婴"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "db63d30392f1d3e2",
+      "title": "AI搜索时代：2026品牌营销策略洞察——智能硬件篇",
+      "url": "https://cbndata.com/report/3365/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 7,
+      "extra": "消费AI观察",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "消费AI观察"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "81beb3f753c0584b",
+      "title": "2026打工人夏日崩溃瞬间报告",
+      "url": "https://cbndata.com/report/3364/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 8,
+      "extra": "大健康",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "大健康"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "544177591148082b",
+      "title": "全民升舱白皮书VI",
+      "url": "https://cbndata.com/report/3363/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 9,
+      "extra": "消费趋势",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "消费趋势"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "967c862dbcf74c71",
+      "title": "中国时尚消费品牌出海趋势白皮书",
+      "url": "https://cbndata.com/report/3362/detail",
+      "source": "今日热榜-第一财经商业数据中心",
+      "source_type": "热榜",
+      "rank": 10,
+      "extra": "时尚经济",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": "时尚经济"
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0af77f5cf8717831",
+      "title": "16天9板！文投控股最新公告",
+      "url": "https://finance.eastmoney.com/a/202611113928670181.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "98a218b5c28326a7",
+      "title": "腾讯“裁员50%”说法完全不属实",
+      "url": "https://finance.eastmoney.com/a/202611123929343313.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "17ac7bc99c5b37cf",
+      "title": "被曝新婚外情？黄仁勋据悉将遭罢免",
+      "url": "https://finance.eastmoney.com/a/202611123929028358.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "585b31940cb8a29f",
+      "title": "华尔街因黄仁勋风波翻脸：下调评级",
+      "url": "https://finance.eastmoney.com/a/202611123929056577.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f3c96954c6117403",
+      "title": "重大突破 国产1.6T光传输创新纪录",
+      "url": "https://finance.eastmoney.com/a/202611123928930016.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c11f67e4664512c6",
+      "title": "AI交易热情重燃！美股算力产业链飙升",
+      "url": "https://finance.eastmoney.com/a/202611123928848093.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "952447f8208a387e",
+      "title": "全球市场新风暴眼？加息预期全面引爆",
+      "url": "https://finance.eastmoney.com/a/202611123929075045.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a295d1dc3c9dffab",
+      "title": "美国10月CPI超市场预期 12月加息概率多大？",
+      "url": "https://finance.eastmoney.com/a/202611123928851315.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a691c3d3f01023fb",
+      "title": "黄仁勋辞职 谁来接棒英伟达？CUDA之父领跑 特朗普推荐库克",
+      "url": "https://finance.eastmoney.com/a/202611123929996170.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f0ac5d3a6a17f44e",
+      "title": "美股三大指数集体收跌 纳指收跌0.4% 英伟达跌超4%",
+      "url": "https://finance.eastmoney.com/a/202611123929972290.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "08d11dc9c9eb3072",
+      "title": "特朗普称美国不需要与伊朗达成协议 国际油价大幅拉升 现货黄金失守3900美元关口",
+      "url": "https://finance.eastmoney.com/a/202611123929967248.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 11,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "95564e40f7806afa",
+      "title": "美元触及19个月新高 美联储加息预期持续升温",
+      "url": "https://finance.eastmoney.com/a/202611123929900475.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "259b9886af768370",
+      "title": "特朗普称美国不需要与伊朗达成协议",
+      "url": "https://finance.eastmoney.com/a/202611123929897074.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 14,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a9090148e273cd34",
+      "title": "商务部：中美正就降税、贸易、投资等问题保持密切沟通",
+      "url": "https://finance.eastmoney.com/a/202611123929442489.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0e9acbefa2b4b981",
+      "title": "“易中天”利好齐发！科技投资加码、回购进程加速、订单需求旺盛",
+      "url": "https://finance.eastmoney.com/a/202611123929811429.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 16,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "88a5a477b603330d",
+      "title": "今夜集体跳水！利空消息突袭芯片巨头 华尔街投行下调英伟达评级",
+      "url": "https://finance.eastmoney.com/a/202611123929764266.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 17,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3d1acdbe1ce97668",
+      "title": "11月12日晚间上市公司利好消息一览(附名单)",
+      "url": "https://finance.eastmoney.com/a/202611123929869854.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 18,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c485276072486e42",
+      "title": "外交部：坚决反对美方泛化国家安全概念 无理打压中国机构",
+      "url": "https://finance.eastmoney.com/a/202611123929454826.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 19,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0d052ac8a873581c",
+      "title": "11月12日东方财富财经晚报（附新闻联播）",
+      "url": "https://finance.eastmoney.com/a/202611123929818842.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 20,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "75c8dbd270e94917",
+      "title": "国家发改委：11月12日24时起国内汽、柴油价格每吨分别下调645元、625元",
+      "url": "https://finance.eastmoney.com/a/202611123929437071.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 21,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "4c9a3c02fb54515c",
+      "title": "黄金跌破3900美元！贵金属板块集体下挫",
+      "url": "https://finance.eastmoney.com/a/202611123929921519.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 22,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "88e2a66de5da1613",
+      "title": "盘点因“桃色风波”下台的全球十大知名高管",
+      "url": "https://finance.eastmoney.com/a/202611123929779939.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 23,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "d60c81a1145c50f4",
+      "title": "A股回购潮延续！天孚通信、华虹宏力、海光信息等热门公司集体公告回购事项",
+      "url": "https://finance.eastmoney.com/a/202611123929770472.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 24,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "56e6c76894752872",
+      "title": "上交所向日出东方、大东方下发监管工作函",
+      "url": "https://finance.eastmoney.com/a/202611123929731178.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 25,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f80909d8104dc66f",
+      "title": "白酒股逆势走强！双11名酒战报出炉 成交同比增25%",
+      "url": "https://finance.eastmoney.com/a/202611123929728068.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 26,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "715600cabc7a422d",
+      "title": "“黄仁勋风波”催化行情！国产AI芯片份额猛增",
+      "url": "https://finance.eastmoney.com/a/202611123929721073.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 27,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "445f8202aca77129",
+      "title": "中芯国际：第三季度净利润同比增长87.6%",
+      "url": "https://finance.eastmoney.com/a/202611123929707150.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 28,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3a4728a0eb3754ff",
+      "title": "证监会副主席刘浩凌：中国政府高度重视资本市场平稳健康发展 中国资产的安全、韧性和创新价值将持续凸显",
+      "url": "https://finance.eastmoney.com/a/202611123929347043.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 29,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0f6739b6019befd3",
+      "title": "美国上周首次申领失业救济人数为20万人 略高于市场预期",
+      "url": "https://finance.eastmoney.com/a/202611123929902273.html",
+      "source": "东方财富-财经",
+      "source_type": "财经媒体",
+      "rank": 30,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "b878b7c65816409c",
+      "title": "银行新增信贷数据",
+      "url": "http://data.eastmoney.com/cjsj/xzxd.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "16bc50723e0abf72",
+      "title": "多家银行前三季度利息净收入大增",
+      "url": "https://finance.eastmoney.com/a/202611113927757762.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "362b502fae174f02",
+      "title": "银行行业资金流向",
+      "url": "http://data.eastmoney.com/bkzj/BK0475.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "c572fce3e92923aa",
+      "title": "卸任四年 厦门银行原董事长吴世群主动投案",
+      "url": "https://finance.eastmoney.com/a/202611133930041752.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "91aec5c464d69344",
+      "title": "厦门银行原董事长吴世群主动投案 曾执掌该行13年",
+      "url": "https://finance.eastmoney.com/a/202611123930017622.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0e015667e73d1e27",
+      "title": "拿下低息绿色信贷！顺发恒能为自备电厂项目申请14.5亿元授信 控股股东万向集团无偿兜底",
+      "url": "https://finance.eastmoney.com/a/202611123930016068.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "fe7a9cb78002924c",
+      "title": "《2026上海全球资产管理中心建设报告》发布",
+      "url": "https://finance.eastmoney.com/a/202611123929995617.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "32a223d5749fa84f",
+      "title": "中信银行：每10股派2.03元，股权登记日为11月19日",
+      "url": "https://finance.eastmoney.com/a/202611123929991260.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "89ceee6c892d7ddc",
+      "title": "席位订阅、OA嵌智能体，中小银行拥抱AI“办公搭子”",
+      "url": "https://finance.eastmoney.com/a/202611123929948775.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1ee9d80cff39512b",
+      "title": "主动投案，厦门银行原董事长吴世群接受纪律审查和监察调查",
+      "url": "https://finance.eastmoney.com/a/202611123929947792.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "98afe1cf33522790",
+      "title": "工商银行：“工行优1”每10股派31.40元，股权登记日为11月20日",
+      "url": "https://finance.eastmoney.com/a/202611123929924854.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 11,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "87215a2248a18c74",
+      "title": "“亏钱不如不投”！存款到期后，他们又选了定期",
+      "url": "https://finance.eastmoney.com/a/202611123929906137.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6213820751512815",
+      "title": "曾掌舵厦门银行13年，吴世群主动投案被查",
+      "url": "https://finance.eastmoney.com/a/202611123929901648.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 13,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5a7041cef1a8d997",
+      "title": "工商银行：向特定对象发行股票申请获上交所审核通过",
+      "url": "https://finance.eastmoney.com/a/202611123929900154.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 14,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "72a9a749cf47fc61",
+      "title": "花旗加大对中企出海服务投入，在华独资券商2027年下半年有望开业",
+      "url": "https://finance.eastmoney.com/a/202611123929895640.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e93f6595da1bcd7c",
+      "title": "中信银行：拟于11月20日派发A股普通股半年度分红 每股派现0.203元",
+      "url": "https://finance.eastmoney.com/a/202611123929896620.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 16,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6b43b9627d252128",
+      "title": "银行信用卡业务AI布局向服务场景延伸",
+      "url": "https://finance.eastmoney.com/a/202611123929912695.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 17,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f2bc4527eb19439b",
+      "title": "多家银行上调美元定存利率",
+      "url": "https://finance.eastmoney.com/a/202611123929893171.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 18,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "880c6581302da270",
+      "title": "金融活水润泽先进制造：产融合作从“资源对接”走向“生态共建”",
+      "url": "https://finance.eastmoney.com/a/202611123929892756.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 19,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e7dad8e44461f535",
+      "title": "再迎压力测试！36万亿银行理财闯关，净值化考验持续",
+      "url": "https://finance.eastmoney.com/a/202611123929902491.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 20,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "7000e41072c7d37a",
+      "title": "上海四家上市银行回应市场关切 聚焦资产质量与营收利润",
+      "url": "https://finance.eastmoney.com/a/202611123929878728.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 21,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "270ac89e7abd4fc3",
+      "title": "“9月启动开门红，10月已进入考核期”：银行业2027年“开门红”没有统一的“开门”时间，首季战役正变成全年连轴",
+      "url": "https://finance.eastmoney.com/a/202611123929878838.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 22,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "89de4d214f02ab1f",
+      "title": "金价波动加剧，多家银行新增积存金挂单业务",
+      "url": "https://finance.eastmoney.com/a/202611123929873558.html",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 23,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "879f2b8ea39344e9",
+      "title": "东方财富Level-2",
+      "url": "https://acttg.eastmoney.com/pub/pctg_hskh_act_dfcfwl2_01_01_01_0",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 24,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e0e0d823f36bcaa3",
+      "title": "东方财富证券开户",
+      "url": "https://acttg.eastmoney.com/pub/web_kh_dcsy_dbtkwzl_01_01_01_0",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 25,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "dac709864d99ec58",
+      "title": "东方财富在线交易",
+      "url": "https://jywg.18.cn/Trade/Buy",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 26,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a0d774fefffe2d97",
+      "title": "东方财富证券交易",
+      "url": "https://acttg.eastmoney.com/pub/pctg_hskh_act_dfcfzqjy_01_01_01_0",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 27,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "2a85cde60740e463",
+      "title": "jubao@eastmoney.com",
+      "url": "mailto:jubao@eastmoney.com",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 28,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "790ea9ce31551598",
+      "title": "网站备案号:沪ICP备05006054号-11",
+      "url": "https://beian.miit.gov.cn/",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 29,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0f4b7e0de490cbff",
+      "title": "沪公网安备 31010402000120号",
+      "url": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000120",
+      "source": "东方财富-银行",
+      "source_type": "财经媒体",
+      "rank": 30,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "4e8f857d461afd1c",
+      "title": "有进有退 险资差异化配置银行股",
+      "url": "https://finance.eastmoney.com/a/202611113927717716.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 1,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "74e020f7f54d8075",
+      "title": "保险行业资金流向明细",
+      "url": "http://data.eastmoney.com/bkzj/BK0474.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 2,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "5d2a4ee2f4ce22b5",
+      "title": "点击查看主力资金历史数据>>",
+      "url": "http://choice.eastmoney.com/?adid=1435",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 3,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8a63888f386b3987",
+      "title": "80岁也能买的保险 33.8元/月起",
+      "url": "https://topic.1234567.com.cn/html/2022/3/24/xxb0324_PC.html?spm=nryy.HPP.tg&ztcode=xxb0324",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 4,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "daea28056eab6a7a",
+      "title": "期货开户，选东方财富期货！",
+      "url": "https://qs.dfcfw.com/4965",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 5,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "1ef3e404fc12d451",
+      "title": "中国太保：九载服务进博会的金融保险答卷",
+      "url": "https://finance.eastmoney.com/a/202611133930070657.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 6,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8d35b10558790034",
+      "title": "华安资产周嘉伟：发挥险资长期优势 导入国家战略领域",
+      "url": "https://finance.eastmoney.com/a/202611133930043073.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 7,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e9145659b13df31f",
+      "title": "商业健康险相关示范条款与药品推荐清单正式落地",
+      "url": "https://finance.eastmoney.com/a/202611133930046120.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 8,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "e13e231b5c6e97d2",
+      "title": "专访中再产险总经理王忠曜：气候环境已告别稳态，保险业要重新读懂厄尔尼诺风险",
+      "url": "https://finance.eastmoney.com/a/202611123929874832.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 9,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "0066759acce9713a",
+      "title": "两日暴跌超75%！白鸽在线市值蒸发350亿港元，澄清与融资平台关联传闻",
+      "url": "https://finance.eastmoney.com/a/202611123929805310.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 10,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "67df51ea4c5b34e6",
+      "title": "华泰保险2.7352%股权作价5.95亿挂牌转让！山东能源资本拟降价“清仓”",
+      "url": "https://finance.eastmoney.com/a/202611123929810030.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 11,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "f92103684f56b59c",
+      "title": "华安财险黔东南中支被罚10万，涉虚列费用",
+      "url": "https://finance.eastmoney.com/a/202611123929809819.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 12,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "89791d09aa2df50c",
+      "title": "华安财产保险股份有限公司贵州分公司",
+      "url": "http://so.eastmoney.com/news/s?keyword=%e5%8d%8e%e5%ae%89%e8%b4%a2%e4%ba%a7%e4%bf%9d%e9%99%a9%e8%82%a1%e4%bb%bd%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b8%e8%b4%b5%e5%b7%9e%e5%88%86%e5%85%ac%e5%8f%b8",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 13,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "975dfc48afd40800",
+      "title": "虚列费用，华安财险贵州分公司黔东南中心支公司合计被罚11万元",
+      "url": "https://finance.eastmoney.com/a/202611123929810253.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 14,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "9bcd9719c0da630c",
+      "title": "东吴财险领开业以来首张罚单：因未经审批变更营业场所被罚10万",
+      "url": "https://finance.eastmoney.com/a/202611123929808044.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 15,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "018d4acb4729de0e",
+      "title": "保险业前三季：赔款与给付近两万亿，手续费及佣金支出降5.2%",
+      "url": "https://finance.eastmoney.com/a/202611123929727953.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 16,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "8f9f1a3035083f1e",
+      "title": "涵盖58款药械，中保协发布首批商保药品推荐清单",
+      "url": "https://finance.eastmoney.com/a/202611123929649646.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 17,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "279e52cbcd3816a3",
+      "title": "从一张保单到整个家族，险企集体“押注”家族办公室",
+      "url": "https://finance.eastmoney.com/a/202611123929458329.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 18,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "6493c057c46a8fa5",
+      "title": "港股评级汇总：兴业证券维持中国人民保险集团增持评级",
+      "url": "https://finance.eastmoney.com/a/202611123929459214.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 19,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "462f6c54575e5b2a",
+      "title": "中国人民保险集团",
+      "url": "http://so.eastmoney.com/news/s?keyword=%e4%b8%ad%e5%9b%bd%e4%ba%ba%e6%b0%91%e4%bf%9d%e9%99%a9%e9%9b%86%e5%9b%a2",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 20,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "3f07cb1749f30163",
+      "title": "虚假承保理赔！平安产险一支公司被罚，两人遭禁业5年",
+      "url": "https://finance.eastmoney.com/a/202611123929423071.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 21,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "a103567f67d1e6c7",
+      "title": "中国平安财产保险股份有限公司绥江支公司",
+      "url": "http://so.eastmoney.com/news/s?keyword=%e4%b8%ad%e5%9b%bd%e5%b9%b3%e5%ae%89%e8%b4%a2%e4%ba%a7%e4%bf%9d%e9%99%a9%e8%82%a1%e4%bb%bd%e6%9c%89%e9%99%90%e5%85%ac%e5%8f%b8%e7%bb%a5%e6%b1%9f%e6%94%af%e5%85%ac%e5%8f%b8",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 22,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "bf7ad9147057fa80",
+      "title": "国家医疗保障局原副局长陈金甫：大力发展商业健康保险建构新平衡体系，提升其战略定位与支柱权重",
+      "url": "https://finance.eastmoney.com/a/202611123929418929.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 23,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    },
+    {
+      "id": "831d712601bca18b",
+      "title": "安联保险第三季度营业利润47.1亿欧元，同比增长6.2%",
+      "url": "https://finance.eastmoney.com/a/202611123929409035.html",
+      "source": "东方财富-保险",
+      "source_type": "财经媒体",
+      "rank": 24,
+      "extra": "",
+      "heat": {
+        "value": 0,
+        "unit": "",
+        "raw": ""
+      },
+      "published_at": ""
+    }
+  ]
+}
